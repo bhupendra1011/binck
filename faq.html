@@ -1,0 +1,1718 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.binck.fr/faq by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:21:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link href="Telerik.Web.UI.WebResourceb6a9.css?d=PMrIT5dOWaVYIcpFWUE4nMLWcdQIjXr7e7sRrUL6XRMyEGvH48LOQzat_9YOOsN0J6WPBFhfQ4EN__Y3UDQ8KVFySae_B1iqlXBugPHQ1XuXHNF00&amp;t=637317551186412526&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d11.0.6732.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3afr%3aca5aa0cb-9dda-4885-a4ae-598cf4f97af5%3a7a90d6a%3ad271177c%3adff30785" type="text/css" rel="stylesheet" />
+            <link rel="alternate" hreflang="fr_fr" />
+            
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+        <link rel="stylesheet" href="Content/font-awesome.min.css" />
+        
+           <link rel="stylesheet" href="Content/BinckPatternLAB/binck.bootstrap.css" />
+           <link href="Content/patternlabcf9e.css?v=bauX_oIE8src8FNJTNLBQqUcmCLmSn7CvalvEIB5d0M1" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" type="image/x-icon" href="Style/Corporate/images/myicon.ico" />
+    <style>
+        body {
+            min-width: 0 !important;
+        }
+    </style>
+<script type="text/javascript">
+(function () {
+    window.digitalData = window.digitalData || [];
+
+    var domains = [
+        { "domain": "binckspanje.com", "country": "es", "language": "nl", "website": "rs-spain" },
+        { "domain": "binckbank.com", "country": "en", "language": "en", "website": "binck" },
+        { "domain": "binck.com", "country": "en", "language": "en", "website": "rs-binck" },
+        { "domain": "binck.be", "country": "be", "language": "nl", "website": "rs-belgium" },
+        { "domain": "binck.it", "country": "it", "language": "it", "website": "rs-italy" },
+        { "domain": "binck.nl", "country": "nl", "language": "nl", "website": "rs-netherlands" },
+        { "domain": "binck.fr", "country": "fr", "language": "fr", "website": "rs-france" }
+    ];
+
+    var languageList = [
+        { "language": "en" }, { "language": "nl" }, { "language": "fr" }, { "language": "it" }
+    ];
+
+    function findObject(arr, key, val) {
+        var found;
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i][key] === val) {
+                found = arr[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+    var topLvl = document.domain.split(".").reverse();
+    var subdomain = "";
+    
+    if (topLvl.length === 3 && topLvl[2] !== "www") {
+        subdomain = topLvl.pop();
+    } else {
+        topLvl.length = 2;
+    }
+
+    topLvl = topLvl.reverse().join(".");
+
+    var domain = findObject(domains, "domain", topLvl);
+
+    if (!domain) {
+        throw new Error(topLvl + " not supported by dataLayer");
+    }
+
+    var languageCode = domain.language;
+    var parts = window.location.pathname.split("index.html");
+    var languageCodeInUrl;
+
+    if (parts.length > 1) {
+        languageCodeInUrl = findObject(languageList, "language", parts[1]);
+    }
+    
+    if (subdomain === "ouvriruncompte") {
+        languageCodeInUrl = findObject(languageList, "language", "fr");
+    }
+
+    if (languageCodeInUrl) {
+        languageCode = languageCodeInUrl.language;
+        parts.shift();
+    }
+
+    parts.shift();
+    if (subdomain !== "") {
+        parts.unshift(subdomain);
+    }
+
+    var sections = parts.concat();
+    sections.unshift(languageCode + "-" + domain.country);
+
+    function responseStatusCode() {
+        responseStatusCode = 200;
+        var titlepage = window.document.title.toLowerCase()
+        if (titlepage.indexOf('pagina niet gevonden') > -1 || titlepage.indexOf('error 404') > -1 || titlepage.indexOf('page not found') > -1 || titlepage.indexOf('page non trouvée') > -1) {
+            responseStatusCode = 404;
+        }
+        return responseStatusCode;
+    }
+
+    function getPageName() {
+        return parts.join(":").replace(/:$/, "");
+    }
+
+    function getSiteSectionAll() {
+        var sectionAll = "";
+        if (parts.length === 0 || parts[0] === "") {
+            sectionAll = "frontpage";
+        } else {
+            sectionAll = getPageName();
+        }
+        return sectionAll;
+    }
+
+    var pageName = getPageName();
+
+    window.digitalData.error = {
+        responseStatusCode: responseStatusCode(),
+    }
+    window.digitalData.page = {
+        hostName: window.location.hostname,
+        pageName: languageCode + "-" + domain.country + (pageName != "" ? ":" : "" ) + pageName,
+        siteSection1: sections[0] || '',
+        siteSection2: sections[1] || '',
+        siteSection3: sections[2] || '',
+        siteSection4: sections[3] || '',
+        siteSection5: sections[4] || '',
+        siteSectionAll: getSiteSectionAll(),
+        queryString: window.location.search,
+        website: domain.website,
+        language: languageCode
+    };
+})()
+</script><script type="text/javascript" src="../assets.adobedtm.com/launch-EN5a2ce50dc24d4c95ad125c65fa54d8b3.min.js"></script><meta name="Generator" content="Sitefinity 11.0.6732.0 PU" /><link rel="canonical" href="faq.html" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="Sitefinity/Public/ResponsiveDesign/layout_transformations181c.html?pageDataId=128df9cb-219e-61cd-bc43-ff0300e84d35&amp;pageSiteNode=118DF9CB-219E-61CD-BC43-FF0300E84D35/f77df8cb-219e-61cd-bc43-ff0100e84d35/SitefinitySiteMap" type="text/css" rel="stylesheet" /><title>
+	Aide et Foire Aux Questions (FAQ) - Binck.fr
+</title><meta name="description" content="Questions fréquentes sur Binck.fr, courtier bourse en ligne" /><meta name="keywords" content="questions fréquentes, bourse en ligne, fiscalité, risques en bourse, sécurité des dépôts, règlementation des banques" /></head>
+<body>
+    <script src="bundles/PatternLab3b9e?v=eaHEFy3f5naNK8Kf7OcOckvdcpgFonixou7UWowavXk1"></script>
+
+    <form method="post" action="https://www.binck.fr/faq" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSM" id="ctl06_TSM" value="" />
+<input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="qkgya42m2SRf9b1YMX0x17jVTjvulmX7lY2UDPbEbVI2oPUZ6eGztK81PtTycPoKO89RjwYj9ueaO95fRaiaHK+cazw=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource908c.js?d=pynGkmcFUV13He1Qd6_TZP_4ej2xu7z_XVotHnL9kuaGNPxbuoHGPHb-o8amqx79yDcwVA2&amp;t=637290829350350503" type="text/javascript"></script>
+
+
+<script src="WebResource74ff.js?d=yAZznlIeaGQJz8qTi4uqDSxm-bWuIiwJKKVOYfsBKOKGAYFrBb8CzgrpwJulWIFfZX6-Sq38e3w8f8tdivnh_jEm03mVBkvaobew0b5wtEF7AzpSEpk2-02-UP7Vfj_PgCuldAuwGtncSUrXnO_klSdbTGY1&amp;t=636751093820000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"Non numérique","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infini","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+Infini","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":true,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="Telerik.Web.UI.WebResourcef71e.js?_TSM_HiddenField_=ctl06_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr%3a4feca508-514b-48c0-a162-7fa9c360d783%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AAD74847" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="eWSzIAHsFEs+QEDPJA9m8RIMr970C/XQVVIQxvFox9Rf05QDa3CdJRGgrgHdYYZByw9VqQHFuRXV6Jis5i7VYka2GGg756aGAoDMv7Unv6hXl1BA" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl06', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<input type="hidden" name="ctl00$ctl06" id="ctl06" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl06", "ctl00$ctl06");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <input type="hidden" name="ctl00$uniqueSubmitIdHiddenField" id="uniqueSubmitIdHiddenField" value="255e3333-1d25-4379-bf56-909052d6af49" />
+        
+        
+        
+    <script type="text/javascript">
+	StatsClient.LogVisit('118df9cb-219e-61cd-bc43-ff0300e84d35', '99a73a73-6f70-4602-8029-57af4ee572d6');
+</script><script type="text/javascript">
+if(typeof _satellite!=="undefined"){_satellite.pageBottom();}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='index.html';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl07_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=11.0.6732.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:fr:ca5aa0cb-9dda-4885-a4ae-598cf4f97af5:7a90d6a:d271177c:dff30785';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();//]]>
+</script>
+</form>
+    <div id="content" class="wrap">
+
+    <div id="dna-header">
+        <nav class="navbar navbar-inverse navbar-static-top" id="top-nav" role="navigation">
+            <div class="container-fluid-lg">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" >
+                        <img alt="binck logo" src="images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                    </a>
+                    <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-left" aria-expanded="false" data-icon="">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                        <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-right" aria-expanded="false" data-icon="">
+                            <span class="sr-only">Toggle selection</span>
+                        </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown nav-item open-on-hover">
+                                <a href="contact.html" class="nav-link">Contacts</a>
+                            </li>
+                                                    <li class="nav-link">
+                                <a id="header-button" class="btn btn-primary btn-sm navbar-btn mr-2 ml-2 hidden-xs" href="devenir-client.html" >Devenir client</a>
+                                <a class="nav-link visible-xs" href="devenir-client.html" >Devenir client</a>
+                            </li>
+                                                    <li class="nav-link">
+                                
+
+<a class="nav-link" href="connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<nav class="navbar navbar-light alt" id="secondary-nav">
+    <div class="container-fluid-lg">
+        <ul class="nav navbar-nav navbar-left secondary-nav navbar-collapse collapse" id="secondary-nav-left">
+                <li class="nav-item visible-xs">
+                    
+
+<a class="nav-link" href="connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="bourse-en-ligne.html">Bourse</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/bourses.html" style="text-transform: none;">
+                                                        Les Bourses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                        Produits
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                                                Achat d&#39;actions en bourse
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/fonds.html" style="text-transform: none;">
+                                                                                Fonds
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/trackers.html" style="text-transform: none;">
+                                                                                Trackers
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/turbos.html" style="text-transform: none;">
+                                                                                Turbos
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/certificats.html" style="text-transform: none;">
+                                                                                Certificats
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/warrants.html" style="text-transform: none;">
+                                                                                Warrants
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/options.html" style="text-transform: none;">
+                                                                                Options
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/futures.html" style="text-transform: none;">
+                                                                                Futures
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/srd.html" style="text-transform: none;">
+                                                                                SRD
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/comptes.html" style="text-transform: none;">
+                                                        Comptes
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/comptes/compte-titres.html" style="text-transform: none;">
+                                                                                Le compte-titres
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/comptes/pea.html" style="text-transform: none;">
+                                                                                Le PEA
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/comptes/pea-pme.html" style="text-transform: none;">
+                                                                                Le PEA-PME
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/outils-de-trading.html" style="text-transform: none;">
+                                                        Outils de trading
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/nos-plateformes.html" style="text-transform: none;">
+                                                                                Nos plateformes
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/application-mobile.html" style="text-transform: none;">
+                                                                                Application mobile
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/prorealtime.html" style="text-transform: none;">
+                                                                                ProRealTime V11
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/protrader.html" style="text-transform: none;">
+                                                                                ProTrader
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/fiches-valeurs.html" style="text-transform: none;">
+                                                                                Fiches valeurs
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/ordres-conditionnels.html" style="text-transform: none;">
+                                                                                Ordres conditionnels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/portefeuille-virtuel.html" style="text-transform: none;">
+                                                                                Portefeuille virtuel
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                        Outils d&#39;analyses
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                                                Analyses techniques
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/analyse-fondamentale.html" style="text-transform: none;">
+                                                                                Analyse fondamentale
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/aide-a-la-decision.html" style="text-transform: none;">
+                                                                                Aide &#224; la d&#233;cision
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/portefeuilles-types.html" style="text-transform: none;">
+                                                                                Portefeuilles types
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/club-des-traders.html" style="text-transform: none;">
+                                                        Club des Traders
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="assurance-vie.html">Assurance Vie</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                        Modes de gestion
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                                                Gestion libre
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/modes-de-gestion/gestion-sous-mandat.html" style="text-transform: none;">
+                                                                                Gestion sous mandat
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                        Supports
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                                                Tous nos supports
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/fonds-euros.html" style="text-transform: none;">
+                                                                                Fonds euros
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/opc.html" style="text-transform: none;">
+                                                                                OPC
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/opc-indiciels.html" style="text-transform: none;">
+                                                                                OPC indiciels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/actions.html" style="text-transform: none;">
+                                                                                Actions
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/performances-assurance-vie.html" style="text-transform: none;">
+                                                        Performances
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/avantages-fiscalite.html" style="text-transform: none;">
+                                                        Fiscalit&#233;
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/adherer-assurance-vie.html" style="text-transform: none;">
+                                                        Comment adh&#233;rer
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/FAQ-assurance-vie.html" style="text-transform: none;">
+                                                        FAQ
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/lexique.html" style="text-transform: none;">
+                                                        Lexique
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="qui-est-binck.html">Qui est Binck</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/pourquoi-choisir-binck.html" style="text-transform: none;">
+                                                        Pourquoi choisir Binck
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/trader-en-ligne.html" style="text-transform: none;">
+                                                        Trader en ligne
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/palmares.html" style="text-transform: none;">
+                                                        Palmar&#232;s
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/presse.html" style="text-transform: none;">
+                                                        Binck dans la presse
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                        Communiqu&#233;s de presse
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                                                2020
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2019.html" style="text-transform: none;">
+                                                                                2019
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2018.html" style="text-transform: none;">
+                                                                                2018
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2017.html" style="text-transform: none;">
+                                                                                2017
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2016.html" style="text-transform: none;">
+                                                                                2016
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2015.html" style="text-transform: none;">
+                                                                                2015
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2014.html" style="text-transform: none;">
+                                                                                2014
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2013.html" style="text-transform: none;">
+                                                                                2013
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2012.html" style="text-transform: none;">
+                                                                                2012
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2011.html" style="text-transform: none;">
+                                                                                2011
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/rapports-financiers.html" style="text-transform: none;">
+                                                        Rapports financiers
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown open">
+                            <a class="nav-link dropdown-toggle active" href="formations-trading.html">Formations</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="formations-trading/espace-bourse-pratique.html" style="text-transform: none;">
+                                                        Espace Bourse Pratique
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="formations-trading/dictionnaire-financier.html" style="text-transform: none;">
+                                                        Dictionnaire financier
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="formations-trading/investir-en-bourse-sur-binck-fr.html" style="text-transform: none;">
+                                                        Investir en bourse sur Binck.fr
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="actualites/analyses.html">Actualit&#233;s</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="actualites/analyses.html" style="text-transform: none;">
+                                                        Analyses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="actualites/calendrier-boursier.html" style="text-transform: none;">
+                                                        Calendrier boursier
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link  " href="binck-tv.html">Binck TV</a>
+                        </li>
+            
+                <li class="nav-item visible-xs">
+<a href="contact.html" class="nav-link">Contacts</a>                </li>
+                            <li class="nav-item visible-xs">
+                    <a class="nav-link" href="devenir-client.html" >Devenir client</a>
+                </li>
+                    </ul>
+        
+            <ul class="nav navbar-nav navbar-right secondary-nav navbar-collapse collapse" id="secondary-nav-right">
+                <div class="form-group has-search">
+                    <input id="search-box" class="form-control" type="search" placeholder="Recherche ..." data-toggle="pill" data-target="#searchresult" data-search-page="/search-results" data-index-catalog="searchfrance">
+                </div>
+            </ul>
+    </div>
+</nav>
+    <nav class="levelmenu alt">
+        <div class="container-fluid-lg">
+            <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="formations-trading/espace-bourse-pratique.html">Espace Bourse Pratique</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="formations-trading/dictionnaire-financier.html">Dictionnaire financier</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="formations-trading/investir-en-bourse-sur-binck-fr.html">Investir en bourse sur Binck.fr</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+
+
+
+
+
+
+<div class="lane  bg-image fixed-image bg-darkgrey  has-halfrudder has-tail" 
+     style="background-image: url('images/librariesprovider6/formations/header-05cbbb.jpg?sfvrsn=cbc38134_0')" >
+    <div class="container text-center text-white " >
+<h1 class="h1  ">Foire aux questions</h1>                    <div class="littleruler"></div>
+        <p class="lead">Vous trouverez ci-dessous les réponses aux questions qui nous sont les plus fréquemment posées. </p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane tail">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpHeader_C055_Col00" class="sf_colsIn col-xs-12"><div class="row" data-sf-element="Row">
+    <div id="cpHeader_C056_Col00" class="sf_colsIn col-md-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+    </div>
+    <div id="cpHeader_C056_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+    </div>
+    <div id="cpHeader_C056_Col02" class="sf_colsIn col-md-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+<div class="card   call-out"    >            <header class="card-header text-center">
+                <h3 class="h3  ">IMPORTANT</h3>
+            </header>
+        <div class="card-block text-center">
+            <p class="card-text"><strong>Si vous ne trouvez pas la r&eacute;ponse &agrave; votre question dans cette rubrique</strong>, appelez-nous sur au&nbsp;&nbsp;<img sfref="[images|librariesProvider6]0f1babcc-219e-61cd-bc43-ff0100e84d35" src="images/librariesprovider6/topline/numero-vert-binck5eee.gif?sfvrsn=2" data-displaymode="Original" alt="" title="numero-vert-binck">.&nbsp;<br>
+<br>
+Notre Service Commercial est &agrave; votre disposition de 8h &agrave; 22h du lundi au vendredi.</p>
+        </div>
+</div>
+    </div>
+</div>
+
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C058_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Qui sommes-nous ?</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C079_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div id="Accordioncd589b1bee4f40e19e923df57bff2486" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordioncd589b1bee4f40e19e923df57bff2486_0" data-parent="#Accordioncd589b1bee4f40e19e923df57bff2486" data-target="#contentAccordioncd589b1bee4f40e19e923df57bff2486_0" aria-controls="contentAccordioncd589b1bee4f40e19e923df57bff2486_0">
+                <h4 class="panel-title">Pr&#233;sentation</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordioncd589b1bee4f40e19e923df57bff2486_0" aria-labelledby="headingAccordioncd589b1bee4f40e19e923df57bff2486_0">
+                <div class="card-block">Sp&eacute;cialiste de la Bourse en ligne pour les investisseurs actifs,<strong> Binck.fr propose une large gamme de produits financiers </strong>:&nbsp;<br>
+<ul class="unordered">
+  <li><div> 25 000 actions,&nbsp;</div></li>
+    <li><div>20 000 warrants et certificats,&nbsp;</div></li>
+    <li><div>des centaines de fonds OPCVM sans droit d'entr&eacute;e ni de sortie,&nbsp;</div></li>
+    <li><div>et les options et futures des principales places Europ&eacute;ennes et Am&eacute;ricaines.&nbsp;</div></li>
+</ul>
+<br>
+Binck.fr permet d'investir sur les 27 principales places financi&egrave;res mondiales en Europe et aux Etats-Unis, sur les march&eacute;s cash et les d&eacute;riv&eacute;s, au comptant comme au SRD.&nbsp;<br>
+Binck.fr est le sp&eacute;cialiste de la Bourse en ligne et ne propose ni compte courant, ni moyens de paiements. Nous ne faisons que de la bourse et c'est pour &ccedil;a que nous le faisons bien.&nbsp;
+</div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordioncd589b1bee4f40e19e923df57bff2486_1" data-parent="#Accordioncd589b1bee4f40e19e923df57bff2486" data-target="#contentAccordioncd589b1bee4f40e19e923df57bff2486_1" aria-controls="contentAccordioncd589b1bee4f40e19e923df57bff2486_1">
+                <h4 class="panel-title">Binck.fr est-elle une entreprise fran&#231;aise ou n&#233;erlandaise ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordioncd589b1bee4f40e19e923df57bff2486_1" aria-labelledby="headingAccordioncd589b1bee4f40e19e923df57bff2486_1">
+                <div class="card-block">Binck.fr est la succursale fran&ccedil;aise de BinckBank N.V, banque n&eacute;erlandaise appartenant au groupe danois Saxo Bank. &nbsp;<br /><br />Les bureaux de Binck.fr en France sont situ&eacute;s au <b>10 rue de la Paix, 75002 Paris</b>. Binck.fr est enregistr&eacute;e
+au Registre du Commerce et des Soci&eacute;t&eacute;s de Nanterre sous le num&eacute;ro 495 193 849. Le site <a href="index.html">www.binck.fr </a>et son utilisation sont soumis &agrave; la loi fran&ccedil;aise et aux r&eacute;glementations
+en vigueur, sauf stipulation contraire expresse ou conventions internationales contraires. Le si&egrave;ge social de BinckBank NV se situe au 310 Barbara Strozzilaan, 1083 HN Amsterdam, Pays-Bas.&nbsp;<br /><br />En mati&egrave;re de fiscalit&eacute;,
+Binck.fr d&eacute;pend de la l&eacute;gislation fran&ccedil;aise.&nbsp;</div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordioncd589b1bee4f40e19e923df57bff2486_2" data-parent="#Accordioncd589b1bee4f40e19e923df57bff2486" data-target="#contentAccordioncd589b1bee4f40e19e923df57bff2486_2" aria-controls="contentAccordioncd589b1bee4f40e19e923df57bff2486_2">
+                <h4 class="panel-title">Pourquoi plus de 600 000 clients ont choisi Binck en Europe ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordioncd589b1bee4f40e19e923df57bff2486_2" aria-labelledby="headingAccordioncd589b1bee4f40e19e923df57bff2486_2">
+                <div class="card-block"><p>Binck.fr offre aux investisseurs en bourse un site simple d'utilisation comprenant tous les outils dont ils ont besoin pour investir, <b>avec une tarification unique et transparente parmi les plus comp&eacute;titives du march&eacute;&hellip; et sans frais cach&eacute;s.</b></p>
+<ul
+    class="unordered">
+    <li>
+        <div>Pas de frais d'abonnement, de tenue de compte ou de droits de garde</div>
+    </li>
+    <li>
+        <div>Ouverture de comptes gratuite</div>
+    </li>
+    <li>
+        <div>Un site simple et fonctionnel con&ccedil;u pour les investisseurs actifs</div>
+    </li>
+    <li>
+        <div>Les cours en temps r&eacute;el et en streaming gratuits sur toutes les places Euronext</div>
+    </li>
+    <li>
+        <div>Passage d'ordres simple, pratique et ultra rapide</div>
+    </li>
+    <li>
+        <div>Des outils d'analyse techniques sur + de 400 valeurs et d'aide &agrave; la d&eacute;cision</div>
+    </li>
+    <li>
+        <div>Votre argent est 100% disponible</div>
+    </li>
+    <li>
+        <div>Accessible 24h/24 et 7j/7 via Internet</div>
+    </li>
+    <li>
+        <div>Un Service Clients disponible du lundi au vendredi, de 8h &agrave; 22h, et le samedi de 10h &agrave; 13h et de 14h &agrave; 17h sur un num&eacute;ro non surtax&eacute;</div>
+    </li>
+    <li>
+        <div>Et des formations boursi&egrave;res en ligne gratuites !</div>
+    </li>
+    </ul></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div id="cpMain_C079_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div id="Accordion7cafda3dfb414796ad6f738c90ddfbe3" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_0" data-parent="#Accordion7cafda3dfb414796ad6f738c90ddfbe3" data-target="#contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_0" aria-controls="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_0">
+                <h4 class="panel-title">Quelle est la diff&#233;rence entre Binck.fr et ses concurrents ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_0" aria-labelledby="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_0">
+                <div class="card-block">Binck.fr dispose d'un site web complet, pratique et simple d'utilisation. Nous proposons des tarifs parmi les plus bas du march&eacute; et la grille tarifaire la plus simple et la plus transparente. Et nous portons une attention particuli&egrave;re &agrave; notre qualit&eacute; de service. Nos charg&eacute;s de client&egrave;le sont des professionnels de la Bourse form&eacute;s par Binck.fr et pr&eacute;sents dans nos locaux &agrave; Paris. C'est en satisfaisant &agrave; 100% notre client&egrave;le que celle-ci peut appr&eacute;cier notre service et le recommander tout naturellement ! Voici les cl&eacute;s de notre succ&egrave;s depuis plus de 10 ans en Europe.&nbsp;</div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_1" data-parent="#Accordion7cafda3dfb414796ad6f738c90ddfbe3" data-target="#contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_1" aria-controls="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_1">
+                <h4 class="panel-title">Binck.fr d&#233;livre-t-il un service de conseil en investissement ? </h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_1" aria-labelledby="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_1">
+                <div class="card-block">Binck.fr ne propose pas de conseils financiers ; c'est aussi une des raisons qui nous permet de fournir des tarifs de courtage parmi les plus comp&eacute;titifs du march&eacute;. Binck.fr met &agrave; disposition de ses clients une plateforme de trading ainsi qu'un panel d'outils d'analyse (technique et fondamentale) et d'aide &agrave; la d&eacute;cision gratuits pour permettre d'investir en toute autonomie.&nbsp;</div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_2" data-parent="#Accordion7cafda3dfb414796ad6f738c90ddfbe3" data-target="#contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_2" aria-controls="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_2">
+                <h4 class="panel-title">Binck.fr fonctionne-t-il par le web ou avec un logiciel ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_2" aria-labelledby="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_2">
+                <div class="card-block">Les services propos&eacute;s par Binck.fr sont accessibles <mark>24h/24h</mark> sur votre espace client s&eacute;curis&eacute; du site <a href="index.html">www.binck.fr</a> qui vous permet d'acc&eacute;der &agrave; votre compte et de passer
+vos ordres en direct de n'importe quel ordinateur, partout dans le monde, sans avoir &agrave; t&eacute;l&eacute;charger ou installer une plateforme&nbsp;sur votre ordinateur.&nbsp;Vous pouvez &eacute;galement passer vos ordres n'importe o&ugrave;, n'importe
+quand, gr&acirc;ce &agrave; <a href="bourse-en-ligne/outils-de-trading/application-mobile.html">notre application mobile</a>.&nbsp;<br /></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_3" data-parent="#Accordion7cafda3dfb414796ad6f738c90ddfbe3" data-target="#contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_3" aria-controls="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_3">
+                <h4 class="panel-title">Pourquoi Binck.fr peut &#234;tre moins cher que d&#39;autres brokers en ligne et banques traditionnelles ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion7cafda3dfb414796ad6f738c90ddfbe3_3" aria-labelledby="headingAccordion7cafda3dfb414796ad6f738c90ddfbe3_3">
+                <div class="card-block">Notre mod&egrave;le &eacute;conomique s'appuie sur la rationalisation et le contr&ocirc;le strict des co&ucirc;ts pour offrir &agrave; nos clients les tarifs les plus comp&eacute;titifs du march&eacute;. Nous avons enti&egrave;rement automatis&eacute; et centralis&eacute; tous nos processus et nous utilisons les syst&egrave;mes les plus avanc&eacute;s. Une logique d'&eacute;conomie d'&eacute;chelle pour nos 4 pays en Europe, l'absence de r&eacute;seau d'agences ainsi qu'une offre de services exclusivement par Internet et t&eacute;l&eacute;phone nous permet de diminuer consid&eacute;rablement nos co&ucirc;ts. C'est pourquoi nos tarifs sont parmi les plus bas du march&eacute;.</div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C064_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Ouverture de compte</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C080_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div id="Accordion2325d7cf0b894066b46f35ebf620ccbd" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_0" data-parent="#Accordion2325d7cf0b894066b46f35ebf620ccbd" data-target="#contentAccordion2325d7cf0b894066b46f35ebf620ccbd_0" aria-controls="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_0">
+                <h4 class="panel-title">Qui peut ouvrir un compte chez Binck.fr ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_0" aria-labelledby="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_0">
+                <div class="card-block">Les personnes physiques (les particuliers) et les personnes morales r&eacute;sidant fiscalement en France.&nbsp;</div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_1" data-parent="#Accordion2325d7cf0b894066b46f35ebf620ccbd" data-target="#contentAccordion2325d7cf0b894066b46f35ebf620ccbd_1" aria-controls="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_1">
+                <h4 class="panel-title">Qui sont les clients de Binck.fr ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_1" aria-labelledby="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_1">
+                <div class="card-block">Des investisseurs en Bourse d&eacute;butants ou experts qui g&egrave;rent eux-m&ecirc;mes leurs placements &agrave; distance de mani&egrave;re compl&egrave;tement autonome.&nbsp;</div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_2" data-parent="#Accordion2325d7cf0b894066b46f35ebf620ccbd" data-target="#contentAccordion2325d7cf0b894066b46f35ebf620ccbd_2" aria-controls="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_2">
+                <h4 class="panel-title">Comment ouvrir un compte et dans quel d&#233;lai ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_2" aria-labelledby="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_2">
+                <div class="card-block"><p><b>Ouvrir un compte chez Binck, c'est simple et rapide, quelques clics suffisent :</b></p><table class="table table-striped table-hover k-table" style=""><tbody><tr><td colspan="2"><mark>ETAPE 1</mark></td></tr><tr style=""><td>&nbsp;</td><td><ul class="unordered"><li><div><b>COMPLETEZ <a href="ouvrir-un-compte-en-ligne.html">VOTRE FORMULAIRE EN LIGNE</a></b></div></li></ul><ol><li><div>Renseignez les informations n&eacute;cessaires &agrave; votre demande.</div></li><li><div>Dans le cadre d&rsquo;un compte joint, mineur ou Personne Morale UNIQUEMENT, veuillez imprimer votre formulaire pr&eacute;-rempli, renvoyez- nous votre demande d'ouverture sign&eacute;e, accompagn&eacute;e des pi&egrave;ces justificatives n&eacute;cessaires, &agrave; l'adresse suivante (sans affranchissement) :</div></li><li><div><b>Binck.fr<br />Libre R&eacute;ponse 60521<br />75085 Paris cedex 02</b></div></li></ol></td></tr><tr style=""><td colspan="2"><mark>ETAPE 2</mark></td></tr><tr style=""><td>&nbsp;</td><td>Une fois votre dossier complet et valid&eacute;, vous recevrez par email sous 48h, votre confirmation d'ouverture de compte accompagn&eacute;e de votre num&eacute;ro de compte Binck.fr
+            </td></tr><tr style=""><td colspan="2"><mark>ETAPE 3</mark></td></tr><tr><td>&nbsp;</td><td>Une fois votre premier versement r&eacute;alis&eacute;, vous recevrez par email votre mot de passe vous permettant d'avoir acc&egrave;s &agrave; votre compte.</td></tr></tbody></table><br /><p>Vous pouvez d&egrave;s &agrave; pr&eacute;sent passer vos premiers ordres en bourse chez Binck.fr.</p></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_3" data-parent="#Accordion2325d7cf0b894066b46f35ebf620ccbd" data-target="#contentAccordion2325d7cf0b894066b46f35ebf620ccbd_3" aria-controls="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_3">
+                <h4 class="panel-title">Puis-je tester les services Binck.fr gratuitement et sans engagement ? Y-a-t-il un montant minimum pour ouvrir un compte ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2325d7cf0b894066b46f35ebf620ccbd_3" aria-labelledby="headingAccordion2325d7cf0b894066b46f35ebf620ccbd_3">
+                <div class="card-block">L'ouverture et la fermeture d'un Compte-titres sont gratuites chez Binck.fr. Un premier versement de 300 euro minimum est n&eacute;cessaire pour activer votre compte. Vous pouvez alors tester notre plateforme de passage d'ordres sans aucun engagement ainsi que la qualit&eacute; de notre Service Clients.&nbsp;</div>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div id="cpMain_C080_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div id="Accordionb6bca264bab84fed9b77f3655f7c0778" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb6bca264bab84fed9b77f3655f7c0778_0" data-parent="#Accordionb6bca264bab84fed9b77f3655f7c0778" data-target="#contentAccordionb6bca264bab84fed9b77f3655f7c0778_0" aria-controls="contentAccordionb6bca264bab84fed9b77f3655f7c0778_0">
+                <h4 class="panel-title">Y-a-t-il des frais de garde, d&#39;abonnement ou d&#39;ouverture ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb6bca264bab84fed9b77f3655f7c0778_0" aria-labelledby="headingAccordionb6bca264bab84fed9b77f3655f7c0778_0">
+                <div class="card-block"><p>Binck.fr vous propose une tarification simple, transparente et moins ch&egrave;re ! Vous n'avez aucune contrainte, aucuns frais cach&eacute;s :</p>
+<ul class="unordered">
+    <li><div><mark>0&euro; </mark> de frais d'abonnement</div></li>
+    <li><div><mark>0&euro; </mark> de frais de tenue de compte</div></li>
+    <li><div><mark>0&euro; </mark> d'inactivit&eacute;</div></li>
+    <li><div><mark>0&euro; </mark> de droits de garde</div></li>
+</ul></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb6bca264bab84fed9b77f3655f7c0778_1" data-parent="#Accordionb6bca264bab84fed9b77f3655f7c0778" data-target="#contentAccordionb6bca264bab84fed9b77f3655f7c0778_1" aria-controls="contentAccordionb6bca264bab84fed9b77f3655f7c0778_1">
+                <h4 class="panel-title">Comment activer mon compte ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb6bca264bab84fed9b77f3655f7c0778_1" aria-labelledby="headingAccordionb6bca264bab84fed9b77f3655f7c0778_1">
+                <div class="card-block"><p>Pour activer votre compte, il vous suffit de r&eacute;aliser un premier versement&nbsp;<b>par virement &eacute;lectronique sur votre compte Binck</b> dont les coordonn&eacute;es bancaires vous ont &eacute;t&eacute; communiqu&eacute;es dans votre email d'ouverture de compte.</p><p><b>Une fois votre versement d'identification effectu&eacute;</b>, vous recevrez par e-mail dans les 24 heures ouvrables votre mot de passe. Vous pourrez alors commencer &agrave; investir.</p></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb6bca264bab84fed9b77f3655f7c0778_2" data-parent="#Accordionb6bca264bab84fed9b77f3655f7c0778" data-target="#contentAccordionb6bca264bab84fed9b77f3655f7c0778_2" aria-controls="contentAccordionb6bca264bab84fed9b77f3655f7c0778_2">
+                <h4 class="panel-title">O&#249; trouver mes coordonn&#233;es bancaires ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb6bca264bab84fed9b77f3655f7c0778_2" aria-labelledby="headingAccordionb6bca264bab84fed9b77f3655f7c0778_2">
+                <div class="card-block"><p>Vos coordonn&eacute;es bancaires sont disponibles dans votre Espace Client, dans l'onglet <strong>Mon compte / Relev&eacute;s / Relev&eacute; d'Identit&eacute; Bancaire</strong>. <br />
+<br />
+</p></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb6bca264bab84fed9b77f3655f7c0778_3" data-parent="#Accordionb6bca264bab84fed9b77f3655f7c0778" data-target="#contentAccordionb6bca264bab84fed9b77f3655f7c0778_3" aria-controls="contentAccordionb6bca264bab84fed9b77f3655f7c0778_3">
+                <h4 class="panel-title">Quels documents/justificatifs dois-je joindre &#224; ma demande d&#39;ouverture de compte ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb6bca264bab84fed9b77f3655f7c0778_3" aria-labelledby="headingAccordionb6bca264bab84fed9b77f3655f7c0778_3">
+                <div class="card-block"><p><b>Documents &agrave; joindre &agrave; votre demande d'ouverture de compte pour chaque titulaire :</b></p><table class="table table-striped table-hover k-table"><tbody><tr><td colspan="2"><mark>1-UNE PIECE D'IDENTITE PRINCIPALE</mark></td></tr><tr><td>&nbsp;</td><td><b>pour le titulaire du compte ET le co-titulaire :</b><br />&bull; Une photocopie recto-verso de votre carte d'identit&eacute; en cours de validit&eacute; <b>OU&nbsp;</b><br />&bull; Une photocopie de votre passeport en cours de validit&eacute; (copie des 2 pages faisant appara&icirc;tre le N&deg; de passeport, sa date de d&eacute;livrance et d'expiration, pr&eacute;nom &amp; nom, date de naissance, domicile) <b>OU&nbsp;</b><br />&bull; Une photocopie de votre titre de s&eacute;jour en cours de validit&eacute; <b>OU&nbsp;</b><br />&bull; Une photocopie recto-verso de votre permis de conduire s&eacute;curis&eacute; (nouveau format &eacute;mis apr&egrave;s le 16/09/2013).
+            </td></tr><tr><td colspan="2"><mark>2-UNE PIECE D'IDENTITE SECONDAIRE</mark></td></tr><tr><td>&nbsp;</td><td><b>pour le titulaire du compte ET le co-titulaire en compl&eacute;ment de la pi&egrave;ce principale fournie :</b><br />&bull; Une photocopie recto-verso de votre carte d'identit&eacute; en cours de validit&eacute; <b>OU&nbsp;</b><br />&bull; Une photocopie de votre passeport en cours de validit&eacute; <b>OU&nbsp;</b><br />&bull; Une photocopie de votre titre de s&eacute;jour en cours de validit&eacute; <b>OU&nbsp;</b><br />&bull; Votre permis de conduire ou votre permis bateau&nbsp;<b>OU&nbsp;</b><br />&bull; Un original de votre acte de naissance datant de moins de 3 mois <b>OU&nbsp;</b><br />&bull; Une attestation de vos droits &agrave; l'assurance maladie en cours de validit&eacute; et  datant de moins de 3 mois <b>OU&nbsp;</b><br />&bull; Une attestation de votre carte vitale accompagn&eacute;e de la photocopie de votre carte vitale avec photo <b>OU</b><br />&bull; Votre carte du combattant.</td></tr><tr><td colspan="2"><mark>3-UN JUSTIFICATIF DE DOMICILE</mark> de moins de 3 mois</td></tr><tr><td>&nbsp;</td><td>&bull; Une  facture Internet, &eacute;lectricit&eacute;, eau, gaz ou t&eacute;l&eacute;phone fixe <sup>(1) (2)</sup>,<br />&bull; Une quittance de loyer ou un contrat de bail &eacute;manant d'institutionnels <sup>(1) (2)</sup>,<br />&bull; Un avis d'imposition, un avis de tiers pr&eacute;visionnel,  la taxe fonci&egrave;re, la taxe d'habitation <sup>(3)</sup>,<br />&bull; Une attestation d'assurance d'habitation<sup> (1) (4)</sup>,<br />&bull; Une attestation des droits &agrave; l'assurance maladie en cours de validit&eacute;<sup> (1)</sup>.<br /><br /><b>Attention</b><br /><sup><i>(1)</i></sup><i> Ces justificatifs doivent &ecirc;tre &eacute;tablis au nom de la personne ouvrant le compte.
+            Dans le cas contraire, joindre une attestation d'h&eacute;bergement de votre h&eacute;bergeur ainsi qu'une photocopie de sa pi&egrave;ce d'identit&eacute; en  cours de validit&eacute; (voir pi&egrave;ces d'identit&eacute; accept&eacute;es ci-dessus).<br /><sup>(2)</sup> Ces justificatifs doivent syst&eacute;matiquement mentionner le RCS.<br /><sup>(3)</sup> Seuls les documents les plus r&eacute;cents sont accept&eacute;s, c'est &agrave; dire dat&eacute;s de moins d'un an.<br /><sup>(4)</sup> Ce justificatif doit &eacute;maner de l'assureur et mentionner qu'il s'agit de la r&eacute;sidence principale. Elle doit &ecirc;tre souscrite au nom de la personne effectuant la demande d'ouverture de compte.
+            </i> <br /><br /></td></tr><tr><td colspan="2"><mark>4-UN RIB ORIGINAL</mark></td></tr><tr><td>&nbsp;</td><td><b>d&eacute;signant votre compte courant externe :</b><br />&bull; Le compte externe doit &ecirc;tre &agrave; votre nom et &ecirc;tre domicili&eacute; en France.<br />&bull; Dans le cas d'un compte-joint, fournir la pi&egrave;ce d'identit&eacute; du co-titulaire du compte.</td></tr><tr><td colspan="2"><mark>5-UN PREMIER VERSEMENT</mark></td></tr><tr><td>&nbsp;</td><td><b>pour alimenter votre compte :</b><br />&bull; En r&eacute;alisant un virement d&egrave;s la r&eacute;ception de votre num&eacute;ro de compte par email (les coordonn&eacute;es bancaires de  Binck.fr vous seront communiqu&eacute;es dans l'email d'ouverture de compte).</td></tr><tr><td colspan="2"><mark>6-S'IL S'AGIT D'UN TRANSFERT</mark></td></tr><tr><td>&nbsp;</td><td>&bull; La <a href="formulaires.html">demande de transfert de compte-titres</a> compl&eacute;t&eacute;e et sign&eacute;e,<br />&bull; Une <a href="formulaires.html">demande d'ouverture de compte</a><br />&bull; Une photocopie de votre dernier relev&eacute; titres.</td></tr></tbody></table></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C063_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Code d'accès</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C081_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div id="Accordion0de1d3f6a2b24557bdcc3c7cb05da0c1" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_0" data-parent="#Accordion0de1d3f6a2b24557bdcc3c7cb05da0c1" data-target="#contentAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_0" aria-controls="contentAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_0">
+                <h4 class="panel-title">Vais-je recevoir un email me confirmant que nous avons bien re&#231;u mon dossier ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_0" aria-labelledby="headingAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_0">
+                <div class="card-block"><p>Vous recevrez une confirmation d'ouverture de compte par courrier o&ugrave; vous trouverez :</p>
+<ul class="unordered">
+  <li><div>Votre num&eacute;ro de compte Binck</div></li>
+    <li><div>Les coordonn&eacute;es t&eacute;l&eacute;phoniques du Service Client&egrave;le</div></li>
+</ul></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_1" data-parent="#Accordion0de1d3f6a2b24557bdcc3c7cb05da0c1" data-target="#contentAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_1" aria-controls="contentAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_1">
+                <h4 class="panel-title">Comment obtenir mes codes d&#39;acc&#232;s et de confirmation ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_1" aria-labelledby="headingAccordion0de1d3f6a2b24557bdcc3c7cb05da0c1_1">
+                <div class="card-block">Si vous avez indiqu&eacute; une adresse email lors de l'ouverture de votre compte, vous recevrez ces codes par email.<br />
+Si vous n'avez rien re&ccedil;u ou que vous n'avez pas indiqu&eacute; de coordonn&eacute;es email, vous pourrez nous en faire la demande en contactant notre Service Client&egrave;le au <mark>01 70 36 70 80</mark>.&nbsp;<br /></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div id="cpMain_C081_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div id="Accordiond68e8e9fa5cb4b8ea55f57294f1facc1" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordiond68e8e9fa5cb4b8ea55f57294f1facc1_0" data-parent="#Accordiond68e8e9fa5cb4b8ea55f57294f1facc1" data-target="#contentAccordiond68e8e9fa5cb4b8ea55f57294f1facc1_0" aria-controls="contentAccordiond68e8e9fa5cb4b8ea55f57294f1facc1_0">
+                <h4 class="panel-title">Mes codes d&#39;acc&#232;s et de confirmation ne fonctionnent plus, que dois-je faire ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordiond68e8e9fa5cb4b8ea55f57294f1facc1_0" aria-labelledby="headingAccordiond68e8e9fa5cb4b8ea55f57294f1facc1_0">
+                <div class="card-block">Le code d'acc&egrave;s est sensible aux majuscules et aux minuscules. Contr&ocirc;lez si la fonction &laquo; Verr Maj &raquo; sur votre clavier n'est pas active.&nbsp;<br />
+<br />
+Si vous n'arrivez toujours pas &agrave; vous connecter, cliquez sur &laquo; Code d'acc&egrave;s oubli&eacute; &raquo; qui se trouve en dessous de l'&eacute;cran de saisie du code d'acc&egrave;s. Le nouveau code d'acc&egrave;s est alors envoy&eacute; directement &agrave; l'adresse email que vous avez renseign&eacute; lors de votre ouverture de compte. Il est donc primordial que votre adresse email soit bien renseign&eacute;e.&nbsp;<br />
+<br />
+V&eacute;rifiez aussi que votre code d'acc&egrave;s soit encore valide ; ce code restera valide pendant 99 jours. Apr&egrave;s cette date, il vous est demand&eacute; automatiquement de le modifier.&nbsp;<br />
+<br />
+Vous avez &eacute;galement la possibilit&eacute; de demander un nouveau code d'acc&egrave;s aupr&egrave;s du Service Clients au <mark>01 70 36 70 80</mark>.</div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C061_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Transferts, virements, RIB...</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C082_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div id="Accordionb08abcef3c38455aa0355c0a9de9d3a0" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb08abcef3c38455aa0355c0a9de9d3a0_0" data-parent="#Accordionb08abcef3c38455aa0355c0a9de9d3a0" data-target="#contentAccordionb08abcef3c38455aa0355c0a9de9d3a0_0" aria-controls="contentAccordionb08abcef3c38455aa0355c0a9de9d3a0_0">
+                <h4 class="panel-title">Peut-on r&#233;f&#233;rencer plusieurs RIB ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb08abcef3c38455aa0355c0a9de9d3a0_0" aria-labelledby="headingAccordionb08abcef3c38455aa0355c0a9de9d3a0_0">
+                <div class="card-block">Binck.fr propose au maximum l&rsquo;ajout de trois RIB externes &agrave; votre nom et pr&eacute;nom d&eacute;tenus dans un &eacute;tablissement domicili&eacute; en France m&eacute;tropolitaine, Mayotte, Guadeloupe, Martinique, R&eacute;union, ou Guyane fran&ccedil;aise. Pour ajouter un nouveau RIB, vous devez t&eacute;l&eacute;charger et remplir le formulaire <strong>&laquo; Ajout ou modification de compte externe &raquo;</strong> dans la rubrique Aide-Formulaires.</div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb08abcef3c38455aa0355c0a9de9d3a0_1" data-parent="#Accordionb08abcef3c38455aa0355c0a9de9d3a0" data-target="#contentAccordionb08abcef3c38455aa0355c0a9de9d3a0_1" aria-controls="contentAccordionb08abcef3c38455aa0355c0a9de9d3a0_1">
+                <h4 class="panel-title">Les virements sont-ils payants ? Quelles sont les dates de valeur des virements ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb08abcef3c38455aa0355c0a9de9d3a0_1" aria-labelledby="headingAccordionb08abcef3c38455aa0355c0a9de9d3a0_1">
+                <div class="card-block">Non, chez Binck.fr les op&eacute;rations courantes sur internet sont gratuites : les virements internes de compte &agrave; compte, les virements &eacute;mis et les virements re&ccedil;us. La valeur de votre virement prend date au jour J et pour toute op&eacute;ration pass&eacute;e, une confirmation de votre ordre vous est envoy&eacute;e par email ou SMS.&nbsp;</div>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div id="cpMain_C082_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div id="Accordionb1477318a43d4db69d4a2accf8f57cfa" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb1477318a43d4db69d4a2accf8f57cfa_0" data-parent="#Accordionb1477318a43d4db69d4a2accf8f57cfa" data-target="#contentAccordionb1477318a43d4db69d4a2accf8f57cfa_0" aria-controls="contentAccordionb1477318a43d4db69d4a2accf8f57cfa_0">
+                <h4 class="panel-title">Comment transf&#233;rer mon portefeuille ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb1477318a43d4db69d4a2accf8f57cfa_0" aria-labelledby="headingAccordionb1477318a43d4db69d4a2accf8f57cfa_0">
+                <div class="card-block">C'est tr&egrave;s simple ! Vous trouverez dans le dossier d'ouverture de compte (ouverture en ligne ou dans le dossier que vous pouvez demander &agrave; recevoir par courrier), le <a href="formulaires.html">formulaire de transfert</a> de portefeuille accompagn&eacute; d'une <a href="formulaires.html">demande d'ouverture de compte</a>. <br />
+La demande d'ouverture est n&eacute;cessaire pour ouvrir le compte dans nos livres et recevoir les titres transf&eacute;r&eacute;s depuis votre banque. Il vous suffit de la remplir et de nous la renvoyer sign&eacute;e avec la copie de votre relev&eacute; de portefeuille titres. Nous contactons ensuite votre banque et <strong>nous nous chargeons de votre transfert.&nbsp;</strong></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionb1477318a43d4db69d4a2accf8f57cfa_1" data-parent="#Accordionb1477318a43d4db69d4a2accf8f57cfa" data-target="#contentAccordionb1477318a43d4db69d4a2accf8f57cfa_1" aria-controls="contentAccordionb1477318a43d4db69d4a2accf8f57cfa_1">
+                <h4 class="panel-title">Combien de temps faut-il pour transf&#233;rer son compte ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionb1477318a43d4db69d4a2accf8f57cfa_1" aria-labelledby="headingAccordionb1477318a43d4db69d4a2accf8f57cfa_1">
+                <div class="card-block"><p>Un d&eacute;lai de 3 &agrave; 5 semaines est &agrave; pr&eacute;voir pour transf&eacute;rer votre compte chez Binck.fr. Ce d&eacute;lai d&eacute;pend de votre banque, qui doit initier le transfert de ses livres vers Binck.fr.&nbsp;<br /> <br />
+Suite &agrave; la r&eacute;ception de votre demande, nous nous chargeons de contacter votre banque et d'effectuer le transfert pour vous.&nbsp;</p></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C060_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Questions liées aux marchés</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C084_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div id="Accordion9bdbb549e5a24dfd9e2a31b39d864aa1" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_0" data-parent="#Accordion9bdbb549e5a24dfd9e2a31b39d864aa1" data-target="#contentAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_0" aria-controls="contentAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_0">
+                <h4 class="panel-title">Comment acc&#233;der au Service de R&#232;glement diff&#233;r&#233; (SRD) ? Quel niveau de connaissance dois-je avoir pour pouvoir y investir ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_0" aria-labelledby="headingAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_0">
+                <div class="card-block"><p>Vous pourrez passer vos premiers ordres sur le SRD apr&egrave;s acceptation par Binck.fr de votre demande d'acc&egrave;s au SRD. Etant donn&eacute; le caract&egrave;re sp&eacute;culatif des ordres SRD, Binck.fr se r&eacute;serve le droit d'accepter ou de refuser la demande du client d'intervenir sur le SRD.</p></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_1" data-parent="#Accordion9bdbb549e5a24dfd9e2a31b39d864aa1" data-target="#contentAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_1" aria-controls="contentAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_1">
+                <h4 class="panel-title">Peut-on passer des ordres avant l&#39;ouverture des march&#233;s ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_1" aria-labelledby="headingAccordion9bdbb549e5a24dfd9e2a31b39d864aa1_1">
+                <div class="card-block"><p>Il est &eacute;videmment possible de passer des ordres en dehors des heures d'ouverture des march&eacute;s. <strong>Vous pouvez passer vos ordres en direct, sur internet via le site Binck.fr, <mark>24h/24</mark> et <mark>7 jours sur 7</mark>, ou bien par t&eacute;l&eacute;phone ou email (r&eacute;ponse sous 2h) gr&acirc;ce &agrave; l'un de nos charg&eacute; de client&egrave;le,</strong> de 8h &agrave; 22h du lundi au vendredi, et le samedi de 10h &agrave; 13h et de 14h &agrave; 17h. Les ordres sont ensuite transf&eacute;r&eacute;s aux march&eacute;s d&egrave;s leur ouverture.&nbsp;</p></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div id="cpMain_C084_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div id="Accordionf88667c5833f4af3809b16886caf95a4" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordionf88667c5833f4af3809b16886caf95a4_0" data-parent="#Accordionf88667c5833f4af3809b16886caf95a4" data-target="#contentAccordionf88667c5833f4af3809b16886caf95a4_0" aria-controls="contentAccordionf88667c5833f4af3809b16886caf95a4_0">
+                <h4 class="panel-title">Les frais de courtage sont-ils int&#233;gr&#233;s au prix de revient unitaire (PRU) dans le portefeuille Binck.fr ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordionf88667c5833f4af3809b16886caf95a4_0" aria-labelledby="headingAccordionf88667c5833f4af3809b16886caf95a4_0">
+                <div class="card-block"><p>Chez Binck.fr, le prix de revient int&egrave;gre les frais de courtage : lorsqu'un de vos ordres est ex&eacute;cut&eacute; celui-ci int&egrave;gre automatiquement des frais de courtage.<br />
+Ainsi, lorsque vous d&eacute;gagez une plus ou moins value sur une valeur, celle-ci est nette de frais de courtage. Vous n'avez pas la mauvaise surprise de vous voir facturer des frais de courtage en fin de mois puisqu'ils sont directement int&eacute;gr&eacute;s au prix d'achat ou de vente.&nbsp;</p></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C072_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Fiscalité</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C083_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div id="Accordion2edec1c9a2ba43938547f2ef99b38c0f" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2edec1c9a2ba43938547f2ef99b38c0f_0" data-parent="#Accordion2edec1c9a2ba43938547f2ef99b38c0f" data-target="#contentAccordion2edec1c9a2ba43938547f2ef99b38c0f_0" aria-controls="contentAccordion2edec1c9a2ba43938547f2ef99b38c0f_0">
+                <h4 class="panel-title">Quelle est la fiscalit&#233; applicable aux plus-values de cessions dans le cadre d&#39;un compte-titres ordinaire ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2edec1c9a2ba43938547f2ef99b38c0f_0" aria-labelledby="headingAccordion2edec1c9a2ba43938547f2ef99b38c0f_0">
+                <div class="card-block"><p>Depuis 1er janvier 2013, les plus-values de cessions r&eacute;alis&eacute;es dans le cadre d'un compte-titres ordinaire sont soumises &agrave; l'Imp&ocirc;t sur le Revenu (IR) au bar&egrave;me progressif, et b&eacute;n&eacute;ficieront d'une d&eacute;duction de la CSG au taux de 5.10% sur le revenu global. A ceci s'ajoutent les Pr&eacute;l&egrave;vements Sociaux (PS) au taux de 15.50% depuis le 1er janvier 2012.&nbsp;</p>
+<strong>Un abattement en fonction de la dur&eacute;e de d&eacute;tention est pr&eacute;vu :</strong>
+<ul class="unordered">
+  <li><div>50% pour une d&eacute;tention de plus de 2 ans et moins de 8 ans</div></li>
+    <li><div>65% pour les titres d&eacute;tenus pendant plus de 8 ans</div></li>
+</ul></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2edec1c9a2ba43938547f2ef99b38c0f_1" data-parent="#Accordion2edec1c9a2ba43938547f2ef99b38c0f" data-target="#contentAccordion2edec1c9a2ba43938547f2ef99b38c0f_1" aria-controls="contentAccordion2edec1c9a2ba43938547f2ef99b38c0f_1">
+                <h4 class="panel-title">Quelle est la fiscalit&#233; applicable aux dividendes et coupons dans le cadre d&#39;un compte-titres ordinaire ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2edec1c9a2ba43938547f2ef99b38c0f_1" aria-labelledby="headingAccordion2edec1c9a2ba43938547f2ef99b38c0f_1">
+                <div class="card-block"><p>Depuis 1er janvier 2013, la suppression du Pr&eacute;l&egrave;vement Forfaitaire Lib&eacute;ratoire (PFL) applicable aux int&eacute;r&ecirc;ts g&eacute;n&eacute;r&eacute;s par les livrets d'&eacute;pargne, aux coupons d'obligations et aux dividendes a &eacute;galement &eacute;t&eacute; adopt&eacute;e. Ces revenus sont d&eacute;sormais soumis &agrave; l'Imp&ocirc;t sur le Revenu (IR).</p>
+<p>En cons&eacute;quence depuis le 1er janvier 2013, un acompte de 21% est d&eacute;sormais pr&eacute;lev&eacute; automatiquement sur les dividendes per&ccedil;us. Ce taux est port&eacute; &agrave; 24% pour les int&eacute;r&ecirc;ts et les coupons per&ccedil;us.&nbsp;<br />
+Cet acompte sera automatiquement indiqu&eacute; sur votre imposition de revenus au titre de l'ann&eacute;e 2016. La diff&eacute;rence entre votre pourcentage d'imposition et les taux indiqu&eacute;s ci-dessus vous sera demand&eacute;e ou rembours&eacute;e selon si votre tranche d'imposition est sup&eacute;rieure ou inf&eacute;rieure &agrave; 21% et 24%.&nbsp;</p>
+<p>N&eacute;anmoins, si vous en faites la demande, vous pouvez &ecirc;tre dispens&eacute; de cet acompte si le revenu fiscal de r&eacute;f&eacute;rence de votre foyer (sur votre avis d'imposition 2015 au titre des revenus 2014) est :</p>
+
+<p>1. &nbsp;<strong>Pour les int&eacute;r&ecirc;ts et coupons :</strong> </p>
+
+<ul class="unordered">
+  <li><div>inf&eacute;rieur &agrave; 25 000 euros si vous &ecirc;tes c&eacute;libataire, divorc&eacute; ou veuf,</div></li>
+    <li><div>inf&eacute;rieur &agrave; 50 000 euros si vous &ecirc;tes soumis &agrave; une imposition commune,</div></li>
+</ul>
+
+
+<p>2. &nbsp;<strong>Pour les dividendes :</strong></p>
+
+<ul class="unordered">
+  <li><div>inf&eacute;rieur &agrave; 50 000 euros si vous &ecirc;tes c&eacute;libataire, divorc&eacute; ou veuf,</div></li>
+    <li><div>inf&eacute;rieur &agrave; 75 000 euros si vous &ecirc;tes soumis &agrave; une imposition commune.</div></li>
+</ul>
+
+
+
+<p><br><br><a href="docs/librariesprovider6/clients/demande-de-dispense-de-prelevement-a-la-source5eee.pdf?sfvrsn=2" title="Un formulaire de demande de dispense">Un formulaire de demande de dispense</a></p></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div id="cpMain_C083_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div id="Accordion536e7c8f4242430bbb12887bf27b0c85" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion536e7c8f4242430bbb12887bf27b0c85_0" data-parent="#Accordion536e7c8f4242430bbb12887bf27b0c85" data-target="#contentAccordion536e7c8f4242430bbb12887bf27b0c85_0" aria-controls="contentAccordion536e7c8f4242430bbb12887bf27b0c85_0">
+                <h4 class="panel-title">Quelle fiscalit&#233; pour un PEA/PEA-PME ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion536e7c8f4242430bbb12887bf27b0c85_0" aria-labelledby="headingAccordion536e7c8f4242430bbb12887bf27b0c85_0">
+                <div class="card-block"><p><strong>La taxation des plus-values dans le cadre d'un PEA/PEA-PME</strong></p> <p>
+Le Plan d'&eacute;pargne en actions (PEA/PEA-PME) offre un cadre fiscal avantageux pour l'&eacute;pargnant souhaitant intervenir sur des actions ou OPCVM. Les revenus et les plus-values de valeurs mobili&egrave;res sont exon&eacute;r&eacute;s d'imp&ocirc;ts (except&eacute;s des pr&eacute;l&egrave;vements sociaux) sous certaines conditions. Sa dur&eacute;e de vie est illimit&eacute;e, cependant certains cas entra&icirc;nent la cl&ocirc;ture du PEA/PEA-PME.<br /><br />
+Pour b&eacute;n&eacute;ficier pleinement de ces avantages fiscaux, aucun retrait ne doit &ecirc;tre effectu&eacute; avant la cinqui&egrave;me ann&eacute;e (&agrave; compter du premier versement); un retrait entre 5 et 8 ans entra&icirc;ne la cl&ocirc;ture du plan; un retrait apr&egrave;s 8 ans n'entra&icirc;ne pas la cl&ocirc;ture du plan, mais interdit tous reversements sur le plan.</p> 
+
+
+<table class="table table-striped table-hover">
+   <thead>
+ <tr> 
+ 	<td><strong>Imposition sur plus values</strong></td> 
+ 	<td><strong>0-2 ans</strong></td> 
+    <td><strong>0-5 ans</strong></td> 
+    <td><strong>5-8 ans</strong></td> 
+    <td><strong>Apr&egrave;s 8 ans</strong></td> 
+    </tr> 
+    </thead>
+    
+       <tbody>
+    
+    <tr> 
+    <td><mark>D&egrave;s le 1er euro de cession</mark></td> 
+    <td><mark>15,5% + 22,5% = 38%</mark><br /> <br />
+            Cette taxe est applicable seulement en cas de rupture du PEA/PEA-PME (retrait avant 5 ans).</td> 
+            <td><mark>15,5% + 19% = 34,5%</mark><br /> <br />
+            Cette taxe est applicable seulement en cas de rupture du PEA/PEA-PME (retrait avant 5 ans).</td> 
+            <td colspan="2"><br><br>Seuls les pr&eacute;l&egrave;vements sociaux s'appliquent aux plus values. Le taux actuellement en vigueur est de <span class="buy">15,5%</span> mais il a connu des augmentations progressives depuis 1996.</td> 
+            </tr> 
+            
+            <tr> <td>Disponibilit&eacute;</td> 
+            <td colspan="3">&bull; Tout retrait m&ecirc;me partiel entra&icirc;ne la cl&ocirc;ture du PEA/PEA-PME<br />
+            &bull; Alimentation du PEA/PEA-PME possible &agrave; tout moment (esp&egrave;ces, titres)</td> 
+            <td>&bull; Pas de cl&ocirc;ture en cas de retrait partiel<br />
+            &bull; Interdiction de nouveaux versements apr&egrave;s le premier retrait</td> </tr> 
+            
+            
+              </tbody></table> </div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C073_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Parrainage</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+
+<div id="Accordion1cd8acf3a51e448e9bf362571fb622d8" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion1cd8acf3a51e448e9bf362571fb622d8_0" data-parent="#Accordion1cd8acf3a51e448e9bf362571fb622d8" data-target="#contentAccordion1cd8acf3a51e448e9bf362571fb622d8_0" aria-controls="contentAccordion1cd8acf3a51e448e9bf362571fb622d8_0">
+                <h4 class="panel-title">Comment parrainer quelqu&#39;un et profiter de l&#39;offre de parrainage en cours ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion1cd8acf3a51e448e9bf362571fb622d8_0" aria-labelledby="headingAccordion1cd8acf3a51e448e9bf362571fb622d8_0">
+                <div class="card-block">Binck.fr ne propose pas d'offre de parrainage actuellement.</div>
+            </div>
+        </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C076_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Formation</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+
+<div id="Accordion8ffea8f6d9ba4778a5e7d37abdc3bbcc" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion8ffea8f6d9ba4778a5e7d37abdc3bbcc_0" data-parent="#Accordion8ffea8f6d9ba4778a5e7d37abdc3bbcc" data-target="#contentAccordion8ffea8f6d9ba4778a5e7d37abdc3bbcc_0" aria-controls="contentAccordion8ffea8f6d9ba4778a5e7d37abdc3bbcc_0">
+                <h4 class="panel-title">Comment participer aux formations en ligne Binck.fr ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion8ffea8f6d9ba4778a5e7d37abdc3bbcc_0" aria-labelledby="headingAccordion8ffea8f6d9ba4778a5e7d37abdc3bbcc_0">
+                <div class="card-block"><p>Pour participer &agrave; nos formations en ligne Binck.fr, nul besoin de vous inscrire. Choisissez dans le planning <a href="binck-tv.html">Binck TV</a> la formation qui vous int&eacute;resse et, le jour dit, rendez-vous sur notre site pour assister &agrave; l'&eacute;mission en direct. <br>
+<br>
+Vous aurez ensuite tout le loisir de revoir la formation en replay <a href="https://www.youtube.com/user/BINCKFR" title="" class="" target="_blank">sur notre chaine Youtube</a>.</p></div>
+            </div>
+        </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C059_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-center">Autorisations, garanties et sécurité...</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C085_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div id="Accordion6b4f6949228244cbb78ae519d9fe6de8" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion6b4f6949228244cbb78ae519d9fe6de8_0" data-parent="#Accordion6b4f6949228244cbb78ae519d9fe6de8" data-target="#contentAccordion6b4f6949228244cbb78ae519d9fe6de8_0" aria-controls="contentAccordion6b4f6949228244cbb78ae519d9fe6de8_0">
+                <h4 class="panel-title">Quelles sont les autorisations officielles de Binck.fr ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion6b4f6949228244cbb78ae519d9fe6de8_0" aria-labelledby="headingAccordion6b4f6949228244cbb78ae519d9fe6de8_0">
+                <div class="card-block"><p>BinckBank N.V.&nbsp; est un &eacute;tablissement de cr&eacute;dit agr&eacute;&eacute; par la banque centrale des Pays-Bas, la De Nederlansche Bank (DNB, Postbus 98, 1000 AB Amsterdam, Pays-Bas), qui est aussi l'autorit&eacute; de tutelle et de surveillance bancaire des Pays-Bas. BinckBank N.V. a proc&eacute;d&eacute; &agrave; une notification de passeport europ&eacute;en aupr&egrave;s de la DNB, afin de pouvoir exercer en France, via sa succursale, les activit&eacute;s de r&eacute;ception-transmission et ex&eacute;cution d'ordres, ainsi que de tenue de comptes-conservation. Cette notification a &eacute;t&eacute; transmise par la DNB &agrave; l'Autorit&eacute; de Contr&ocirc;le Prudentiel et de R&eacute;solution&nbsp; (l'ACPR), en France.<br /><br />Les activit&eacute;s de Binck.fr sur les march&eacute;s financiers en France sont soumises &agrave; l'autorit&eacute; de l'Autorit&eacute; des March&eacute;s Financiers (l'AMF, 17 place de la Bourse 75082 PARIS CEDEX 02). L'ACPR (4 Place de Budapest, CS 92459, 75436 Paris Cedex 09) surveille le respect par Binck.fr des obligations relatives &agrave; la lutte contre le blanchiment des capitaux et contre le financement du terrorisme.<br /><br />Binck.fr est membre de l'Association Fran&ccedil;aise des March&eacute;s Financiers (AMAFI). &nbsp;</p></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion6b4f6949228244cbb78ae519d9fe6de8_1" data-parent="#Accordion6b4f6949228244cbb78ae519d9fe6de8" data-target="#contentAccordion6b4f6949228244cbb78ae519d9fe6de8_1" aria-controls="contentAccordion6b4f6949228244cbb78ae519d9fe6de8_1">
+                <h4 class="panel-title">Quelle s&#233;curit&#233; pour les d&#233;p&#244;ts ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion6b4f6949228244cbb78ae519d9fe6de8_1" aria-labelledby="headingAccordion6b4f6949228244cbb78ae519d9fe6de8_1">
+                <div class="card-block"><p>Binck.fr en France est une succursale de BinckBank N.V., une banque n&eacute;erlandaise appartenant au groupe danois Saxo Bank ayant son si&egrave;ge social &agrave; Amsterdam, Pays-Bas. De par sa licence bancaire n&eacute;erlandaise, Binck.fr rel&egrave;ve donc du syst&egrave;me de garantie des d&eacute;p&ocirc;ts n&eacute;erlandais :&nbsp; vos d&eacute;p&ocirc;ts sont garantis &agrave; hauteur de 100.000 euros par personne, soit 200.000 euros pour un compte joint. Les titres d&eacute;pos&eacute;s par chaque client sur un Compte-titres ou un PEA (actions, obligations, parts et actions d'organismes de placements collectifs,...), sont s&eacute;par&eacute;s de ceux de la banque. Ainsi, en cas de d&eacute;faillance de Binck.fr, les titres sont restitu&eacute;s directement au client, sans risque de confusion avec les titres de la banque.&nbsp;</p></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion6b4f6949228244cbb78ae519d9fe6de8_2" data-parent="#Accordion6b4f6949228244cbb78ae519d9fe6de8" data-target="#contentAccordion6b4f6949228244cbb78ae519d9fe6de8_2" aria-controls="contentAccordion6b4f6949228244cbb78ae519d9fe6de8_2">
+                <h4 class="panel-title">Pourquoi les banques vous demandent-elles des informations personnelles ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion6b4f6949228244cbb78ae519d9fe6de8_2" aria-labelledby="headingAccordion6b4f6949228244cbb78ae519d9fe6de8_2">
+                <div class="card-block"><p>Dans le cadre de la lutte contre le blanchiment des capitaux et contre le financement du terrorisme, les banques fran&ccedil;aises sont soumises &agrave; des obligations de connaissance et de surveillance des op&eacute;rations de la client&egrave;le.<br /> <br />
+Afin de mieux appr&eacute;hender le cadre l&eacute;gal et les cons&eacute;quences pratiques de ces obligations pour le client particulier, nous vous invitons &agrave; consulter le mini-guide &eacute;dit&eacute; par "les cl&eacute;s de la banque" : "<strong>La lutte contre le blanchiment des capitaux et le financement du terrorisme</strong>".</p>
+<p><strong><br />
+Les th&egrave;mes suivants y sont notamment d&eacute;velopp&eacute;s :</strong></p> 
+
+<ul class="unordered">
+  <li><div>Le nouveau cadre juridique</div></li> 
+  <li><div>Les obligations de la banque</div></li> 
+  <li><div>Les informations qui peuvent &ecirc;tre demand&eacute;es &agrave; l'entr&eacute;e en relation</div></li> 
+  <li><div>Les informations qui peuvent &ecirc;tre demand&eacute;es lors d'une op&eacute;ration</div></li> 
+  <li><div>La surveillance de mes op&eacute;rations par la banque</div></li> 
+  <li><div>L'intervention de la banque dans mes op&eacute;rations</div></li> 
+  <li><div>Les op&eacute;rations &agrave; distance ou r&eacute;alis&eacute;es par un tiers
+    Conservation et confidentialit&eacute; des informations </div></li> 
+    <li><div>En cas de d&eacute;saccord avec la banque.</div></li> </ul> 
+    
+    <p>&nbsp;</p> <p> <a href="docs/librariesprovider6/clients/guide-blanchiment-juin2014.pdf" title="Cliquez ici pour télécharger le guide qui vous explique la règlementation en matière de blanchiment de capitaux et de financement du terrorisme qui s'impose aux banques et en quoi cela peut avoir des conséquences pratiques dans vos relations avec elles.">Cliquez ici pour t&eacute;l&eacute;charger le guide qui vous explique la r&egrave;glementation en mati&egrave;re de blanchiment de capitaux et de financement du terrorisme qui s'impose aux banques et en quoi cela peut avoir des cons&eacute;quences pratiques dans vos relations avec elles.</a></p> <br /> </div>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div id="cpMain_C085_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div id="Accordiond3963783471e4ea39c6e316a024d54a9" role="tablist" aria-multiselectable="true">
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordiond3963783471e4ea39c6e316a024d54a9_0" data-parent="#Accordiond3963783471e4ea39c6e316a024d54a9" data-target="#contentAccordiond3963783471e4ea39c6e316a024d54a9_0" aria-controls="contentAccordiond3963783471e4ea39c6e316a024d54a9_0">
+                <h4 class="panel-title">Comment soumettre une r&#233;clamation?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordiond3963783471e4ea39c6e316a024d54a9_0" aria-labelledby="headingAccordiond3963783471e4ea39c6e316a024d54a9_0">
+                <div class="card-block"><p>Binck.fr met tout en &oelig;uvre pour vous apporter la meilleure qualit&eacute; de service. Toutefois, des difficult&eacute;s peuvent survenir dans le fonctionnement de votre compte ou dans l'utilisation des services mis &agrave; votre disposition.&nbsp;</p>
+<p>Dans ce cas vous pouvez contacter :<br /><br />1. &nbsp; <b>Le Service Clients&nbsp;</b></p>
+<ul class="unordered">
+    <li>
+        <div>via le site <a href="https://web.binck.fr/Mailbox/Index">https://web.binck.fr/Mailbox/Index</a></div>
+    </li>
+    <li>
+        <div>par t&eacute;l&eacute;phone au <b>01 70 36 70 80&nbsp;</b></div>
+    </li>
+    <li>
+        <div>par email &agrave; <a href="mailto:clients@binck.fr ">clients@binck.fr&nbsp;</a></div>
+    </li>
+    <li>
+        <div>ou encore par courrier adress&eacute; &agrave;<b> Binck.fr - 10 rue de la Paix - 75085 Paris cedex 02</b>.</div>
+    </li>
+</ul>
+<p><br />2. &nbsp;En cas&nbsp;de difficult&eacute;s persistantes, <b>le Service Qualit&eacute;</b> par courrier adress&eacute; &agrave; <b>Service Qualit&eacute; Binck.fr - 10 rue de la Paix - 75085 Paris cedex 02</b>.</p>
+<p><br />3. &nbsp;Et en ultime&nbsp;&nbsp;&eacute;tape de conciliation, et uniquement dans les cas relevant de sa comp&eacute;tence l&eacute;gale et r&eacute;glementaire, il vous est possible de transmettre votre demande de m&eacute;diation <br />-soit au
+    <b>M&eacute;diateur de l'Autorit&eacute; des March&eacute;s Financiers</b> - 17, place de la Bourse - 75082 Paris Cedex 02 ou sur <a href="http://www.amf-france.org/" title="" target="">www.amf-france.org </a>&agrave; la rubrique contact; <br />-soit
+    au <b>M&eacute;diateur de la FBF</b> - BP 151 - 75422 Paris Cedex 09 ou sur <a href="http://www.lemediateur.fbf.fr/" title="" target="">www.lemediateur.fbf.fr</a>.</p></div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordiond3963783471e4ea39c6e316a024d54a9_1" data-parent="#Accordiond3963783471e4ea39c6e316a024d54a9" data-target="#contentAccordiond3963783471e4ea39c6e316a024d54a9_1" aria-controls="contentAccordiond3963783471e4ea39c6e316a024d54a9_1">
+                <h4 class="panel-title">Quelles sont les mesures de s&#233;curit&#233; prises par Binck.fr ?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordiond3963783471e4ea39c6e316a024d54a9_1" aria-labelledby="headingAccordiond3963783471e4ea39c6e316a024d54a9_1">
+                <div class="card-block"><p>Pour garantir la s&eacute;curit&eacute; de vos comptes, <strong>Binck.fr s'appuie sur une surveillance tr&egrave;s stricte des proc&eacute;dures : </strong> </p> 
+
+
+<ul class="unordered">
+  <li><div>Les pages du site sont s&eacute;curis&eacute;es (https:// )</div></li> 
+  <li><div>Les donn&eacute;es sont prot&eacute;g&eacute;es par un syst&egrave;me de code d'acc&egrave;s et de cryptage gr&acirc;ce au protocole SSL (Secure Socket Layer - 128 bits)</div></li> 
+  <li><div>Pour chaque op&eacute;ration, nous vous demanderons votre code personnel de confirmation</div></li> 
+  <li><div>Les virements sortants sont possibles uniquement vers le compte pr&eacute;alablement renseign&eacute; par le client sans risque de confusion avec les avoirs de la banque.</div></li> 
+  
+  </ul> <br /> </div>
+            </div>
+        </div>
+        <div class="card ">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordiond3963783471e4ea39c6e316a024d54a9_2" data-parent="#Accordiond3963783471e4ea39c6e316a024d54a9" data-target="#contentAccordiond3963783471e4ea39c6e316a024d54a9_2" aria-controls="contentAccordiond3963783471e4ea39c6e316a024d54a9_2">
+                <h4 class="panel-title">Quelles sont les bonnes pratiques pour &#233;viter les probl&#232;mes de &#171;phishing&#187; ou &#171;d&#39;hame&#231;onnage&#187;?</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordiond3963783471e4ea39c6e316a024d54a9_2" aria-labelledby="headingAccordiond3963783471e4ea39c6e316a024d54a9_2">
+                <div class="card-block"><ul class="unordered">
+  <li><div>V&eacute;rifiez &agrave; chaque connexion sur notre site transactionnel, que vous n'&ecirc;tes pas d&eacute;rout&eacute; vers un site frauduleux.</div></li>
+    <li><div>Vous pouvez ainsi vous assurer lors des sessions Internet sur notre site de la pr&eacute;sence du code <strong>https://</strong> devant l'adresse (url) du site, <strong>avec l'ic&ocirc;ne d'une cl&eacute; ou d'un cadenas</strong>.</div></li>
+</ul>
+<p><br><a href="docs/librariesprovider6/clients/guide-securite-les-cles-de-la-banqueb4f4.pdf?sfvrsn=3cd1f234_0" title="guide-securite-les-cles-de-la-banque">Pour plus d'information sur le phishing, cliquez ici</a></p> </div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="lane lane-footer bg-image fixed-image bg-darkgrey   " 
+     style="background-image: url('images/librariesprovider6/formations/header-06df2d.jpg?sfvrsn=c0fc8134_2')" >
+    <div class="container text-center text-white " >
+<h2 class="h1  ">La Bourse vous intéresse ?</h2>                    <div class="littleruler"></div>
+        <p class="lead">Choisir Binck.fr, <br>c'est choisir l'expertise pour ses investissements<br><br></p>
+        <p>
+            
+
+
+
+    <a class="btn btn-primary btn-neutral " type="button"  href='ouvrir-un-compte-en-ligne.html' >Ouvrir un compte</a>
+
+
+
+        </p>
+    </div>
+</div>    <footer class="hidden-footer" id="main-footer">
+        <div class="footer text-white">
+            <div class="container-fluid-lg" id="footer-top">
+                <div class="row" id="footer-row">
+                    <ul class="list-unstyled text-nowrap">
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>CONTACTEZ-NOUS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="contact.html"><span>Notre page contact</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE COMMERCIAL </span></li>
+                                    <li><span><img src="images/librariesprovider6/contact/0800-940-9805014.gif?sfvrsn=4" data-displaymode="Original" alt=" Téléphone Binck 0800 940 980" title="0800 940 980"></span></li>
+                                    <li><a class="icon-before" href="mailto:info@binck.fr" title="Contactez notre service commercial" data-icon=""><span>info@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE CLIENT</span></li>
+                                    <li><span>01 70 36 70 80 (appel non surtax&eacute;)</span></li>
+                                    <li><a class="icon-before" href="mailto:clients@binck.fr" title="Contactez notre service client" data-icon=""><span>clients@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>ADRESSE</span></li>
+                                    <li><span>10 Rue de la Paix</span></li>
+                                    <li><span>FR-75085 Paris cedex 02</span></li>
+                                    <li><span> &nbsp; </span></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>BOURSE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="ouvrir-un-compte-en-ligne.html"><span>Ouvrir un compte</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/produits.html"><span>Produits de Bourse</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/comptes/compte-titres.html"><span>Compte-titres</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/comptes/pea.html"><span>PEA</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/comptes/pea-pme.html"><span>PEA-PME</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/outils-de-trading.html"><span>Outils de Trading</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/outils-d-analyses.html"><span>Outils d'analyses</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/club-des-traders.html"><span>Club des Traders</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="faq.html"><span>FAQ Bourse</span></a></li>
+                                    <li><a class="icon-before" href="formulaires.html"><span>Formulaires</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>ASSURANCE VIE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://landing.av.binck.fr/acquisition"><span>Adh&eacute;rer au contrat</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/modes-de-gestion/gestion-libre.html"><span>Modes de Gestion</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/supports/tous-nos-supports.html"><span>Supports</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/performances-assurance-vie.html"><span>Performances</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/avantages-fiscalite.html"><span>Fiscalit&eacute;</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/adherer-assurance-vie.html"><span>Comment adh&eacute;rer</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/FAQ-assurance-vie.html"><span>FAQ Assurance Vie</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/lexique.html"><span>Lexique</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>QUI EST BINCK.FR</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="qui-est-binck/pourquoi-choisir-binck.html"><span>Pourquoi choisir Binck</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/palmares.html"><span>Palmar&egrave;s</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/presse.html"><span>Binck dans la presse</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/communiques-de-presse.html"><span>Communiqu&eacute;s de presse</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/rapports-financiers.html"><span>Rapports financiers</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>FORMATIONS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="formations-trading/espace-bourse-pratique.html"><span>Espace Bourse Pratique</span></a></li>
+                                    <li><a class="icon-before" href="formations-trading/investir-en-bourse-sur-binck-fr.html"><span>Vid&eacute;os tutorielles</span></a></li>
+                                    <li><a class="icon-before" href="binck-tv.html"><span>Binck TV</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span> ACTUALITES </span></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><a class="icon-before" href="actualites/analyses.html"><span>Analyses</span></a></li>
+                                    <li><a class="icon-before" href="actualites/calendrier-boursier.html"><span>Calendrier Boursier</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>NOUS TROUVER</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://www.facebook.com/BinckFR" data-icon=""><span>Facebook</span></a></li>
+                                    <li><a class="icon-before" href="https://twitter.com/BinckFR" data-icon=""><span>Twitter</span></a></li>
+                                    <li><a class="icon-before" href="https://www.youtube.com/user/BINCKFR" data-icon=""><span>Youtube</span></a></li>
+                                    <li><a class="icon-before" href="https://www.linkedin.com/company/binckbank/" data-icon=""><span>LinkedIn</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="fullruler">
+            <div class="container-fluid-lg text-nowrap" id="footer-bottom">
+                <div class="row row-eq-height-md">
+                    <div class="col-md-4 col-lg-2 text-xs-center text-md-left">
+                            <a class="no-border" href="index.html" >
+                                <img alt="binck logo" height="16" src="images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                            </a>
+                    </div>
+                    <nav class="col-md-8 col-lg-10" role="navigation">
+                        <div class="row">
+                                <div class="col-xs-auto"><a href="information/securite.html">S&eacute;curit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="informations-legales.html">Informations l&eacute;gales<span></span></a></div>
+                                <div class="col-xs-auto"><a href="politique-de-confidentialite.html">Politique de confidentialit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="gestion-des-cookies.html">Gestion des cookies<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binckrecrute.fr/" target="_blank">Recrutement<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binck.com/nl/corporate/" target="_blank">Binck.com<span></span></a></div>
+                                <div class="col-xs-auto"><a href="plan-du-site.html">Plan du site<span></span></a></div>
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</div>
+</body>
+
+<!-- Mirrored from www.binck.fr/faq by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:21:23 GMT -->
+</html>

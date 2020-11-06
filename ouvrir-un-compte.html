@@ -1,0 +1,492 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    
+<!-- Mirrored from www.binck.fr/ouvrir-un-compte by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:23:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><title>
+	Ouvrir un compte en ligne - Ouverture et transfert de compte - Binck.fr
+</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta content="yes" name="apple-mobile-web-app-capable" /><link href="images/librariesprovider6/site-essentials/myicon.ico" rel="Shortcut Icon" /><link href="Telerik.Web.UI.WebResource0061.css?d=PMrIT5dOWaVYIcpFWUE4nMLWcdQIjXr7e7sRrUL6XRMyEGvH48LOQzat_9YOOsN0J6WPBFhfQ4EN__Y3UDQ8KVFySae_B1iqlXBugPHQ1XuXHNF00&amp;t=637317551186412526&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d11.0.6732.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3afr%3aca5aa0cb-9dda-4885-a4ae-598cf4f97af5%3a7a90d6a" type="text/css" rel="stylesheet" />
+                    <link rel="alternate" hreflang="fr_fr" />
+                <link href="Style/France/CSS/bundled8f9.css?v=pUFKc7Q5ZHmnZ8PKeD39d5j2I_yx7L7ajV1kr27d09Q1" rel="stylesheet"/>
+<link href="Style/LeadSites/css/header.css" rel="stylesheet" /><script type="text/javascript">(function () {
+    window.digitalData = window.digitalData || [];
+
+    var domains = [
+        { "domain": "binckspanje.com", "country": "es", "language": "nl", "website": "rs-spain" },
+        { "domain": "binckbank.com", "country": "en", "language": "en", "website": "binck" },
+        { "domain": "binck.com", "country": "en", "language": "en", "website": "rs-binck" },
+        { "domain": "binck.be", "country": "be", "language": "nl", "website": "rs-belgium" },
+        { "domain": "binck.it", "country": "it", "language": "it", "website": "rs-italy" },
+        { "domain": "binck.nl", "country": "nl", "language": "nl", "website": "rs-netherlands" },
+        { "domain": "binck.fr", "country": "fr", "language": "fr", "website": "rs-france" }
+    ];
+
+    var languageList = [
+        { "language": "en" }, { "language": "nl" }, { "language": "fr" }, { "language": "it" }
+    ];
+
+    function findObject(arr, key, val) {
+        var found;
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i][key] === val) {
+                found = arr[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+    var topLvl = document.domain.split(".").reverse();
+    var subdomain = "";
+    
+    if (topLvl.length === 3 && topLvl[2] !== "www") {
+        subdomain = topLvl.pop();
+    } else {
+        topLvl.length = 2;
+    }
+
+    topLvl = topLvl.reverse().join(".");
+
+    var domain = findObject(domains, "domain", topLvl);
+
+    if (!domain) {
+        throw new Error(topLvl + " not supported by dataLayer");
+    }
+
+    var languageCode = domain.language;
+    var parts = window.location.pathname.split("index.html");
+    var languageCodeInUrl;
+
+    if (parts.length > 1) {
+        languageCodeInUrl = findObject(languageList, "language", parts[1]);
+    }
+    
+    if (subdomain === "ouvriruncompte") {
+        languageCodeInUrl = findObject(languageList, "language", "fr");
+    }
+
+    if (languageCodeInUrl) {
+        languageCode = languageCodeInUrl.language;
+        parts.shift();
+    }
+
+    parts.shift();
+    if (subdomain !== "") {
+        parts.unshift(subdomain);
+    }
+
+    var sections = parts.concat();
+    sections.unshift(languageCode + "-" + domain.country);
+
+    function responseStatusCode() {
+        responseStatusCode = 200;
+        var titlepage = window.document.title.toLowerCase()
+        if (titlepage.indexOf('pagina niet gevonden') > -1 || titlepage.indexOf('error 404') > -1 || titlepage.indexOf('page not found') > -1 || titlepage.indexOf('page non trouvée') > -1) {
+            responseStatusCode = 404;
+        }
+        return responseStatusCode;
+    }
+
+    function getPageName() {
+        return parts.join(":").replace(/:$/, "");
+    }
+
+    function getSiteSectionAll() {
+        var sectionAll = "";
+        if (parts.length === 0 || parts[0] === "") {
+            sectionAll = "frontpage";
+        } else {
+            sectionAll = getPageName();
+        }
+        return sectionAll;
+    }
+
+    var pageName = getPageName();
+
+    window.digitalData.error = {
+        responseStatusCode: responseStatusCode(),
+    }
+    window.digitalData.page = {
+        hostName: window.location.hostname,
+        pageName: languageCode + "-" + domain.country + (pageName != "" ? ":" : "" ) + pageName,
+        siteSection1: sections[0] || '',
+        siteSection2: sections[1] || '',
+        siteSection3: sections[2] || '',
+        siteSection4: sections[3] || '',
+        siteSection5: sections[4] || '',
+        siteSectionAll: getSiteSectionAll(),
+        queryString: window.location.search,
+        website: domain.website,
+        language: languageCode
+    };
+})()</script><script type="text/javascript" src="../assets.adobedtm.com/launch-EN5a2ce50dc24d4c95ad125c65fa54d8b3.min.js"></script><meta name="Generator" content="Sitefinity 11.0.6732.0 PU" /><link rel="canonical" href="ouvrir-un-compte.html" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="Sitefinity/Public/ResponsiveDesign/layout_transformations062e.html?pageDataId=82c7f9cb-219e-61cd-bc43-ff0300e84d35&amp;pageSiteNode=81C7F9CB-219E-61CD-BC43-FF0300E84D35/f77df8cb-219e-61cd-bc43-ff0100e84d35/SitefinitySiteMap" type="text/css" rel="stylesheet" /><style type="text/css" media="all">.sfContentBlock iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}</style><style type="text/css" media="all">#footer {
+  background-color: #F2F2F2;
+  font-size: 0.875em;
+  line-height: 1.571em;
+  color: #606060;
+  font-family: "binck-optimized/TheSans-Plain", Arial, Verdana, sans-serif; }
+  footer a,
+  footer a:link,
+  footer a:visited {
+    color: #58b0ff; }
+  footer a:active {
+    color: #8cd600;
+    text-decoration: none; }
+  footer a:hover {
+    color: #8cd600;
+    text-decoration: underline; }
+  footer a.btn-link,
+  footer a.btn-link:visited,
+  footer a.btn-search,
+  footer a.btn-search:visited,
+  footer a.btn-home,
+  footer a.btn-home:visited,
+  footer a.btn-download,
+  footer a.btn-download:visited,
+  footer a.btn-ext,
+  footer a.btn-ext:visited {
+    font-family: "open-sans/OpenSans-Regular", Arial, Verdana, sans-serif;
+    font-size: 1em;
+    text-transform: none;
+    color: #58b0ff !important;
+    display: inline-block;
+    padding: 0;
+    margin: -5px 0 !important;
+    height: auto;
+    border: none;
+    overflow: auto; }
+    footer a.btn-link:hover, footer a.btn-link:active,
+    footer a.btn-link:visited:hover,
+    footer a.btn-link:visited:active,
+    footer a.btn-search:hover,
+    footer a.btn-search:active,
+    footer a.btn-search:visited:hover,
+    footer a.btn-search:visited:active,
+    footer a.btn-home:hover,
+    footer a.btn-home:active,
+    footer a.btn-home:visited:hover,
+    footer a.btn-home:visited:active,
+    footer a.btn-download:hover,
+    footer a.btn-download:active,
+    footer a.btn-download:visited:hover,
+    footer a.btn-download:visited:active,
+    footer a.btn-ext:hover,
+    footer a.btn-ext:active,
+    footer a.btn-ext:visited:hover,
+    footer a.btn-ext:visited:active {
+      background-color: transparent;
+      color: #8cd600 !important;
+      text-decoration: underline; }
+  footer h2 {
+    font-family: "open-sans/OpenSans-Bold", Arial, Verdana, sans-serif;
+    color: #fff;
+    font-size: 1.125em; }
+  footer .boxes h2 {
+    font-weight: normal;
+    color: #e0e0e0;
+    padding: 0;
+    margin-bottom: 20px;
+    border-bottom: none; }
+  footer h3 {
+    font-family: "open-sans/OpenSans-Bold", Arial, Verdana, sans-serif;
+    font-size: 1em;
+    color: #606060;
+    margin-bottom: 20px; }
+  footer .green-headers h3 {
+    color: #8cd600; }
+  footer .hr {
+    border-color: #606060; }
+  footer .boxes {
+    padding: 25px 0 15px !important; }
+  footer .italic {
+    font-size: 0.929em; }
+  footer .privacy {
+    font-family: "open-sans/OpenSans-Regular", Arial, Verdana, sans-serif;
+    background-color: #999999; }
+    footer .privacy a,
+    footer .privacy a:link,
+    footer .privacy a:visited {
+      color: #f2f2f2; }
+    footer .privacy a:active {
+      text-decoration: none; }
+    footer .privacy a:hover {
+      text-decoration: underline; }
+    footer .privacy .active a,
+    footer .privacy .active a:link,
+    footer .privacy .active a:visited {
+      color: #58b0ff; }
+  footer .rdContent .privacy nav {
+    width: 75%; }
+  footer .logo {
+    text-align: center;
+    line-height: 1em;
+    margin: 10px 0;
+    height: 20px; }
+    footer .logo .boxes {
+      padding: 0 !important; }
+    footer .logo a {
+      display: inline-block;
+      width: 212px;
+      height: 100%; }
+  footer nav {
+    text-align: center;
+    margin: 20px 5px 5px 5px; }
+    footer nav ul {
+      display: inline-block; }
+    footer nav li {
+      float: left;
+      margin: 0 12px;
+      letter-spacing: -1px; }
+  footer .press h2 {
+    text-transform: uppercase; }
+  footer .press .press-date {
+    font-size: 0.929em;
+    font-style: italic; }
+  footer .press .press-line {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #606060; }
+    footer .press .press-line:last-child {
+      border: none; }
+  footer .cookie-policy {
+    position: fixed;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+    color: #ffffff;
+    padding: 5px 10px 7px;
+    width: 100%;
+    z-index: 100; }
+    footer .cookie-policy a, footer .cookie-policy a:link a:visited {
+      color: #fff;
+      text-decoration: underline; }
+    footer .cookie-policy .container, footer .cookie-policy #main-footer .subMenuBar, #main-footer footer .cookie-policy .subMenuBar, footer .cookie-policy #dna-header .subMenuBar, #dna-header footer .cookie-policy .subMenuBar, footer .cookie-policy #main-footer .container-fluid-lg, #main-footer footer .cookie-policy .container-fluid-lg, footer .cookie-policy #dna-header .container-fluid-lg, #dna-header footer .cookie-policy .container-fluid-lg {
+      position: relative;
+      font-size: 1.077em;
+      line-height: 1.429em;
+      padding: 0; }
+    footer .cookie-policy .title {
+      display: none; }
+    footer .cookie-policy .close-link {
+      float: right;
+      display: inline-block;
+      background-color: #58b0ff;
+      font-family: "binck-optimized/TheSansBold-Plain", Arial, Verdana, sans-serif;
+      font-size: 1em;
+      line-height: 1.643em;
+      text-decoration: none;
+      color: #fff;
+      padding: 0 9px;
+      margin: 5px 0 5px 10px;
+      height: 29px;
+      border: 2px solid #58b0ff; }
+      footer .cookie-policy .close-link span {
+        display: none; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .box-contact .box-txt > div {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%; }
+  footer .colls-tree {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 10px; }
+    footer .colls-tree .hr {
+      display: none; } }
+
+@media screen and (min-width: 480px) {
+  footer .logo {
+    float: left;
+    margin: 10px 0 10px 10px;
+    width: 212px; }
+  footer nav {
+    float: right;
+    margin: 14px 5px 0 5px; }
+    footer nav li {
+      margin: 0 14px; } }
+
+@media screen and (min-width: 768px) {
+  footer .social-icons-wrapper .container, footer .social-icons-wrapper #main-footer .subMenuBar, #main-footer footer .social-icons-wrapper .subMenuBar, footer .social-icons-wrapper #dna-header .subMenuBar, #dna-header footer .social-icons-wrapper .subMenuBar, footer .social-icons-wrapper #main-footer .container-fluid-lg, #main-footer footer .social-icons-wrapper .container-fluid-lg, footer .social-icons-wrapper #dna-header .container-fluid-lg, #dna-header footer .social-icons-wrapper .container-fluid-lg {
+    width: 100%; }
+  footer .logo {
+    margin-right: 15px; }
+  footer nav {
+    margin: 10px 15px 0 0; }
+    footer nav li {
+      margin: 0 0 0 55px;
+      letter-spacing: 0; }
+  footer .cookie-policy {
+    padding: 15px 0 12px;
+    border-bottom: 3px solid #3c4146; }
+    footer .cookie-policy .container, footer .cookie-policy #main-footer .subMenuBar, #main-footer footer .cookie-policy .subMenuBar, footer .cookie-policy #dna-header .subMenuBar, #dna-header footer .cookie-policy .subMenuBar, footer .cookie-policy #main-footer .container-fluid-lg, #main-footer footer .cookie-policy .container-fluid-lg, footer .cookie-policy #dna-header .container-fluid-lg, #dna-header footer .cookie-policy .container-fluid-lg {
+      position: relative;
+      font-size: 1.077em;
+      line-height: 1.429em;
+      padding: 0 150px 0 15px; }
+    footer .cookie-policy .title {
+      display: block;
+      font-family: "open-sans/OpenSans-Bold", Arial, Verdana, sans-serif; }
+    footer .cookie-policy .close-link {
+      position: absolute;
+      float: none;
+      top: -5px;
+      right: 10px;
+      font-size: 1em;
+      line-height: 1.643em;
+      padding: 0 19px;
+      margin: 0; }
+      footer .cookie-policy .close-link span {
+        display: inline-block;
+        padding-left: 12px; } }</style><meta name="description" content="Ouvrir un compte pour investir en bourse,  c’est facile, rapide et gratuit avec Binck.fr" /><meta name="keywords" content="ouverture de compte, compte-titre, pea, livret, pea-pme, ouvrir un compte, transférer un compte, demande d&#39;ouverture, ouvrir chez Binck, " /></head>
+    <body>
+        <script src="bundles/baseBinckd743?v=9qM4-Lg1DeHWc4garFpvKTwUcTWuvl_BLGQ7OZk_fxU1"></script>
+
+        
+        <konami></konami>
+        <form method="post" action="https://www.binck.fr/ouvrir-un-compte" id="form" novalidate="novalidate">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl10_TSM" id="ctl10_TSM" value="" />
+<input type="hidden" name="ctl11_TSSM" id="ctl11_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="YKttYsjEPrccEKS21rr/JmgCusftVtoPHgFtJ7OtHZ6tvYDBTjcnJWekEja08SSj7Wl5XQAKzksmf883KWDBwOtEA5I=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource908c.js?d=pynGkmcFUV13He1Qd6_TZP_4ej2xu7z_XVotHnL9kuaGNPxbuoHGPHb-o8amqx79yDcwVA2&amp;t=637290829350350503" type="text/javascript"></script>
+
+
+<script src="WebResource74ff.js?d=yAZznlIeaGQJz8qTi4uqDSxm-bWuIiwJKKVOYfsBKOKGAYFrBb8CzgrpwJulWIFfZX6-Sq38e3w8f8tdivnh_jEm03mVBkvaobew0b5wtEF7AzpSEpk2-02-UP7Vfj_PgCuldAuwGtncSUrXnO_klSdbTGY1&amp;t=636751093820000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"Non numérique","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infini","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+Infini","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":true,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="Telerik.Web.UI.WebResource5bda.js?_TSM_HiddenField_=ctl10_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr%3a4feca508-514b-48c0-a162-7fa9c360d783%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DD466A81" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="opBV4H5aQU3ogCN7iEpKsaMuMlJmespBZQAAbY12nEkwEIwjVnjEY5jrJX46QBA5tVVOLNeOmC23T6Y4UOxGX4deNiS7JvqLh1pQ5gxN18ef6hk2NAqBEZbcBnxRv8Vw7HeKlg==" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl10', 'form', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<input type="hidden" name="ctl00$ctl10" id="ctl10" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl10", "ctl00$ctl10");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+            <input type="hidden" name="ctl00$uniqueSubmitIdHiddenField" id="uniqueSubmitIdHiddenField" value="2d6e5c63-9e11-462b-ae9c-e889a4ec64ca" />
+            <input name="ctl00$apiRequestVerificationToken" type="hidden" id="apiRequestVerificationToken" />
+            <div id="wrapper" class="wrapper">
+                <header id="header">
+                    <nav class="nav-collapse">
+                        
+<div class="sf_cols">
+    <div class="container main">
+        <div class="row">
+            <div class="col-xxs-12">
+                <div id="cpMainNavigation_C003_Col00" class="sf_colsIn">
+                </div>
+            </div>
+            <div class="col-xxs-12">                
+                <div id="cpMainNavigation_C003_Col01" class="sf_colsIn"><div class='sfContentBlock'><iframe src="https://binck-ouverture-en-ligne.fr/?b=" width="962" height="5000" frameborder="0" id="ifr" scrolling="yes"></iframe>
+
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><script type="text/javascript">_st("loadTags");</script>
+
+
+
+                    </nav>
+                </header>
+                <div class="top-content">
+                    
+                    
+
+                </div>
+                <div>
+                    
+
+                    
+
+                </div>
+                <footer id="footer">
+                    
+
+                </footer>
+                <div class="top">
+                    <span id="top-link-block" class="hidden">
+                        <a href="#top" id="backToTopBtn" class="well well-sm">
+                            <span class="hex2"></span>
+                            <span class="icon-top"></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        <script type="text/javascript">
+	StatsClient.LogVisit('81c7f9cb-219e-61cd-bc43-ff0300e84d35', '5944226a-44bf-46d5-b6c0-232f5afb18ad');
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='index.html';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl11_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=11.0.6732.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:fr:ca5aa0cb-9dda-4885-a4ae-598cf4f97af5:7a90d6a';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();//]]>
+</script>
+</form>
+        <script>
+            
+            var Binck = Binck || {};
+            Binck.Config = {"Settings":{"ProductInformationSummary":{"DefaultFinancingCostPercentage":0.025},"Currency":{"DefaultCurrency":"EUR"},"Socket":{"User":"binck-marketsapi","Application":"Nl","Url":["ws://push1.binck-marketsapi.customers.solvians.com/websocket","ws://push2.binck-marketsapi.customers.solvians.com/websocket"],"Pull":"/pushserver/"},"Utils":{"Timezone":"Europe/Amsterdam"}},"Resources":{}};
+        </script>
+        
+        
+    </body>
+
+
+<!-- Mirrored from www.binck.fr/ouvrir-un-compte by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:23:18 GMT -->
+</html>

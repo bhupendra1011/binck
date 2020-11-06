@@ -1,0 +1,2030 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.binck.fr/qui-est-binck/presse by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:01:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link href="../Telerik.Web.UI.WebResourceb6a9.css?d=PMrIT5dOWaVYIcpFWUE4nMLWcdQIjXr7e7sRrUL6XRMyEGvH48LOQzat_9YOOsN0J6WPBFhfQ4EN__Y3UDQ8KVFySae_B1iqlXBugPHQ1XuXHNF00&amp;t=637317551186412526&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d11.0.6732.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3afr%3aca5aa0cb-9dda-4885-a4ae-598cf4f97af5%3a7a90d6a%3ad271177c%3adff30785" type="text/css" rel="stylesheet" />
+            <link rel="alternate" hreflang="fr_fr" />
+            
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+        <link rel="stylesheet" href="../Content/font-awesome.min.css" />
+        
+           <link rel="stylesheet" href="../Content/BinckPatternLAB/binck.bootstrap.css" />
+           <link href="../Content/patternlabcf9e.css?v=bauX_oIE8src8FNJTNLBQqUcmCLmSn7CvalvEIB5d0M1" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" type="image/x-icon" href="../Style/Corporate/images/myicon.ico" />
+    <style>
+        body {
+            min-width: 0 !important;
+        }
+    </style>
+<style type="text/css" media="all">.navbar-brand > img {
+    max-height: 20px;
+    max-width: 65vw;
+    height: auto;
+}
+</style><script type="text/javascript">
+(function () {
+    window.digitalData = window.digitalData || [];
+
+    var domains = [
+        { "domain": "binckspanje.com", "country": "es", "language": "nl", "website": "rs-spain" },
+        { "domain": "binckbank.com", "country": "en", "language": "en", "website": "binck" },
+        { "domain": "binck.com", "country": "en", "language": "en", "website": "rs-binck" },
+        { "domain": "binck.be", "country": "be", "language": "nl", "website": "rs-belgium" },
+        { "domain": "binck.it", "country": "it", "language": "it", "website": "rs-italy" },
+        { "domain": "binck.nl", "country": "nl", "language": "nl", "website": "rs-netherlands" },
+        { "domain": "binck.fr", "country": "fr", "language": "fr", "website": "rs-france" }
+    ];
+
+    var languageList = [
+        { "language": "en" }, { "language": "nl" }, { "language": "fr" }, { "language": "it" }
+    ];
+
+    function findObject(arr, key, val) {
+        var found;
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i][key] === val) {
+                found = arr[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+    var topLvl = document.domain.split(".").reverse();
+    var subdomain = "";
+    
+    if (topLvl.length === 3 && topLvl[2] !== "www") {
+        subdomain = topLvl.pop();
+    } else {
+        topLvl.length = 2;
+    }
+
+    topLvl = topLvl.reverse().join(".");
+
+    var domain = findObject(domains, "domain", topLvl);
+
+    if (!domain) {
+        throw new Error(topLvl + " not supported by dataLayer");
+    }
+
+    var languageCode = domain.language;
+    var parts = window.location.pathname.split("../index.html");
+    var languageCodeInUrl;
+
+    if (parts.length > 1) {
+        languageCodeInUrl = findObject(languageList, "language", parts[1]);
+    }
+    
+    if (subdomain === "ouvriruncompte") {
+        languageCodeInUrl = findObject(languageList, "language", "fr");
+    }
+
+    if (languageCodeInUrl) {
+        languageCode = languageCodeInUrl.language;
+        parts.shift();
+    }
+
+    parts.shift();
+    if (subdomain !== "") {
+        parts.unshift(subdomain);
+    }
+
+    var sections = parts.concat();
+    sections.unshift(languageCode + "-" + domain.country);
+
+    function responseStatusCode() {
+        responseStatusCode = 200;
+        var titlepage = window.document.title.toLowerCase()
+        if (titlepage.indexOf('pagina niet gevonden') > -1 || titlepage.indexOf('error 404') > -1 || titlepage.indexOf('page not found') > -1 || titlepage.indexOf('page non trouvée') > -1) {
+            responseStatusCode = 404;
+        }
+        return responseStatusCode;
+    }
+
+    function getPageName() {
+        return parts.join(":").replace(/:$/, "");
+    }
+
+    function getSiteSectionAll() {
+        var sectionAll = "";
+        if (parts.length === 0 || parts[0] === "") {
+            sectionAll = "frontpage";
+        } else {
+            sectionAll = getPageName();
+        }
+        return sectionAll;
+    }
+
+    var pageName = getPageName();
+
+    window.digitalData.error = {
+        responseStatusCode: responseStatusCode(),
+    }
+    window.digitalData.page = {
+        hostName: window.location.hostname,
+        pageName: languageCode + "-" + domain.country + (pageName != "" ? ":" : "" ) + pageName,
+        siteSection1: sections[0] || '',
+        siteSection2: sections[1] || '',
+        siteSection3: sections[2] || '',
+        siteSection4: sections[3] || '',
+        siteSection5: sections[4] || '',
+        siteSectionAll: getSiteSectionAll(),
+        queryString: window.location.search,
+        website: domain.website,
+        language: languageCode
+    };
+})()
+</script><script type="text/javascript" src="../../assets.adobedtm.com/launch-EN5a2ce50dc24d4c95ad125c65fa54d8b3.min.js"></script><meta name="Generator" content="Sitefinity 11.0.6732.0 PU" /><link rel="canonical" href="presse.html" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="../Sitefinity/Public/ResponsiveDesign/layout_transformations5219.html?pageDataId=fa39e7cc-219e-61cd-bc43-ff0100e84d35&amp;pageSiteNode=F939E7CC-219E-61CD-BC43-FF0100E84D35/f77df8cb-219e-61cd-bc43-ff0100e84d35/SitefinitySiteMap" type="text/css" rel="stylesheet" /><title>
+	Binck dans la Presse - Toute l&#39;Actualit&#233; de Binck
+</title><meta name="description" content="L&#39;actualité Binck : Un espace qui s&#39;adresse à toutes personnes souhaitant s&#39;informer sur l&#39;actualité de Binck.fr." /><meta name="keywords" content="Binck dans la presse, articles sur binck" /></head>
+<body>
+    <script src="../bundles/PatternLab3b9e?v=eaHEFy3f5naNK8Kf7OcOckvdcpgFonixou7UWowavXk1"></script>
+
+    <form method="post" action="https://www.binck.fr/qui-est-binck/presse" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSM" id="ctl06_TSM" value="" />
+<input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="TGIeVGqBGaeL5KUYVEvQyHXDVegpk08qj+oJKk7kTZ/viRFYNyl3OluYw3lVhR9fWCFeekpzOATiBbs7+J806YLCMEQ=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResource908c.js?d=pynGkmcFUV13He1Qd6_TZP_4ej2xu7z_XVotHnL9kuaGNPxbuoHGPHb-o8amqx79yDcwVA2&amp;t=637290829350350503" type="text/javascript"></script>
+
+
+<script src="../WebResource74ff.js?d=yAZznlIeaGQJz8qTi4uqDSxm-bWuIiwJKKVOYfsBKOKGAYFrBb8CzgrpwJulWIFfZX6-Sq38e3w8f8tdivnh_jEm03mVBkvaobew0b5wtEF7AzpSEpk2-02-UP7Vfj_PgCuldAuwGtncSUrXnO_klSdbTGY1&amp;t=636751093820000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"Non numérique","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infini","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+Infini","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":true,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="../Telerik.Web.UI.WebResourcef71e.js?_TSM_HiddenField_=ctl06_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr%3a4feca508-514b-48c0-a162-7fa9c360d783%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6212A8E9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="UZrZ5oggNGtMZXLXC0ScF1U2RAOa0krxszEU65eJl3ejJCQlx1BcBDn7fGoX/jOWtM7FNAmN1Sp5SpiV0oLmzvsuJ/1locziWkTK/5AyOO0n5XQj" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl06', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<input type="hidden" name="ctl00$ctl06" id="ctl06" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl06", "ctl00$ctl06");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <input type="hidden" name="ctl00$uniqueSubmitIdHiddenField" id="uniqueSubmitIdHiddenField" value="51d14cbd-7c1a-4b1b-8e58-ade320052076" />
+        
+        
+        
+    <script type="text/javascript">
+	StatsClient.LogVisit('f939e7cc-219e-61cd-bc43-ff0100e84d35', 'a4124c00-a71b-43bc-b396-f80265f5e5e0');
+</script><script type="text/javascript">
+if(typeof _satellite!=="undefined"){_satellite.pageBottom();}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='../index.html';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl07_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=11.0.6732.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:fr:ca5aa0cb-9dda-4885-a4ae-598cf4f97af5:7a90d6a:d271177c:dff30785';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();//]]>
+</script>
+</form>
+    <div id="content" class="wrap">
+
+    <div id="dna-header">
+        <nav class="navbar navbar-inverse navbar-static-top" id="top-nav" role="navigation">
+            <div class="container-fluid-lg">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html" >
+                        <img alt="binck logo" src="../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                    </a>
+                    <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-left" aria-expanded="false" data-icon="">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                        <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-right" aria-expanded="false" data-icon="">
+                            <span class="sr-only">Toggle selection</span>
+                        </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown nav-item open-on-hover">
+                                <a href="../contact.html" class="nav-link">Contacts</a>
+                            </li>
+                                                    <li class="nav-link">
+                                <a id="header-button" class="btn btn-primary btn-sm navbar-btn mr-2 ml-2 hidden-xs" href="../devenir-client.html" >Devenir client</a>
+                                <a class="nav-link visible-xs" href="../devenir-client.html" >Devenir client</a>
+                            </li>
+                                                    <li class="nav-link">
+                                
+
+<a class="nav-link" href="../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<nav class="navbar navbar-light alt" id="secondary-nav">
+    <div class="container-fluid-lg">
+        <ul class="nav navbar-nav navbar-left secondary-nav navbar-collapse collapse" id="secondary-nav-left">
+                <li class="nav-item visible-xs">
+                    
+
+<a class="nav-link" href="../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../bourse-en-ligne.html">Bourse</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/bourses.html" style="text-transform: none;">
+                                                        Les Bourses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                        Produits
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                                                Achat d&#39;actions en bourse
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/fonds.html" style="text-transform: none;">
+                                                                                Fonds
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/trackers.html" style="text-transform: none;">
+                                                                                Trackers
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/turbos.html" style="text-transform: none;">
+                                                                                Turbos
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/certificats.html" style="text-transform: none;">
+                                                                                Certificats
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/warrants.html" style="text-transform: none;">
+                                                                                Warrants
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/options.html" style="text-transform: none;">
+                                                                                Options
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/futures.html" style="text-transform: none;">
+                                                                                Futures
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/srd.html" style="text-transform: none;">
+                                                                                SRD
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/comptes.html" style="text-transform: none;">
+                                                        Comptes
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/comptes/compte-titres.html" style="text-transform: none;">
+                                                                                Le compte-titres
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/comptes/pea.html" style="text-transform: none;">
+                                                                                Le PEA
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/comptes/pea-pme.html" style="text-transform: none;">
+                                                                                Le PEA-PME
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/outils-de-trading.html" style="text-transform: none;">
+                                                        Outils de trading
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/nos-plateformes.html" style="text-transform: none;">
+                                                                                Nos plateformes
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/application-mobile.html" style="text-transform: none;">
+                                                                                Application mobile
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/prorealtime.html" style="text-transform: none;">
+                                                                                ProRealTime V11
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/protrader.html" style="text-transform: none;">
+                                                                                ProTrader
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/fiches-valeurs.html" style="text-transform: none;">
+                                                                                Fiches valeurs
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/ordres-conditionnels.html" style="text-transform: none;">
+                                                                                Ordres conditionnels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/portefeuille-virtuel.html" style="text-transform: none;">
+                                                                                Portefeuille virtuel
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                        Outils d&#39;analyses
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                                                Analyses techniques
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/analyse-fondamentale.html" style="text-transform: none;">
+                                                                                Analyse fondamentale
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/aide-a-la-decision.html" style="text-transform: none;">
+                                                                                Aide &#224; la d&#233;cision
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/portefeuilles-types.html" style="text-transform: none;">
+                                                                                Portefeuilles types
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/club-des-traders.html" style="text-transform: none;">
+                                                        Club des Traders
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../assurance-vie.html">Assurance Vie</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                        Modes de gestion
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                                                Gestion libre
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/modes-de-gestion/gestion-sous-mandat.html" style="text-transform: none;">
+                                                                                Gestion sous mandat
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                        Supports
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                                                Tous nos supports
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/fonds-euros.html" style="text-transform: none;">
+                                                                                Fonds euros
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/opc.html" style="text-transform: none;">
+                                                                                OPC
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/opc-indiciels.html" style="text-transform: none;">
+                                                                                OPC indiciels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/actions.html" style="text-transform: none;">
+                                                                                Actions
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/performances-assurance-vie.html" style="text-transform: none;">
+                                                        Performances
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/avantages-fiscalite.html" style="text-transform: none;">
+                                                        Fiscalit&#233;
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/adherer-assurance-vie.html" style="text-transform: none;">
+                                                        Comment adh&#233;rer
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/FAQ-assurance-vie.html" style="text-transform: none;">
+                                                        FAQ
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/lexique.html" style="text-transform: none;">
+                                                        Lexique
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown open">
+                            <a class="nav-link dropdown-toggle active" href="../qui-est-binck.html">Qui est Binck</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="pourquoi-choisir-binck.html" style="text-transform: none;">
+                                                        Pourquoi choisir Binck
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="trader-en-ligne.html" style="text-transform: none;">
+                                                        Trader en ligne
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="palmares.html" style="text-transform: none;">
+                                                        Palmar&#232;s
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  open">
+                                                    <a class="nav-link active" href="presse.html" style="text-transform: none;">
+                                                        Binck dans la presse
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="communiques-de-presse/2020.html" style="text-transform: none;">
+                                                        Communiqu&#233;s de presse
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2020.html" style="text-transform: none;">
+                                                                                2020
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2019.html" style="text-transform: none;">
+                                                                                2019
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2018.html" style="text-transform: none;">
+                                                                                2018
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2017.html" style="text-transform: none;">
+                                                                                2017
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2016.html" style="text-transform: none;">
+                                                                                2016
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2015.html" style="text-transform: none;">
+                                                                                2015
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2014.html" style="text-transform: none;">
+                                                                                2014
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2013.html" style="text-transform: none;">
+                                                                                2013
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2012.html" style="text-transform: none;">
+                                                                                2012
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="communiques-de-presse/2011.html" style="text-transform: none;">
+                                                                                2011
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="rapports-financiers.html" style="text-transform: none;">
+                                                        Rapports financiers
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../formations-trading.html">Formations</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../formations-trading/espace-bourse-pratique.html" style="text-transform: none;">
+                                                        Espace Bourse Pratique
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../formations-trading/dictionnaire-financier.html" style="text-transform: none;">
+                                                        Dictionnaire financier
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../formations-trading/investir-en-bourse-sur-binck-fr.html" style="text-transform: none;">
+                                                        Investir en bourse sur Binck.fr
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../actualites/analyses.html">Actualit&#233;s</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../actualites/analyses.html" style="text-transform: none;">
+                                                        Analyses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../actualites/calendrier-boursier.html" style="text-transform: none;">
+                                                        Calendrier boursier
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link  " href="../binck-tv.html">Binck TV</a>
+                        </li>
+            
+                <li class="nav-item visible-xs">
+<a href="../contact.html" class="nav-link">Contacts</a>                </li>
+                            <li class="nav-item visible-xs">
+                    <a class="nav-link" href="../devenir-client.html" >Devenir client</a>
+                </li>
+                    </ul>
+        
+            <ul class="nav navbar-nav navbar-right secondary-nav navbar-collapse collapse" id="secondary-nav-right">
+                <div class="form-group has-search">
+                    <input id="search-box" class="form-control" type="search" placeholder="Recherche ..." data-toggle="pill" data-target="#searchresult" data-search-page="/search-results" data-index-catalog="searchfrance">
+                </div>
+            </ul>
+    </div>
+</nav>
+    <nav class="levelmenu alt">
+        <div class="container-fluid-lg">
+            <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="pourquoi-choisir-binck.html">Pourquoi choisir Binck</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="trader-en-ligne.html">Trader en ligne</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="palmares.html">Palmar&#232;s</a>
+                    </li>
+                    <li class="nav-item  open">
+                        <a class="nav-link  active" href="presse.html">Binck dans la presse</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="communiques-de-presse/2020.html">Communiqu&#233;s de presse</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="rapports-financiers.html">Rapports financiers</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<div class="lane  bg-image fixed-image bg-darkgrey  has-halfrudder has-tail" 
+     style="background-image: url('../images/librariesprovider6/bgd/header-251d40.jpg?sfvrsn=85a08634_4')" >
+    <div class="container text-center text-white " >
+<h1 class="h1  ">Binck dans la presse</h1>                    <div class="littleruler"></div>
+        <p class="lead">Cet espace s'adresse à tous les investisseurs particuliers, aux journalistes et aux professionnels de la communication souhaitant s'informer sur l'actualité de Binck.fr et ses différents services.</p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane tail">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C122_Col00" class="sf_colsIn col-xs-12">
+<div class="card has-bubble  " data-icon="&#xf095;"   >        <div class="card-block text-center">
+            <h2 class="h2  ">Contacts Presse</h2>
+            <p class="card-text"><table class="table" >
+    <colgroup><col><col></colgroup>
+    <tbody>
+        <tr>
+            <td class="text-center">
+            <h3>Caroline Schiro</h3>
+            01 70 36 71 10  <br>
+            <a href="mailto:cschiro@binck.fr" title="" class="" target="">cschiro@binck.fr</a></td>
+            <td class="text-center">
+            <h3>Cynthia Eang</h3>
+            01 70 36 70 76<br>
+            <a href="mailto:ceang@binck.fr" title="" class="" target="">ceang@binck.fr</a></td>
+        </tr>
+    </tbody>
+</table></p>
+        </div>
+</div>
+            </div> 
+        </div>
+    </div>
+</div><div class="lane tail">
+    <div class="container">
+        <div class="sf_cols row bg-white">
+            <div id="cpMain_C092_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p class="h1">2019</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">JANVIER</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">9 janvier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.francetransactions.com/actus/assurancevie/assurance-vie-binck-vie-une-gestion-sous-mandat-exclusive-et-individualisee.html" title="Assurance-vie Binck Vie : une gestion sous mandat exclusive et individualisée, assistée par le robo-advisor BinckBank" class="" target="_blank">Assurance-vie Binck Vie : une gestion sous mandat exclusive et individualis&eacute;e, assist&eacute;e par le robo-advisor BinckBank</a></h2>
+    [Le nouveau contrat d&rsquo;assurance-vie de Binck.fr, Binck Vie, 100% en ligne, permet d&rsquo;opter pour la gestion sous mandat, d&egrave;s 300&euro; de versement.]<br>
+    <strong>FranceTransactions.com</strong>
+    </div>
+    </li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+            </div> 
+        </div>
+    </div>
+</div><div class="lane">
+    <div class="container">
+        <div class="sf_cols row bg-white">
+            <div id="cpMain_C114_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p class="h1">2018</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">DÉCEMBRE</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">31 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.capital.fr/votre-argent/2018-un-bilan-tres-noir-pour-les-marches-1321628" title="2018 : un bilan très noir pour les marchés" class="" target="_blank">2018 : un bilan tr&egrave;s noir pour les march&eacute;s</a></h2>
+    [&ldquo;Plus de la moiti&eacute; des 40 principaux indices actions de la plan&egrave;te ont accus&eacute; une perte de plus de 20% depuis leurs pics annuels, ce qui n&rsquo;augure rien de bon pour 2019&rdquo;, souligne Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr.]<br>
+    <strong>Nicolas Gallant, Capital.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">27 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.cbanque.com/actu/71674/rachat-de-binck-par-saxo-bank-quelles-consequences-pour-les-clients" title="Rachat de Binck par Saxo Bank : quelles conséquences pour les clients ?" class="" target="_blank">Rachat de Binck par Saxo Bank : quelles cons&eacute;quences pour les clients ? </a></h2>
+    [&laquo; A court et moyen terme, cette fusion n'entra&icirc;ne aucun changement pour les clients &raquo;, explique ainsi Binck.fr.]<br>
+    <strong>Marie-Eve FR&Eacute;NAY, cBanque.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">21 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-nicolas-cheron-vs-jean-louis-cussac-2112-1127215.html" title="Le Match des Traders : Nicolas Chéron VS  Jean-Louis Cussac" class="" target="_blank">Le Match des Traders : Nicolas Ch&eacute;ron VS  Jean-Louis Cussac</a></h2>
+    Le Match des Traders a oppos&eacute; : Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, et Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil .<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">20 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.cerclefinance.com/default.asp?pub=valactu&amp;art=538067" title="La Bourse de New York repart à la baisse jeudi matin, au lendemain d'un rendez-vous avec la Fed qui avait déjà été clairement sanctionné par les opérateurs." class="" target="_blank">La Bourse de New York repart &agrave; la baisse jeudi matin, au lendemain d'un rendez-vous avec la Fed qui avait d&eacute;j&agrave; &eacute;t&eacute; clairement sanctionn&eacute; par les op&eacute;rateurs.</a></h2>
+    [Loin du rally de No&euml;l escompt&eacute;, les march&eacute;s d'actions am&eacute;ricains se dirigent donc vers un "triste mois de d&eacute;cembre", comme le constatent avec amertume les &eacute;quipes de Binck.fr.]<br>
+    <strong>CercleFinance.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">18 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.banques-en-ligne.fr/actualites/detail.php?idactu=3714%2Fcourtiers-en-ligne-une-offre-pour-chaque-profil-d-investisseur" title="Courtiers en ligne : une offre pour chaque profil d'investisseur" class="" target="_blank">Courtiers en ligne : une offre pour chaque profil d'investisseur</a></h2>
+    [Binck.fr, le broker aux 70.000 comptes client, diversifie ainsi sa gamme de produits en lan&ccedil;ant Binck Vie, un contrat d&rsquo;assurance vie en gestion libre ou en gestion sous mandat (ce mode &eacute;tant appuy&eacute; par un robo-advisor).]<br>
+    <strong>banques-en-ligne.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">17 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.cerclefinance.com/default.asp?pub=valactu&amp;art=537499" title="BinckBank : Accord pour une OPA par Saxo Bank" class="" target="_blank">BinckBank : Accord pour une OPA par Saxo Bank</a></h2>
+    [BinckBank et Saxo Bank indiquent avoir conclu un accord conditionnel sur une offre publique d'achat.]<br>
+    <strong>CercleFinance.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">14 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-jean-louis-cussac-vs-nicolas-cheron-1412-1125351.html" title="Le Match des Traders: Jean-Louis Cussac VS Nicolas Chéron" class="" target="_blank">Le Match des Traders: Jean-Louis Cussac VS Nicolas Ch&eacute;ron</a></h2>
+    Le Match des Traders a oppos&eacute; : Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil, et Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">11 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.tradingsat.com/quantum-genomics-FR0011648971/actualites/quantum-genomics-comment-quantum-genomics-a-rebondi-de-170-en-deux-mois-839353.html" title="Comment Quantum Genomics a rebondi de 170% en deux mois" class="" target="_blank">Comment Quantum Genomics a rebondi de 170% en deux mois</a></h2>
+    [Nicolas Ch&eacute;ron, responsable de la recherche chez Binck.fr, met toutefois en garde : "Quantum a profit&eacute; de bonnes nouvelles, de bons r&eacute;sultats et de beaux projets. Elle a ainsi &eacute;t&eacute; la
+    seule valeur vraiment haussi&egrave;re de ces 2-3 derniers mois avec de beaux volumes historiques."]<br>
+    <strong>TradingSat.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">10 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/integrale-bourse-du-lundi-10-decembre-2018-1124151.html" title="Intégrale Bourse du lundi 10 décembre 2018" class="" target="_blank">Int&eacute;grale Bourse du lundi 10 d&eacute;cembre 2018</a></h2>
+    Avec : Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">7 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-nicolas-cheron-vs-jean-louis-cussac-0712-1123526.html" title="Le Match des Traders : Nicolas Chéron VS  Jean-Louis Cussac" class="" target="_blank">Le Match des Traders : Nicolas Ch&eacute;ron VS  Jean-Louis Cussac</a></h2>
+    Le Match des Traders a oppos&eacute; : Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, et Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil .<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">5 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.tvfinance.fr/video-finance/edito-les-investisseurs-inquiets-en-cette-fin-dannee-lactualite-hebdomadaire-des-marches-par-sg-bourse-live/" title="Les investisseurs inquiets en cette fin d’année" class="" target="_blank">Les investisseurs inquiets en cette fin d&rsquo;ann&eacute;e</a></h2>
+    [La nouvelle Assurance-Vie 100% en ligne par Binck.fr et les ETF (OPC indiciels) dans l&rsquo;enveloppe Assurance-Vie.]<br>
+    <strong>tvfinance.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">5 d&eacute;cembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://billetdebanque.panorabanques.com/epargne/binck-vie-2/" title="Binck Vie, l'assurance-vie nouvelle génération" class="" target="_blank">Binck Vie, l'assurance-vie nouvelle g&eacute;n&eacute;ration</a></h2>
+    [Binck.fr, courtier sp&eacute;cialis&eacute; dans la bourse en ligne et l&rsquo;&eacute;pargne, &eacute;largit sa gamme de produits financiers et propose d&eacute;sormais une offre d&rsquo;assurance vie nouvelle g&eacute;n&eacute;ration : Binck Vie.]<br>
+    <strong>billetdebanque.panorabanques.com</strong>
+    </div>
+    </li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">NOVEMBRE</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">28 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.tradingsat.com/europacorp-FR0010490920/actualites/europacorp-malgre-les-accusations-contre-besson-europacorp-bondit-en-bourse-837595.html" title="Malgre les accusations contre Besson, Europacorp bondit en bourse" class="" target="_blank">Malgr&eacute; les accusations contre Besson, Europacorp bondit en bourse</a></h2>
+    [Selon Nicolas Ch&eacute;ron, responsable de la recherche chez Binck.fr, il s'agirait avant tout d'un rebond technique, apr&egrave;s la d&eacute;gringolade quasi continue du titre depuis mai.]<br>
+    <strong>Quentin Soubranne, TradingSat.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">23 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/frEuroRpt/idFRL8N1XW4C8" title="La crainte d'une correction plus profonde prend de l'ampleur" class="" target="_blank">La crainte d'une correction plus profonde prend de l'ampleur</a></h2>
+    [&ldquo;Cet indice est techniquement entré en marché baissier ou &ldquo;bear market&rdquo;, tout comme 30% des indices de la planète en 2018&rdquo;, note Nicolas Ch&eacute;ron, responsable de la recherche March&eacute;s pour Binck.fr.] <br>
+    <strong>Patrick Vignal, Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">20 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.challenges.fr/high-tech/pourquoi-le-bitcoin-devisse-brutalement_627240" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Pourquoi le bitcoin dévisse brutalement" class="" target="_blank">Pourquoi le bitcoin d&eacute;visse brutalement</a></h2>
+    [Pour Nicolas Ch&eacute;ron, responsable de la recherche chez Binck.fr, il y a eu un sur-engouement. &laquo; Quand on regarde les vid&eacute;os sur Internet, 80% des intervenants sont acheteurs. Il y a eu un ph&eacute;nom&egrave;ne de consensus, tout le monde &eacute;tait &agrave; l&rsquo;achat...]<br>
+    <strong>Paul Loubi&egrave;re, Challenges.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">20 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.capital.fr/entreprises-marches/le-plongeon-des-gafa-en-bourse-pourrait-donner-le-coup-denvoi-dun-krach-1316153" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le plongeon des GAFA en Bourse pourrait donner le coup d’envoi d’un krach" class="" target="_blank">Le plongeon des GAFA en Bourse pourrait donner le coup d&rsquo;envoi d&rsquo;un krach</a></h2>
+    [Un ph&eacute;nom&egrave;ne inqui&eacute;tant, tant pour l&rsquo;avenir des valeurs technologiques que pour celui des march&eacute;s d&rsquo;actions mondiaux, selon Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour le courtier en ligne Binck.fr.]<br>
+    <strong>Nicolas Gallant, Capital.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">20 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.tradingsat.com/parrot-FR0004038263/actualites/parrot-avant-l-annonce-de-ses-resultats-trimestriels-parrot-en-chute-libre-836219.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Parrot : Avant l'annonce de ses résultats trimestriels, Parrot en chute libre" class="" target="_blank">Parrot : Avant l'annonce de ses r&eacute;sultats trimestriels, Parrot en chute libre</a></h2>
+    [Selon Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr,  "toutes les petites valeurs d&eacute;rouillent &agrave; cause du CAC 40 et Parrot plus qu'une autre car il y a d&eacute;j&agrave; un mouvement
+    baissier de base sur ce titre"...]<br>
+    <strong>Quentin Soubranne, TradingSat.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">16 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-jean-louis-cussac-vs-nicolas-cheron-1611-1117849.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le Match des Traders : Jean-Louis Cussac VS Nicolas Chéron" class="" target="_blank">Le Match des Traders : Jean-Louis Cussac VS Nicolas Ch&eacute;ron</a></h2>
+    Le Match des Traders a oppos&eacute; : Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil, et Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">12 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.capital.fr/votre-argent/assurance-vie-il-est-de-plus-en-plus-facile-dinvestir-en-direct-dans-les-actions-1315964" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Assurance-vie : il est de plus en plus facile d'investir en direct dans les actions !" class="" target="_blank">Assurance-vie : il est de plus en plus facile d'investir en direct dans les actions !</a></h2>
+    [... Binck.fr vient de lancer Binck Vie, un contrat d&rsquo;assurance vie offrant la possibilit&eacute; d&rsquo;investir en direct, avec des frais et un ticket d&rsquo;entr&eacute;e limit&eacute;s. 30 actions du CAC40 sont propos&eacute;es...]<br>
+    <strong>Nicolas Gallant, Capital.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">12 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.latribune.fr/supplement/binck-fr-presente-sa-nouvelle-assurance-vie-797176.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Binck.fr présente sa nouvelle assurance vie" class="" target="_blank">Binck.fr pr&eacute;sente sa nouvelle assurance vie</a></h2>
+    [Apr&egrave;s une ann&eacute;e 2018 r&eacute;ussie, Binck.fr lance son offre d'assurance vie. Mathias Baccino, Directeur G&eacute;n&eacute;ral, pr&eacute;sente l'offre Binck Vie et en quoi elle se distingue des assurances habituelles.]<br>
+    <strong>LaTribune.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]6ef7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/default-album/logo-boursierbd45.jpg?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=75FF330D0CFC5F1DE5BDFDEF458CC799" data-displaymode="Custom" alt="Logo boursier" title="logo-boursier" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" align="right">
+<span class="badge badge-xs">6 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.boursier.com/actions/actualites/news/binck-fr-lance-un-premier-contrat-d-assurance-vie-innovant-et-performant-binck-vie-779811.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Binck.fr lance un premier contrat d'assurance vie &quot;innovant et performant&quot;, Binck Vie" class="" target="_blank">Binck.fr lance un premier contrat d'assurance vie "innovant et performant", Binck Vie</a></h2>
+    [Apr&egrave;s 10 ans de pr&eacute;sence en France, Binck.fr acc&eacute;l&egrave;re son d&eacute;veloppement en lan&ccedil;ant un premier contrat d'assurance vie innovant et performant, Binck Vie, assur&eacute; par Generali Vie.]<br>
+    <strong>Claude Leguilloux, Boursier.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">6 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.cbanque.com/actu/70548/binck-vie-une-synthese-de-ce-qui-se-fait-de-mieux-sur-assurance-vie-en-ligne" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Binck Vie : « une synthèse de ce qui se fait de mieux sur l'assurance-vie en ligne »" class="" target="_blank">Binck Vie : &laquo; une synth&egrave;se de ce qui se fait de mieux sur l'assurance-vie en ligne &raquo;</a></h2>
+    Interview de Matthias Baccino, Directeur G&eacute;n&eacute;ral, et Mathieu Ramadier, Business Development Manager chez Binck.fr <br>
+    <strong>Beno&icirc;t Lety, cBanque.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">3 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.lemonde.fr/economie/article/2018/11/03/apres-un-octobre-noir-la-bourse-devrait-rester-febrile_5378445_3234.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Après un octobre noir, la Bourse devrait rester fébrile" class="" target="_blank">Apr&egrave;s un octobre noir, la Bourse devrait rester f&eacute;brile</a></h2>
+    [&laquo; Apr&egrave;s neuf ann&eacute;es de croissance, une fois que l&rsquo;effet des mesures de relance de Trump se sera estomp&eacute;, le cycle am&eacute;ricain pourrait toucher &agrave; sa fin courant 2019, estime Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chezBinck.fr...]<br>
+    <strong>Marie Charrel et V&eacute;ronique Chocron, LeMonde.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">2 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-jean-louis-cussac-vs-nicolas-cheron-0211-1114027.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le Match des Traders : Jean-Louis Cussac VS Nicolas Chéron" class="" target="_blank">Le Match des Traders : Jean-Louis Cussac VS Nicolas Ch&eacute;ron</a></h2>
+    Le Match des Traders a oppos&eacute; : Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil, et Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">2 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.tradingsat.com/claranova-FR0004026714/actualites/claranova-le-titre-profite-d-un-regain-d-interet-des-acheteurs-833457.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Claranova : Le titre profite d'un regain d'intérêt des acheteurs" class="" target="_blank">Claranova : Le titre profite d'un regain d'int&eacute;r&ecirc;t des acheteurs</a></h2>
+    [Le responsable de la recherche march&eacute;s pour Binck.fr,  Nicolas Ch&eacute;ron, estime que Claranova, "comme de nombreuses small et midcaps, profite du regain d'int&eacute;r&ecirc;t des acheteurs de court terme...]<br>
+    <strong>Quentin Soubranne, TradingSat.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">2 novembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.banques-en-ligne.fr/actualites/detail.php?idactu=3700%2Fbinck-fr-meilleur-service-client-2019" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Binck.fr, meilleur Service Client 2019" class="" target="_blank">Binck.fr, meilleur Service Client 2019</a></h2>
+    [Pour la deuxi&egrave;me ann&eacute;e d'affil&eacute;e, Binck.fr est &eacute;lu &laquo; Service Client 2019 &raquo; dans la cat&eacute;gorie Bourse en ligne par une &eacute;tude BVA Group/Vis&eacute;o CI. Le courtier en ligne d&eacute;croche aussi le titre de la meilleure plateforme de trading 2018 du prix Investment Trends.]<br>
+    <strong>Olivier B., Banques-en-Ligne.fr</strong>
+    </div>
+    </li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">OCTOBRE</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">31 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.sensduclient.com/2018/10/faites-du-bruit-pour-elu-service-client.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Faites du bruit pour Elu Service Client de l'Année 2019" class="" target="_blank">Faites du bruit pour Elu Service Client de l'Ann&eacute;e 2019</a></h2>
+    [Binck.fr (Bourse en ligne) est &eacute;lu pour la deuxi&egrave;me ann&eacute;e cons&eacute;cutive. "La satisfaction des clients d&eacute;pend de la satisfaction des salari&eacute;s" affirmait sur sc&egrave;ne Matthias Baccino, son Directeur g&eacute;n&eacute;ral.]<br>
+    <strong>SensduClient.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">26 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-nicolas-cheron-vs-jean-louis-cussac-2610-1112210.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le Match des Traders : Nicolas Chéron VS Jean-Louis Cussac" class="" target="_blank">Le Match des Traders : Nicolas Ch&eacute;ron VS Jean-Louis Cussac</a></h2>
+    Le Match des Traders a oppos&eacute; : Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, et Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right"><span class="badge badge-xs">25 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/businessNews/idFRKCN1MZ1WT-OFRBS" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Les banques françaises sous haute surveillance au troisième trimestre avec l'Italie" class="" target="_blank">Les banques fran&ccedil;aises sous haute surveillance au troisi&egrave;me trimestre avec l'Italie</a></h2>
+    [Pour Nicolas Ch&eacute;ron, responsable de la recherche March&eacute;s pour Binck.fr, malgr&eacute; l&rsquo;Italie, les valeurs bancaires fran&ccedil;aises ont un potentiel de rebond...] <br>
+    <strong>Matthieu Protard, Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">22 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.cerclefinance.com/default.asp?pub=valactu&amp;localcode=&amp;isin=NL0000335578&amp;art=532057" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="BinckBank: un solide troisième trimestre" class="" target="_blank">BinckBank: un solide troisi&egrave;me trimestre</a></h2>
+    [BinckBank N.V. a fait &eacute;tat ce lundi matin d'un b&eacute;n&eacute;fice net de 27,6 millions d'euros au titre des trois premiers trimestres de son exercice, "en forte progression d'une ann&eacute;e sur l'autre".]<br>
+    <strong>CercleFinance.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">22 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.wansquare.com/012-25308-L-Italie-s-entete-sur-le-budget.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="L'Italie s'entête sur le budget" class="" target="_blank">L'Italie s'ent&ecirc;te sur le budget</a></h2>
+    ["Cette tentative de passage en force ne devrait pas plaire &agrave; la Commission europ&eacute;enne, mais les march&eacute;s semblent lass&eacute;s de ce dossier et les r&eacute;actions se font de moins en moins violentes", explique Nicolas Cheron responsable de la recherche march&eacute;s chez Binck.fr.]<br>
+    <strong>Wansquare.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">19 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-nicolas-cheron-vs-jean-louis-cussac-1910-1110317.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le Match des Traders : Nicolas Chéron VS Jean-Louis Cussac" class="" target="_blank">Le Match des Traders : Nicolas Ch&eacute;ron VS Jean-Louis Cussac</a></h2>
+    Le Match des Traders a oppos&eacute; : Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, et Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]6ef7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/default-album/logo-boursierbd45.jpg?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=75FF330D0CFC5F1DE5BDFDEF458CC799" data-displaymode="Custom" alt="logo boursier" title="logo-boursier" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" align="right">
+<span class="badge badge-xs">19 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.boursier.com/actions/actualites/news/binck-fr-elu-service-client-de-l-annee-pour-la-deuxieme-fois-consecutive-778286.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Binck.fr élu service client de l'année pour la deuxième fois consécutive" class="" target="_blank">Binck.fr &eacute;lu service client de l'ann&eacute;e pour la deuxi&egrave;me fois cons&eacute;cutive</a></h2>
+    [Binck.fr, la succursale fran&ccedil;aise du groupe BinckBank, sp&eacute;cialiste de la
+    bourse en ligne en Europe, a &eacute;t&eacute; &eacute;lue Service Client de l'Ann&eacute;e 2019 dans la cat&eacute;gorie Bourse en
+    ligne selon une &eacute;tude BVA Group.]<br>
+    <strong>Boursier.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">18 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://leparticulier.lefigaro.fr/article/les-3-nouveaux-produits-et-services-selectionnes-par-le-particulier-en-novembre-2018/" sfref="[documents|librariesProvider6]13037ccc-219e-61cd-bc43-ff0100e84d35" title="Les 3 nouveaux produits et services sélectionnés par Le Particulier en novembre 2018" class="" target="">Les 3 nouveaux produits et services s&eacute;lectionn&eacute;s par Le Particulier en novembre 2018</a></h2>
+    [Le courtier en ligne Binck.fr se lance dans l&rsquo;assurance vie avec Binck Vie.]<br>
+    <strong>Le Particulier</strong><br>
+    </div>
+    </li>
+</ul>
+<hr>
+<img src="../images/librariesprovider6/Qui-est-Binck/logos-presse/logo-lerevenu8b3b.gif?sfvrsn=0.29883945477195084" alt="Logo lerevenu" title="logo-lerevenu" sfref="[images|librariesProvider6]73cafccb-219e-61cd-bc43-ff0300e84d35" align="right">
+<span class="badge badge-xs">18 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.lerevenu.com/placements/assurance-vie/assurance-vie-en-ligne-les-offres-se-multiplient" sfref="[documents|librariesProvider6]13037ccc-219e-61cd-bc43-ff0100e84d35" title="Assurance vie en ligne : les offres se multiplient !" class="" target="">Assurance vie en ligne : les offres se multiplient !</a></h2>
+    [Binck.fr broker bien connu des investisseurs actifs en Bourse qui recense 70.000 comptes en France, va lancer le 6 novembre prochain un contrat d&rsquo;assurance vie en ligne assur&eacute; par Generali.]<br>
+    <strong>Henri R&eacute;au, Le Revenu</strong><br>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">15 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://patrimoine.lesechos.fr/placement/placement-boursier/0302412668655-bourse-faut-il-vendre-maintenant-2213676.php" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Bourse : faut-il vendre maintenant ?" class="" target="_blank">Bourse : faut-il vendre maintenant ?</a></h2>
+    [Pour Nicolas Ch&eacute;ron, responsable de la recherche actions chez Binck.fr, il est urgent d'attendre.]<br>
+    <strong>Marie-Christine Sonkin, LesEchos.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img src="../images/librariesprovider6/Qui-est-Binck/logos-presse/logo-lerevenu8b3b.gif?sfvrsn=0.29883945477195084" alt="Logo lerevenu" title="logo-lerevenu" sfref="[images|librariesProvider6]73cafccb-219e-61cd-bc43-ff0300e84d35" align="right">
+<span class="badge badge-xs">11 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.lerevenu.com/placements/sicav-et-fcp/bourse-reveillez-votre-pea-avec-des-sicav-sans-frais-dentree" sfref="[documents|librariesProvider6]13037ccc-219e-61cd-bc43-ff0100e84d35" title="Bourse : réveillez votre PEA avec des sicav sans frais d'entrée" class="" target="">Bourse : r&eacute;veillez votre PEA avec des sicav sans frais d'entr&eacute;e</a></h2>
+    [Vous trouvez 200 fonds &agrave; 0% chez Binck.fr ...]<br>
+    <strong>Aline Fauvarque, Le Revenu</strong><br>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">11 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-nicolas-cheron-vs-jean-louis-cussac-1110-1108170.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le Match des Traders : Nicolas Chéron VS Jean-Louis Cussac" class="" target="_blank">Le Match des Traders : Nicolas Ch&eacute;ron VS Jean-Louis Cussac</a></h2>
+    Le Match des Traders a oppos&eacute; : Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil, et Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">10 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.tradingsat.com/lvmh-FR0000121014/actualites/lvmh-sous-pression-lvmh-devoile-ses-resultats-en-chine-829293.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Sous pression, LVMH dévoile ses résultats en Chine" class="" target="_blank">Sous pression, LVMH d&eacute;voile ses r&eacute;sultats en Chine</a></h2>
+    ["Le g&eacute;ant du luxe a publi&eacute; de bons r&eacute;sultats mais son cours en refl&egrave;te d&rsquo;excellents", estime Nicolas Ch&eacute;ron, responsable de la recherche actions de Binck.fr]<br>
+    <strong>Tradingsat.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">8 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/tour-d-horizon-de-l-actualite-economique-et-financiere-americaine-avec-john-plassard-et-nicolas-cheron-0810-1107326.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Tour d'horizon de l'actualité économique et financière américaine avec John Plassard et Nicolas Chéron" class="" target="_blank">Tour d'horizon de l'actualit&eacute; &eacute;conomique et financi&egrave;re am&eacute;ricaine avec John Plassard et Nicolas Ch&eacute;ron</a></h2>
+    John Plassard, consultant pour Mirabaud Securities, chez Cambridge Securities (New York), et Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, ont d&eacute;crypt&eacute; l'actualit&eacute; &eacute;conomique et financi&egrave;re am&eacute;ricaine, du lundi 8 octobre 2018.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">5 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.economiematin.fr/news-euphorie-et-dichotomie-boursiere" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Euphorie et dichotomie boursière" class="" target="_blank">Euphorie et dichotomie boursi&egrave;re</a></h2>
+    Article de Nicolas Ch&eacute;ron, responsable de la recherche chez Binck.fr.<br>
+    <strong>EconomieMatin.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]6ef7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/default-album/logo-boursierbd45.jpg?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=75FF330D0CFC5F1DE5BDFDEF458CC799" data-displaymode="Custom" alt="logo boursier" title="logo-boursier" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" align="right">
+<span class="badge badge-xs">5 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.boursier.com/actions/actualites/news/technicolor-une-tres-belle-semaine-777017.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Technicolor : une très belle semaine" class="" target="_blank">Technicolor : une tr&egrave;s belle semaine</a></h2>
+    ["Certains op&eacute;rateurs &agrave; la recherche de volatilit&eacute; portent leur attention sur des titres survendus, &agrave; proximit&eacute; de supports historiques, comme c'&eacute;tait le cas de Technicolor ce matin", expliquait mercredi Nicolas Ch&eacute;ron, responsable de la recherche chez Binck.fr.]<br>
+    <strong>Boursier.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]6ef7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/default-album/logo-boursierbd45.jpg?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=75FF330D0CFC5F1DE5BDFDEF458CC799" data-displaymode="Custom" alt="logo boursier" title="logo-boursier" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" align="right">
+<span class="badge badge-xs">3 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.boursier.com/actions/actualites/news/technicolor-gros-coup-de-chaud-776763.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Technicolor : gros coup de chaud" class="" target="_blank">Technicolor : gros coup de chaud</a></h2>
+    [Selon Nicolas Ch&eacute;ron, responsable de la recherche chez Binck.fr, cit&eacute; par Reuters, la sp&eacute;culation du
+    jour est &agrave; mettre... ]<br>
+    <strong>Boursier.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">3 octobre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/technologyNews/idFRKCN1MD1BJ-OFRIN" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Technicolor grimpe, spéculations sur une box Bouygues Telecom" class="" target="_blank">Technicolor grimpe, sp&eacute;culations sur une box Bouygues Telecom</a></h2>
+    [Selon Nicolas Ch&eacute;ron, responsable de la recherche March&eacute;s pour Binck.fr, la hausse pourrait s&rsquo;expliquer pour partie par ...] <br>
+    <strong>Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">SEPTEMBRE</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">28 septembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-nicolas-cheron-vs-jean-louis-cussac-2809-1105040.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le Match des Traders : Nicolas Chéron VS Jean-Louis Cussac" target="_blank">Le Match des Traders : Nicolas Ch&eacute;ron VS Jean-Louis Cussac</a></h2>
+    Le Match des Traders a oppos&eacute; : Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, et Jean-Louis Cussac, trader pour compte propre chez Perceval Finance Conseil.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">21 septembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/le-match-des-traders-nicolas-cheron-vs-matthieu-ceronne-2109-1103220.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le Match des Traders : Nicolas Chéron VS Matthieu Céronne" target="_blank">Le Match des Traders : Nicolas Ch&eacute;ron VS Matthieu C&eacute;ronne</a></h2>
+    Le Match des Traders a oppos&eacute; : Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, et&nbsp;Matthieu C&eacute;ronne, trader pour compte propre chez Perceval Finance.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">19 septembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://bfmbusiness.bfmtv.com/mediaplayer/video/les-tendances-sur-les-marches-les-investisseurs-digerent-les-developpements-de-la-guerre-commerciale-entre-les-etats-unis-et-la-chine-1909-1102701.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Les tendances sur les marchés" target="_blank">Int&eacute;grale bourse : les tendances sur les march&eacute;s</a></h2>
+    Quentin Perromat, directeur g&eacute;n&eacute;ral et responsable de la gestion d'AssetFi, et Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr, ont d&eacute;crypt&eacute; les tendances sur les march&eacute;s.<br>
+    <strong>Bfmbusiness.bfmtv.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">20 septembre</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.agefi.fr/emploi/actualites/hebdo/20180927/banques-en-ligne-l-esprit-start-up-256516" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Banques en ligne : l’esprit start-up" target="_blank">Banques en ligne : l&rsquo;esprit start-up</a></h2>
+    [Pour s&eacute;duire les candidats, les banques en ligne avancent d&rsquo;autres arguments comme la taille de leur structure, &agrave; l&rsquo;instar de Binck.fr]<br>
+    <strong>Agefi.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">AOÛT</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">30 ao&ucirc;t</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.cerclefinance.com/default.asp?pub=valactu&amp;art=527215" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="BinckBank: nomination au conseil de surveillance" target="_blank">BinckBank: nomination au conseil de surveillance</a></h2>
+    BinckBank fait part ce jeudi de la nomination de J.G. Princen &agrave; son conseil de surveillance<br>
+    <strong>CercleFinance.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">JUILLET</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">27 juillet</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.journaldunet.com/patrimoine/finances-personnelles/1210779-15-applications-mobiles-pour-investir-en-bourse/1210797-binck" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="15 applications mobiles pour trader en bourse" target="_blank">15 applications mobiles pour trader en bourse</a></h2>
+    Binck, pour trader en un clic<br>
+    <strong>Journaldunet.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]6ef7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/default-album/logo-boursierbd45.jpg?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=75FF330D0CFC5F1DE5BDFDEF458CC799" data-displaymode="Custom" alt="Logo boursier" title="logo-boursier" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" align="right">
+<span class="badge badge-xs">23 juillet</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.boursier.com/actions/actualites/news/binckbank-a-realise-un-resultat-net-en-forte-progression-au-s1-2018-771181.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="BinckBank a réalisé un résultat net en forte progression au S1 2018" target="_blank">R&eacute;sulats S1 2018 BinckBank</a></h2>
+    BinckBank a r&eacute;alis&eacute; un r&eacute;sultat net en forte progression au S1 2018<br>
+    <strong>Boursier.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">JUIN</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <img src="../images/librariesprovider6/Qui-est-Binck/logos-presse/logo-journaldesfinances377f.gif?sfvrsn=0.7122614502441138" alt="Logo journal des finances" title="logo-journaldesfinances" sfref="[images|librariesProvider6]63cafccb-219e-61cd-bc43-ff0300e84d35" align="right">
+<span class="badge badge-xs">27 juin</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://investir.lesechos.fr/dossiers/les-champions-de-la-bourse/les-champions-de-la-bourse-ces-valeurs-qui-brillent-sur-3-5-et-10-ans-1775136.php#" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Les champions de la Bourse, ces valeurs qui brillent sur 3, 5 et 10 ans" class="" target="_blank">Les champions de la Bourse, ces valeurs qui brillent sur 3, 5 et 10 ans</a></h2>
+    Pour la deuxi&egrave;me ann&eacute;e, votre journal a remis, cette semaine, ses prix des Champions de la Bourse avec le soutien de ses partenaires Binck.fr, Moneta AM, Girard-Perregaux et Andlil.<br>
+    <strong>Investir.lesechos.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">14 juin</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://labourseauquotidien.fr/comment-choisir-votre-courtier-en-ligne/" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Comment choisir votre courtier en ligne ?" class="" target="_blank">Comment choisir votre courtier en ligne ?</a></h2>
+    [... si vos positions sont inf&eacute;rieures &agrave; 1 000&euro;, alors mieux vaut vous orienter vers des brokers comme Binck.fr...] <br>
+    <strong>Mathieu Lebrun, Labourseauquotidien.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">11 juin</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://photo.capital.fr/la-crise-italienne-va-t-elle-faire-flamber-l-or-et-comment-miser-dessus-29927#comment-miser-simplement-sur-l-or-516602" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="La crise italienne va-t-elle faire flamber l’or ? (et comment miser dessus)" class="" target="_blank">La crise italienne va-t-elle faire flamber l&rsquo;or ? (et comment miser dessus)</a></h2>
+    [...&ldquo;Sur 20 ans, les cours du m&eacute;tal jaune sont haussiers au regard de l&rsquo;oblique qui passe par les plus bas&rdquo;, souligne de son c&ocirc;t&eacute; Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr"...] <br>
+    <strong>Capital.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">MAI</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">17 mai</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/companyNews/idFRL5N1SO3WL" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="LEAD 2-M5S et Ligue s'entendent sur un programme de gouvernement" class="" target="_blank">LEAD 2-M5S et Ligue s'entendent sur un programme de gouvernement</a></h2>
+    [...Les march&eacute;s r&eacute;alisent que la possibilit&eacute; de voir deux partis anti-syst&egrave;me au pouvoir est d&eacute;sormais une r&eacute;alit&eacute;&rdquo;, indique Nicolas Ch&eacute;ron, responsable de la recherche March&eacute;s pour Binck.fr"...] <br>
+    <strong>Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">17 mai</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/businessNews/idFRKCN1II1L6-OFRBS" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Hausse prudente en Europe, les actifs italiens encore délaissés" class="" target="_blank">Hausse prudente en Europe, les actifs italiens encore d&eacute;laiss&eacute;s</a></h2>
+    [...Nicolas Ch&eacute;ron, responsable de la Recherche March&eacute;s pour Binck.fr : "Le manque de visibilit&eacute; sur le programme conjoint du M5S et de la Ligue engendre des sorties de capitaux en amont du vote des militants de ces deux formations ce week-end"...] <br>
+    <strong>Laetitia Volga, Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">15 mai</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.cafedelabourse.com/archive/article/les-meilleures-applications-pour-suivre-la-bourse-sur-votre-iphone" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Les meilleures applications pour suivre la bourse sur votre iPhone" target="_blank">Les meilleures applications pour suivre la bourse sur votre iPhone</a></h2>
+    [... Intuitive, simple et bien s&eacute;curis&eacute;e, [l'application Binck.fr] rend l&rsquo;investissement sur mobile tr&egrave;s facile !...]<br>
+    <strong>Cafedelabourse.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">7 mai</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.capital.fr/entreprises-marches/le-cac40-prend-enfin-sa-revanche-sur-wall-street-et-ca-devrait-vous-inquieter-1286833" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le CAC40 prend enfin sa revanche sur Wall Street (et ça devrait vous inquiéter)" target="_blank">Le CAC40 prend enfin sa revanche sur Wall Street (et &ccedil;a devrait vous inqui&eacute;ter)</a></h2>
+    Interview de Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr.<br>
+    <strong>Nicolas Gallant, Capital.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">AVRIL</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <span class="badge badge-xs">23 avril</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.cerclefinance.com/default.asp?pub=valactu&amp;art=515167" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="BinckBank : forte hausse des bénéfices au 1er trimestre" class="" target="_blank">BinckBank : forte hausse des b&eacute;n&eacute;fices au 1er trimestre</a></h2>
+    [... BinckBank publie un r&eacute;sultat net apr&egrave;s imp&ocirc;ts de 8,5 millions d'euros au titre du premier trimestre 2018, en forte progression d'une ann&eacute;e sur l'autre...] <br>
+    <strong>CercleFinance.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">13 avril</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.capital.fr/entreprises-marches/syrie-russie-chine-coree-du-nord-iran-lor-va-t-il-accelerer-grace-a-donald-trump-1283032" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Syrie, Russie, Chine, Corée du Nord, Iran… L’or va-t-il accélérer grâce à Donald Trump ?" class="" target="_blank">Syrie, Russie, Chine, Cor&eacute;e du Nord, Iran&hellip; L&rsquo;or va-t-il acc&eacute;l&eacute;rer gr&acirc;ce &agrave; Donald Trump ?</a></h2>
+    [... "Certains pourront entrevoir un rounding bottom, d&rsquo;autres une potentielle structure dite en &lsquo;&eacute;paule t&ecirc;te et &eacute;paule invers&eacute;e (ETEI)&rsquo;, toutes deux figures de retournement avec implications haussi&egrave;res, en cas de cassure par le haut&rdquo;, souligne Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr...].<br>
+    <strong>Nicolas Gallant, Capital.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">11 avril</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/companyNews/idFRL8N1RO24L" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Technicolor en tête du SBF 120, rebond après un plus bas de 6 ans" class="" target="_blank">Technicolor en t&ecirc;te du SBF 120, rebond apr&egrave;s un plus bas de 6 ans</a></h2>
+    [... "La hausse du jour semble due &agrave; des facteurs techniques, explique Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s de Binck.fr.]<br>
+    <strong>Marc Angrand et Blandine H&eacute;nault, Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">MARS</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">29 mars</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/businessNews/idFRKBN1H52O5-OFRBS" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Les actions bouclent un trimestre compliqué sur une bonne note" target="_blank">Les actions bouclent un trimestre compliqu&eacute; sur une bonne note</a></h2>
+    [... D&rsquo;autres analystes sont moins alarmistes, &agrave; l&rsquo;image de Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr.]<br>
+    <strong>Patrick Vignal, Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">28 mars</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://votreargent.lexpress.fr/placements/investir-en-bourse-de-l-interet-d-ouvrir-un-compte-en-ligne_1990870.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Investir en Bourse: de l'intérêt d'ouvrir un compte en ligne" class="" target="_blank">Investir en Bourse: de l'int&eacute;r&ecirc;t d'ouvrir un compte en ligne</a></h2>
+    [De son c&ocirc;t&eacute;, Binck.fr fait une promotion z&eacute;ro frais pour toute l'ann&eacute;e 2018 sur les achats et ventes d'actions fran&ccedil;aises effectu&eacute;s sur les comptes ouverts cette ann&eacute;e avant la fin de juin.]<br>
+    <strong>Gilles Pouzin, Lexpress.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">23 mars</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://photo.capital.fr/13-raisons-de-miser-sur-l-or-plutot-que-sur-les-actions-28592#pourquoi-l-or-pourrait-prendre-sa-revanche-sur-les-actions-492187" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="13 raisons de miser sur l’or plutôt que sur les actions" target="_blank">13 raisons de miser sur l&rsquo;or plut&ocirc;t que sur les actions</a></h2>
+    [... &ldquo;sur 20 ans, les cours du m&eacute;tal jaune sont haussiers au regard de l&rsquo;oblique qui passe par les plus bas&rdquo;, souligne Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr...].<br>
+    <strong>Capital.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">5 mars</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.inbanque.com/en-video-matthias-baccino-binck-fr/" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Matthias Baccino et le conseil financier automatisé" target="_blank">Matthias Baccino et le conseil financier automatis&eacute;</a></h2>
+    Retour avec Matthias Baccino, Directeur G&eacute;n&eacute;ral de Binck.fr, interrog&eacute; en marge de la conf&eacute;rence IN BANQUE 2018, sur les robo-advisors, l&rsquo;IA, l&rsquo;&eacute;volution des outils digitaux propos&eacute;s par le courtier en ligne, et la place de l&rsquo;humain malgr&eacute; tout.<br>
+    <strong>Inbanque.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">FÉVRIER</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">19 f&eacute;vrier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/frEuroRpt/idFRL8N1Q920K" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Les marchés disent adieu à Boucles d'or" class="" target="_blank">Les march&eacute;s disent adieu &agrave; Boucles d'or</a></h2>
+    [... "les fondations du march&eacute; haussier que nous connaissons depuis neuf ans maintenant pourraient &ecirc;tre &eacute;branl&eacute;es&rdquo;, avertit Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour le courtier en ligne Binck.fr.]<br>
+    <strong>Patrick Vignal, Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">9 f&eacute;vrier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.huffingtonpost.fr/2018/02/09/cac-40-3-indicateurs-a-surveiller-pour-savoir-si-la-bourse-va-vraiment-paniquer_a_23357229/" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="CAC 40: 3 indicateurs à surveiller pour savoir si la bourse va (vraiment) paniquer" class="" target="_blank">CAC 40: 3 indicateurs &agrave; surveiller pour savoir si la bourse va (vraiment) paniquer</a></h2>
+    [... Si les investisseurs gardent la t&ecirc;te froide, tous sont tous en alerte, &agrave; l'image de Nicolas Ch&eacute;ron, responsable de la Recherche march&eacute; de Binck.fr.]<br>
+    <strong>Jean-Baptiste Duval, Huffingtonpost.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">8 f&eacute;vrier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://lexpansion.lexpress.fr/entreprises/surprise-twitter-a-enfin-reussi-a-gagner-de-l-argent-en-2017_1983325.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Surprise, Twitter a enfin réussi à gagner de l'argent en 2017 " class="" target="_blank">Surprise, Twitter a enfin r&eacute;ussi &agrave; gagner de l'argent en 2017 </a></h2>
+    [..."Twitter cible mieux ses utilisateurs, il propose d&eacute;sormais les cinq ou six tweets qu'il juge les plus int&eacute;ressants. Du coup ceux-ci restent plus longtemps sur le r&eacute;seau social", rel&egrave;ve Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s pour Binck.fr Binck.fr.]<br>
+    <strong>Laurent Martinet, Lexpansion.Lexpress.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]6ef7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/default-album/logo-boursierbd45.jpg?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=75FF330D0CFC5F1DE5BDFDEF458CC799" data-displaymode="Custom" alt="Logo boursier" title="logo-boursier" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" align="right">
+<span class="badge badge-xs">7 f&eacute;vrier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.boursier.com/opcvm/actualites/interviews/nicolas-cheron-responsable-de-la-recherche-marches-chez-binck-fr-4633.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Interview de Nicolas Chéron, Responsable de la Recherche Marchés chez Binck.fr" class="" target="_blank">Interview de Nicolas Ch&eacute;ron, Responsable de la Recherche March&eacute;s chez Binck.fr</a></h2>
+    "Chaque fois que l'on a vu les flux s'inverser en faveur de l'Europe, on a observ&eacute; ensuite une forte correction..."<br>
+    <strong>Didier Hameau, Boursier.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">3 f&eacute;vrier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.lemonde.fr/argent/article/2018/02/03/frais-de-courtage-en-bourse-la-guerre-des-tarifs-est-relancee_5251254_1657007.html" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Frais de courtage en Bourse : la guerre des tarifs est relancée" class="" target="_blank">Frais de courtage en Bourse : la guerre des tarifs est relanc&eacute;e</a></h2>
+    [..."Entre 80 et 85 % de nos clients n&rsquo;op&egrave;rent que sur Euronext (Paris, Bruxelles et Amsterdam)", constate de son c&ocirc;t&eacute; Matthias Baccino, directeur g&eacute;n&eacute;ral de Binck.fr, qui compte 70000 clients.]<br>
+    <strong>Agn&egrave;s Lambert, Lemonde.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">JANVIER</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                <img src="../images/librariesprovider6/Qui-est-Binck/logos-presse/logo-lagefi77f3.gif?sfvrsn=0.8896887795999646" alt="Logo lagefi" title="logo-lagefi" sfref="[images|librariesProvider6]cdc9fccb-219e-61cd-bc43-ff0300e84d35" align="right">
+<span class="badge badge-xs">24 janvier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="http://www.agefi.fr/asset-management/actualites/video/20180124/hausse-l-euro-doit-inciter-bce-statu-quo-monetaire-238182" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="La hausse de l’euro doit inciter la BCE au statu quo monétaire" class="" target="_blank">La hausse de l&rsquo;euro doit inciter la BCE au statu quo mon&eacute;taire</a></h2>
+    Interview de Nicolas Ch&eacute;ron, Responsable de la recherche march&eacute;s pour Binck.fr.<br>
+    <strong>Laurent Chemineau, Agefi.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<img sfref="[images|librariesProvider6]e6f7c4cc-219e-61cd-bc43-ff0100e84d35" src="../images/librariesprovider6/Qui-est-Binck/logos-presse/reuters-logodbf7c4cc219e61cdbc43ff0100e84d35d21a.png?sfvrsn=0&amp;MaxWidth=75&amp;MaxHeight=23&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=4FCE27D8E01B6A7C7156630C26B77DA1" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;75&quot;,&quot;MaxHeight&quot;:&quot;23&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom" alt="Logo Reuters" title="Reuters-logo" align="right">
+<span class="badge badge-xs">10 janvier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fr.reuters.com/article/companyNews/idFRL8N1P52JM" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Les actions creusent leurs pertes avec la remontée des rendements" target="_blank">Les actions creusent leurs pertes avec la remont&eacute;e des rendements</a></h2>
+    [... "Les autorit&eacute;s chinoises consid&egrave;rent d&eacute;sormais les bons du tr&eacute;sor am&eacute;ricain comme moins attractifs qu'auparavant. Cette annonce affecte le dollar mais surtout la capacit&eacute; des Etats-Unis &agrave; financer leur dette, ce qui a engendr&eacute; une tension sur les taux", explique Nicolas Ch&eacute;ron, responsable de la recherche march&eacute;s chez Binck.fr.]<br>
+    <strong>Marc Angrand, Reuters.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">10 janvier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://fintech-mag.com/robo-advisors-binck-partenaire/" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Le plus grand risque pour les banques ? Que les fintechs disparaissent !" class="" target="_blank">Le plus grand risque pour les banques ? Que les fintechs disparaissent !</a></h2>
+    Interview de Mathieu Ramadier, responsable du d&eacute;veloppement de Binck.fr.<br>
+    <strong>Fintech-mag.com</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+<span class="badge badge-xs">9 janvier</span>
+<ul class="arrow">
+    <li>
+    <div>
+    <h2 class="h3"><a href="https://www.tvfinance.fr/video-finance/nicolas-cheron-binck-fr-fait-un-point-sur-lactu-des-marches/" sfref="[documents|librariesProvider6]38037ccc-219e-61cd-bc43-ff0100e84d35" title="Nicolas Chéron, Binck.fr, fait un point sur l’actu des marchés" class="" target="_blank">Nicolas Ch&eacute;ron, Binck.fr, fait un point sur l&rsquo;actu des march&eacute;s</a></h2>
+    Nicolas Ch&eacute;ron, Responsable de la recherche march&eacute;s pour Binck.fr, nous donne son avis sur les d&eacute;veloppements &eacute;conomiques et g&eacute;opolitiques, sur le stock picking &agrave; privil&eacute;gier et sur le retour probable de l&rsquo;inflation en 2018.<br>
+    <strong>TVFinance.fr</strong>
+    </div>
+    </li>
+</ul>
+<hr>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div><div class="lane">
+    <div class="container">
+        <div class="sf_cols row  bg-white">
+            <div id="cpMain_C151_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p class="h1">2017</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 <h3 class="h2  text-center">JANVIER</h3>
+            </div>
+            <div class="col-xs-12 text-left">
+                &nbsp;Bient&ocirc;t...
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="hidden-footer" id="main-footer">
+        <div class="footer text-white">
+            <div class="container-fluid-lg" id="footer-top">
+                <div class="row" id="footer-row">
+                    <ul class="list-unstyled text-nowrap">
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>CONTACTEZ-NOUS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../contact.html"><span>Notre page contact</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE COMMERCIAL </span></li>
+                                    <li><span><img src="../images/librariesprovider6/contact/0800-940-9805014.gif?sfvrsn=4" data-displaymode="Original" alt=" Téléphone Binck 0800 940 980" title="0800 940 980"></span></li>
+                                    <li><a class="icon-before" href="mailto:info@binck.fr" title="Contactez notre service commercial" data-icon=""><span>info@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE CLIENT</span></li>
+                                    <li><span>01 70 36 70 80 (appel non surtax&eacute;)</span></li>
+                                    <li><a class="icon-before" href="mailto:clients@binck.fr" title="Contactez notre service client" data-icon=""><span>clients@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>ADRESSE</span></li>
+                                    <li><span>10 Rue de la Paix</span></li>
+                                    <li><span>FR-75085 Paris cedex 02</span></li>
+                                    <li><span> &nbsp; </span></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>BOURSE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../ouvrir-un-compte-en-ligne.html"><span>Ouvrir un compte</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/produits.html"><span>Produits de Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/comptes/compte-titres.html"><span>Compte-titres</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/comptes/pea.html"><span>PEA</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/comptes/pea-pme.html"><span>PEA-PME</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/outils-de-trading.html"><span>Outils de Trading</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/outils-d-analyses.html"><span>Outils d'analyses</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/club-des-traders.html"><span>Club des Traders</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../faq.html"><span>FAQ Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../formulaires.html"><span>Formulaires</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>ASSURANCE VIE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://landing.av.binck.fr/acquisition"><span>Adh&eacute;rer au contrat</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/modes-de-gestion/gestion-libre.html"><span>Modes de Gestion</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/supports/tous-nos-supports.html"><span>Supports</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/performances-assurance-vie.html"><span>Performances</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/avantages-fiscalite.html"><span>Fiscalit&eacute;</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/adherer-assurance-vie.html"><span>Comment adh&eacute;rer</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/FAQ-assurance-vie.html"><span>FAQ Assurance Vie</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/lexique.html"><span>Lexique</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>QUI EST BINCK.FR</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="pourquoi-choisir-binck.html"><span>Pourquoi choisir Binck</span></a></li>
+                                    <li><a class="icon-before" href="palmares.html"><span>Palmar&egrave;s</span></a></li>
+                                    <li><a class="icon-before" href="presse.html"><span>Binck dans la presse</span></a></li>
+                                    <li><a class="icon-before" href="communiques-de-presse.html"><span>Communiqu&eacute;s de presse</span></a></li>
+                                    <li><a class="icon-before" href="rapports-financiers.html"><span>Rapports financiers</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>FORMATIONS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../formations-trading/espace-bourse-pratique.html"><span>Espace Bourse Pratique</span></a></li>
+                                    <li><a class="icon-before" href="../formations-trading/investir-en-bourse-sur-binck-fr.html"><span>Vid&eacute;os tutorielles</span></a></li>
+                                    <li><a class="icon-before" href="../binck-tv.html"><span>Binck TV</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span> ACTUALITES </span></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><a class="icon-before" href="../actualites/analyses.html"><span>Analyses</span></a></li>
+                                    <li><a class="icon-before" href="../actualites/calendrier-boursier.html"><span>Calendrier Boursier</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>NOUS TROUVER</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://www.facebook.com/BinckFR" data-icon=""><span>Facebook</span></a></li>
+                                    <li><a class="icon-before" href="https://twitter.com/BinckFR" data-icon=""><span>Twitter</span></a></li>
+                                    <li><a class="icon-before" href="https://www.youtube.com/user/BINCKFR" data-icon=""><span>Youtube</span></a></li>
+                                    <li><a class="icon-before" href="https://www.linkedin.com/company/binckbank/" data-icon=""><span>LinkedIn</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="fullruler">
+            <div class="container-fluid-lg text-nowrap" id="footer-bottom">
+                <div class="row row-eq-height-md">
+                    <div class="col-md-4 col-lg-2 text-xs-center text-md-left">
+                            <a class="no-border" href="../index.html" >
+                                <img alt="binck logo" height="16" src="../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                            </a>
+                    </div>
+                    <nav class="col-md-8 col-lg-10" role="navigation">
+                        <div class="row">
+                                <div class="col-xs-auto"><a href="../information/securite.html">S&eacute;curit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../informations-legales.html">Informations l&eacute;gales<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../politique-de-confidentialite.html">Politique de confidentialit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../gestion-des-cookies.html">Gestion des cookies<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binckrecrute.fr/" target="_blank">Recrutement<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binck.com/nl/corporate/" target="_blank">Binck.com<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../plan-du-site.html">Plan du site<span></span></a></div>
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</div>
+</body>
+
+<!-- Mirrored from www.binck.fr/qui-est-binck/presse by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:02:05 GMT -->
+</html>

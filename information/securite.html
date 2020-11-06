@@ -1,0 +1,1136 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.binck.fr/information/securite by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:22:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link href="../Telerik.Web.UI.WebResourceb6a9.css?d=PMrIT5dOWaVYIcpFWUE4nMLWcdQIjXr7e7sRrUL6XRMyEGvH48LOQzat_9YOOsN0J6WPBFhfQ4EN__Y3UDQ8KVFySae_B1iqlXBugPHQ1XuXHNF00&amp;t=637317551186412526&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d11.0.6732.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3afr%3aca5aa0cb-9dda-4885-a4ae-598cf4f97af5%3a7a90d6a%3ad271177c%3adff30785" type="text/css" rel="stylesheet" />
+            <link rel="alternate" hreflang="fr_fr" />
+            
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+        <link rel="stylesheet" href="../Content/font-awesome.min.css" />
+        
+           <link rel="stylesheet" href="../Content/BinckPatternLAB/binck.bootstrap.css" />
+           <link href="../Content/patternlabcf9e.css?v=bauX_oIE8src8FNJTNLBQqUcmCLmSn7CvalvEIB5d0M1" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" type="image/x-icon" href="../Style/Corporate/images/myicon.ico" />
+    <style>
+        body {
+            min-width: 0 !important;
+        }
+    </style>
+<style type="text/css" media="all">.navbar-brand > img {
+    max-height: 20px;
+    max-width: 65vw;
+    height: auto;
+}
+</style><script type="text/javascript">
+(function () {
+    window.digitalData = window.digitalData || [];
+
+    var domains = [
+        { "domain": "binckspanje.com", "country": "es", "language": "nl", "website": "rs-spain" },
+        { "domain": "binckbank.com", "country": "en", "language": "en", "website": "binck" },
+        { "domain": "binck.com", "country": "en", "language": "en", "website": "rs-binck" },
+        { "domain": "binck.be", "country": "be", "language": "nl", "website": "rs-belgium" },
+        { "domain": "binck.it", "country": "it", "language": "it", "website": "rs-italy" },
+        { "domain": "binck.nl", "country": "nl", "language": "nl", "website": "rs-netherlands" },
+        { "domain": "binck.fr", "country": "fr", "language": "fr", "website": "rs-france" }
+    ];
+
+    var languageList = [
+        { "language": "en" }, { "language": "nl" }, { "language": "fr" }, { "language": "it" }
+    ];
+
+    function findObject(arr, key, val) {
+        var found;
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i][key] === val) {
+                found = arr[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+    var topLvl = document.domain.split(".").reverse();
+    var subdomain = "";
+    
+    if (topLvl.length === 3 && topLvl[2] !== "www") {
+        subdomain = topLvl.pop();
+    } else {
+        topLvl.length = 2;
+    }
+
+    topLvl = topLvl.reverse().join(".");
+
+    var domain = findObject(domains, "domain", topLvl);
+
+    if (!domain) {
+        throw new Error(topLvl + " not supported by dataLayer");
+    }
+
+    var languageCode = domain.language;
+    var parts = window.location.pathname.split("../index.html");
+    var languageCodeInUrl;
+
+    if (parts.length > 1) {
+        languageCodeInUrl = findObject(languageList, "language", parts[1]);
+    }
+    
+    if (subdomain === "ouvriruncompte") {
+        languageCodeInUrl = findObject(languageList, "language", "fr");
+    }
+
+    if (languageCodeInUrl) {
+        languageCode = languageCodeInUrl.language;
+        parts.shift();
+    }
+
+    parts.shift();
+    if (subdomain !== "") {
+        parts.unshift(subdomain);
+    }
+
+    var sections = parts.concat();
+    sections.unshift(languageCode + "-" + domain.country);
+
+    function responseStatusCode() {
+        responseStatusCode = 200;
+        var titlepage = window.document.title.toLowerCase()
+        if (titlepage.indexOf('pagina niet gevonden') > -1 || titlepage.indexOf('error 404') > -1 || titlepage.indexOf('page not found') > -1 || titlepage.indexOf('page non trouvée') > -1) {
+            responseStatusCode = 404;
+        }
+        return responseStatusCode;
+    }
+
+    function getPageName() {
+        return parts.join(":").replace(/:$/, "");
+    }
+
+    function getSiteSectionAll() {
+        var sectionAll = "";
+        if (parts.length === 0 || parts[0] === "") {
+            sectionAll = "frontpage";
+        } else {
+            sectionAll = getPageName();
+        }
+        return sectionAll;
+    }
+
+    var pageName = getPageName();
+
+    window.digitalData.error = {
+        responseStatusCode: responseStatusCode(),
+    }
+    window.digitalData.page = {
+        hostName: window.location.hostname,
+        pageName: languageCode + "-" + domain.country + (pageName != "" ? ":" : "" ) + pageName,
+        siteSection1: sections[0] || '',
+        siteSection2: sections[1] || '',
+        siteSection3: sections[2] || '',
+        siteSection4: sections[3] || '',
+        siteSection5: sections[4] || '',
+        siteSectionAll: getSiteSectionAll(),
+        queryString: window.location.search,
+        website: domain.website,
+        language: languageCode
+    };
+})()
+</script><script type="text/javascript" src="../../assets.adobedtm.com/launch-EN5a2ce50dc24d4c95ad125c65fa54d8b3.min.js"></script><meta name="Generator" content="Sitefinity 11.0.6732.0 PU" /><link rel="canonical" href="securite.html" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="../Sitefinity/Public/ResponsiveDesign/layout_transformationsaf06.html?pageDataId=fccaf9cb-219e-61cd-bc43-ff0300e84d35&amp;pageSiteNode=FBCAF9CB-219E-61CD-BC43-FF0300E84D35/f77df8cb-219e-61cd-bc43-ff0100e84d35/SitefinitySiteMap" type="text/css" rel="stylesheet" /><title>
+	Espace s&#233;curit&#233; et protection des donn&#233;es - Binck.fr
+</title><meta name="description" content="Binck.fr considère la sécurité de ses clients comme essentielle pour leur permettre d’investir en toute confiance" /><meta name="keywords" content="précautions, protection, site sécurisé,  système SSL, code secret" /></head>
+<body>
+    <script src="../bundles/PatternLab3b9e?v=eaHEFy3f5naNK8Kf7OcOckvdcpgFonixou7UWowavXk1"></script>
+
+    <form method="post" action="https://www.binck.fr/information/securite" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSM" id="ctl06_TSM" value="" />
+<input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="4pg5m/8TZw+Ahk3fKkD2FKrYcb3eEPc/VnbKQEzzzbgWXf0rmV8dCX+G3u8S1kgp2wAAHK4WfsjlvsnMvGALgFevKQM=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResource908c.js?d=pynGkmcFUV13He1Qd6_TZP_4ej2xu7z_XVotHnL9kuaGNPxbuoHGPHb-o8amqx79yDcwVA2&amp;t=637290829350350503" type="text/javascript"></script>
+
+
+<script src="../WebResource74ff.js?d=yAZznlIeaGQJz8qTi4uqDSxm-bWuIiwJKKVOYfsBKOKGAYFrBb8CzgrpwJulWIFfZX6-Sq38e3w8f8tdivnh_jEm03mVBkvaobew0b5wtEF7AzpSEpk2-02-UP7Vfj_PgCuldAuwGtncSUrXnO_klSdbTGY1&amp;t=636751093820000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"Non numérique","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infini","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+Infini","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":true,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="../Telerik.Web.UI.WebResourcef71e.js?_TSM_HiddenField_=ctl06_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr%3a4feca508-514b-48c0-a162-7fa9c360d783%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6B0203F8" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="787ONqBRKXJrjRMe4G3mlPTLUuflP/wV408G1MWK4RizPDwOf226ruXL75gVMuXjvu3l8YeXa+ncQx+RNzJ0DsyMNRHn4GTyJfaHyrUGTW4vbNdq" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl06', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<input type="hidden" name="ctl00$ctl06" id="ctl06" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl06", "ctl00$ctl06");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <input type="hidden" name="ctl00$uniqueSubmitIdHiddenField" id="uniqueSubmitIdHiddenField" value="9fde8c5d-8f20-4ce4-854d-023fbfcd619d" />
+        
+        
+        
+    <script type="text/javascript">
+	StatsClient.LogVisit('fbcaf9cb-219e-61cd-bc43-ff0300e84d35', 'fc7b1103-6ec1-48ea-9279-1155efecb453');
+</script><script type="text/javascript">
+if(typeof _satellite!=="undefined"){_satellite.pageBottom();}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='../index.html';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl07_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=11.0.6732.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:fr:ca5aa0cb-9dda-4885-a4ae-598cf4f97af5:7a90d6a:d271177c:dff30785';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();//]]>
+</script>
+</form>
+    <div id="content" class="wrap">
+
+    <div id="dna-header">
+        <nav class="navbar navbar-inverse navbar-static-top" id="top-nav" role="navigation">
+            <div class="container-fluid-lg">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html" >
+                        <img alt="binck logo" src="../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                    </a>
+                    <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-left" aria-expanded="false" data-icon="">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                        <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-right" aria-expanded="false" data-icon="">
+                            <span class="sr-only">Toggle selection</span>
+                        </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown nav-item open-on-hover">
+                                <a href="../contact.html" class="nav-link">Contacts</a>
+                            </li>
+                                                    <li class="nav-link">
+                                <a id="header-button" class="btn btn-primary btn-sm navbar-btn mr-2 ml-2 hidden-xs" href="../devenir-client.html" >Devenir client</a>
+                                <a class="nav-link visible-xs" href="../devenir-client.html" >Devenir client</a>
+                            </li>
+                                                    <li class="nav-link">
+                                
+
+<a class="nav-link" href="../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<nav class="navbar navbar-light alt" id="secondary-nav">
+    <div class="container-fluid-lg">
+        <ul class="nav navbar-nav navbar-left secondary-nav navbar-collapse collapse" id="secondary-nav-left">
+                <li class="nav-item visible-xs">
+                    
+
+<a class="nav-link" href="../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../bourse-en-ligne.html">Bourse</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/bourses.html" style="text-transform: none;">
+                                                        Les Bourses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                        Produits
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                                                Achat d&#39;actions en bourse
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/fonds.html" style="text-transform: none;">
+                                                                                Fonds
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/trackers.html" style="text-transform: none;">
+                                                                                Trackers
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/turbos.html" style="text-transform: none;">
+                                                                                Turbos
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/certificats.html" style="text-transform: none;">
+                                                                                Certificats
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/warrants.html" style="text-transform: none;">
+                                                                                Warrants
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/options.html" style="text-transform: none;">
+                                                                                Options
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/futures.html" style="text-transform: none;">
+                                                                                Futures
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/produits/srd.html" style="text-transform: none;">
+                                                                                SRD
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/comptes.html" style="text-transform: none;">
+                                                        Comptes
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/comptes/compte-titres.html" style="text-transform: none;">
+                                                                                Le compte-titres
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/comptes/pea.html" style="text-transform: none;">
+                                                                                Le PEA
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/comptes/pea-pme.html" style="text-transform: none;">
+                                                                                Le PEA-PME
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/outils-de-trading.html" style="text-transform: none;">
+                                                        Outils de trading
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/nos-plateformes.html" style="text-transform: none;">
+                                                                                Nos plateformes
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/application-mobile.html" style="text-transform: none;">
+                                                                                Application mobile
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/prorealtime.html" style="text-transform: none;">
+                                                                                ProRealTime V11
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/protrader.html" style="text-transform: none;">
+                                                                                ProTrader
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/fiches-valeurs.html" style="text-transform: none;">
+                                                                                Fiches valeurs
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/ordres-conditionnels.html" style="text-transform: none;">
+                                                                                Ordres conditionnels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-de-trading/portefeuille-virtuel.html" style="text-transform: none;">
+                                                                                Portefeuille virtuel
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                        Outils d&#39;analyses
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                                                Analyses techniques
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/analyse-fondamentale.html" style="text-transform: none;">
+                                                                                Analyse fondamentale
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/aide-a-la-decision.html" style="text-transform: none;">
+                                                                                Aide &#224; la d&#233;cision
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../bourse-en-ligne/outils-d-analyses/portefeuilles-types.html" style="text-transform: none;">
+                                                                                Portefeuilles types
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/club-des-traders.html" style="text-transform: none;">
+                                                        Club des Traders
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../bourse-en-ligne/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../assurance-vie.html">Assurance Vie</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                        Modes de gestion
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                                                Gestion libre
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/modes-de-gestion/gestion-sous-mandat.html" style="text-transform: none;">
+                                                                                Gestion sous mandat
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                        Supports
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                                                Tous nos supports
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/fonds-euros.html" style="text-transform: none;">
+                                                                                Fonds euros
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/opc.html" style="text-transform: none;">
+                                                                                OPC
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/opc-indiciels.html" style="text-transform: none;">
+                                                                                OPC indiciels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../assurance-vie/supports/actions.html" style="text-transform: none;">
+                                                                                Actions
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/performances-assurance-vie.html" style="text-transform: none;">
+                                                        Performances
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/avantages-fiscalite.html" style="text-transform: none;">
+                                                        Fiscalit&#233;
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/adherer-assurance-vie.html" style="text-transform: none;">
+                                                        Comment adh&#233;rer
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/FAQ-assurance-vie.html" style="text-transform: none;">
+                                                        FAQ
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../assurance-vie/lexique.html" style="text-transform: none;">
+                                                        Lexique
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../qui-est-binck.html">Qui est Binck</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../qui-est-binck/pourquoi-choisir-binck.html" style="text-transform: none;">
+                                                        Pourquoi choisir Binck
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../qui-est-binck/trader-en-ligne.html" style="text-transform: none;">
+                                                        Trader en ligne
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../qui-est-binck/palmares.html" style="text-transform: none;">
+                                                        Palmar&#232;s
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../qui-est-binck/presse.html" style="text-transform: none;">
+                                                        Binck dans la presse
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                        Communiqu&#233;s de presse
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                                                2020
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2019.html" style="text-transform: none;">
+                                                                                2019
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2018.html" style="text-transform: none;">
+                                                                                2018
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2017.html" style="text-transform: none;">
+                                                                                2017
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2016.html" style="text-transform: none;">
+                                                                                2016
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2015.html" style="text-transform: none;">
+                                                                                2015
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2014.html" style="text-transform: none;">
+                                                                                2014
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2013.html" style="text-transform: none;">
+                                                                                2013
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2012.html" style="text-transform: none;">
+                                                                                2012
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../qui-est-binck/communiques-de-presse/2011.html" style="text-transform: none;">
+                                                                                2011
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../qui-est-binck/rapports-financiers.html" style="text-transform: none;">
+                                                        Rapports financiers
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../formations-trading.html">Formations</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../formations-trading/espace-bourse-pratique.html" style="text-transform: none;">
+                                                        Espace Bourse Pratique
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../formations-trading/dictionnaire-financier.html" style="text-transform: none;">
+                                                        Dictionnaire financier
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../formations-trading/investir-en-bourse-sur-binck-fr.html" style="text-transform: none;">
+                                                        Investir en bourse sur Binck.fr
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../actualites/analyses.html">Actualit&#233;s</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../actualites/analyses.html" style="text-transform: none;">
+                                                        Analyses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../actualites/calendrier-boursier.html" style="text-transform: none;">
+                                                        Calendrier boursier
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link  " href="../binck-tv.html">Binck TV</a>
+                        </li>
+            
+                <li class="nav-item visible-xs">
+<a href="../contact.html" class="nav-link">Contacts</a>                </li>
+                            <li class="nav-item visible-xs">
+                    <a class="nav-link" href="../devenir-client.html" >Devenir client</a>
+                </li>
+                    </ul>
+        
+            <ul class="nav navbar-nav navbar-right secondary-nav navbar-collapse collapse" id="secondary-nav-right">
+                <div class="form-group has-search">
+                    <input id="search-box" class="form-control" type="search" placeholder="Recherche ..." data-toggle="pill" data-target="#searchresult" data-search-page="/search-results" data-index-catalog="searchfrance">
+                </div>
+            </ul>
+    </div>
+</nav>
+
+    </div>
+
+
+
+
+
+
+<div class="lane  bg-image  bg-darkgrey  has-halfrudder " 
+     style="background-image: url('../images/librariesprovider6/bgd/header-10fe5c.jpg?sfvrsn=8a2a8034_0')" >
+    <div class="container text-center text-white " >
+<h1 class="h1  ">Sécurité</h1>                    <div class="littleruler"></div>
+        <p class="lead">Des mesures de précaution indispensables pour renforcer votre protection</p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C022_Col00" class="sf_colsIn col-xs-12"><div class="row" data-sf-element="Row">
+    <div id="cpMain_C025_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div  class="  ">
+    <h3 class="h2  text-left">Code secret</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                Les transactions bancaires sur Internet sont s&eacute;curis&eacute;es mais, comme dans beaucoup d'autres domaines,&nbsp;<strong>il faut suivre quelques mesures de pr&eacute;cautions pour renforcer votre protection</strong>. Veillez &agrave; ne jamais communiquer votre code secret &agrave; un tiers, m&ecirc;me &agrave; un charg&eacute; de client&egrave;le Binck.fr. Veillez &agrave; ne jamais transmettre votre code secret par courrier, par t&eacute;l&eacute;phone ou par e-mail.
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="cpMain_C025_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="">
+        <img class=" ml-auto mr-auto img-responsive" src="../images/librariesprovider6/default-album/i-securite1f3fa.png?sfvrsn=e8298034_0"  />
+</div>
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C024_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="">
+        <img class=" ml-auto mr-auto img-responsive" src="../images/librariesprovider6/default-album/i-securite21531.png?sfvrsn=dd268034_0"  />
+</div>
+    </div>
+    <div id="cpMain_C024_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+<div  class="  ">
+    <h3 class="h2  text-left">Site sécurisé</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                Afin de garantir une s&eacute;curit&eacute; optimale et prot&eacute;ger les op&eacute;rations de ses clients faites sur le site de Binck.fr, Binck.fr utilise la technologie standard de cryptage des donn&eacute;es Secure Socket Layer (SSL) en 128 bits, compatible avec la plupart des navigateurs, qui correspond au niveau de chiffrement le plus &eacute;lev&eacute; autoris&eacute; en France. Les clients sont invit&eacute;s &agrave; s'assurer que leur navigateur accepte ce syst&egrave;me.&nbsp;<br>
+<br>
+<strong>Le syst&egrave;me SSL permet :</strong><br>
+&bull; d'identifier le site: vous &ecirc;tes assur&eacute;s de dialoguer avec le site de Binck.fr.&nbsp;<br>
+&bull; de chiffrer les donn&eacute;es &eacute;chang&eacute;es entre votre ordinateur et le site de Binck.fr: ces donn&eacute;es sont donc confidentielles.&nbsp;<br>
+&bull; d'assurer l'int&eacute;grit&eacute; des donn&eacute;es &eacute;chang&eacute;es: elles ne peuvent &ecirc;tre alt&eacute;r&eacute;es au cours de leur transfert.<br>
+<br>
+<strong>Pour s'assurer que la communication est bien faite en mode s&eacute;curis&eacute; SSL</strong>, il faut s'assurer que :<br>
+&bull; l'adresse de la page s&eacute;curis&eacute;e commence par https:// au lieu de http://<br>
+&bull; un cadenas ferm&eacute; ou une cl&eacute; appara&icirc;t bien dans la barre inf&eacute;rieure (ou sup&eacute;rieure, selon le cas) de votre navigateur.<br>
+<br>
+<strong>Pour sortir d'une page s&eacute;curis&eacute;e en toute s&eacute;curit&eacute;</strong>, utilisez le lien "D&eacute;connexion".&nbsp;<br>
+<br>
+<strong>Pour retourner sur la page s&eacute;curis&eacute;e</strong>, vous devrez vous identifier &agrave; nouveau.
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C023_Col00" class="sf_colsIn col-md-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div  class="  ">
+    <h3 class="h2  text-left">E-mails</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <strong>Binck.fr attire votre attention sur le fait que les e-mails ne sont pas un mode s&eacute;curis&eacute; de transmission d'information</strong>. Lorsque vous envoyez un message &agrave; Binck.fr, personne ne peut garantir que le contenu du message n'est pas copi&eacute; ou d&eacute;tourn&eacute; par des tiers. Nous vous conseillons de veiller &agrave; ne pas transmettre des informations confidentielles comme vos coordonn&eacute;es bancaires ou votre code par ce moyen.
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="cpMain_C023_Col01" class="sf_colsIn col-md-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="">
+        <img class=" ml-auto mr-auto img-responsive" src="../images/librariesprovider6/default-album/i-securite3685b.png?sfvrsn=95268034_0"  />
+</div>
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="cpMain_C026_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+<div  class="  ">
+    <h3 class="h2  text-left">Divulgation responsable</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                Les informations sur cette page sont destin&eacute;es aux chercheurs en s&eacute;curit&eacute; int&eacute;ress&eacute;s par le reporting de vuln&eacute;rabilit&eacute; informatique aupr&egrave;s de BinckBank.&nbsp;<br>
+<br>
+Si vous &ecirc;tes client de BinckBank et que vous avez une question sur la fraude, le phishing ou les malwares, contactez notre service clients &agrave; l&rsquo;adresse&nbsp;<a href="mailto:clients@binck.fr" title="" target="">clients@binck.fr</a>&nbsp;.&nbsp;<br>
+<br>
+Chez BinckBank, la s&eacute;curit&eacute; de nos syst&egrave;mes et la protection de vos informations constituent une priorit&eacute; absolue. Nos sp&eacute;cialistes travaillent quotidiennement pour optimiser nos syst&egrave;mes et processus.&nbsp;<br>
+Malgr&eacute; l&rsquo;attention que nous portons &agrave; la s&eacute;curisation de nos syst&egrave;mes, des failles peuvent toutefois persister.&nbsp;<br>
+<br>
+Si vous &ecirc;tes un chercheur en s&eacute;curit&eacute; et que vous d&eacute;couvrez une faille dans nos syst&egrave;mes, vous pouvez nous aider &agrave; am&eacute;liorer la fiabilit&eacute; de nos syst&egrave;mes .&nbsp;<br>
+Faites-nous parvenir un rapport sur cette faille (de pr&eacute;f&eacute;rence en anglais) par e-mail &agrave; :&nbsp;<a href="mailto:responsible-disclosure@binck.fr" title="" target="">responsible-disclosure@binck.fr</a>&nbsp;. La priorit&eacute; sera donn&eacute;e aux rapports crypt&eacute;s. Les rapports peuvent &ecirc;tre envoy&eacute;s anonymement.&nbsp;<br>
+<br>
+Notre &eacute;quipe de s&eacute;curit&eacute; informatique &eacute;tudiera vos conclusions et tentera d&rsquo;y apporter une r&eacute;ponse dans les meilleurs d&eacute;lais.
+<br>
+<br>
+            </div>
+        </div>
+    </div>
+
+
+<div id="Accordion2fbfbdde6fab484995e6d405af4fb7b3" role="tablist" aria-multiselectable="true">
+        <div class="card panel">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_0" data-parent="#Accordion2fbfbdde6fab484995e6d405af4fb7b3" data-target="#contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_0" aria-controls="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_0">
+                <h4 class="panel-title">Cl&#233; CGP</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_0" aria-labelledby="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_0">
+                <div class="card-block"><p>Si vous souhaitez crypter votre message, vous pouvez utiliser notre cl&eacute; PGP.</p><p>-----BEGIN PGP PUBLIC KEY BLOCK-----<br />mQINBFx2ny0BEAClnvfmp8lUK75EgLo3pfYrIxqvrsGtCccL6q61rgQ+TlL2thGE<br />3Es4d/3nqhQaULU+AftWTJ96KRIPCSlc2ZeE64GoPCZwZ+DqIP8pWDuz//JPydz+<br />io6mebOOeoutNHg2Q+WHmvqNaUhwbi5LpewFD1ZQnNSoSIGE4oufzvIkTPCpugPd<br />kqjGwTbp2dv0IqO0YC20Wm/Z75B9jpFfdfzKxGOa+G89mLcIRgZcDEjJxPmoCLfG<br />1ozSCgvnuxugR1wnm9BOCMLuGsH9C7ErKknlSeTZM64mp4QZrfSUXviOqFnAIItw<br />H8hn/2+ykV2iUInlT2IavoQlZBkJv39dGh6WC+XYNuFlCfz9IRBP0qWgnref+rfR<br />LoPZghVoXgWcuIn+VqpRkrXct+HOi5nA3xa5rMnzzofR7Nxzc2hvHnQK2ol6p2Ht<br />OCAkI0r1/yDVS058k+HyG4KwdX3dpCopKSbyf3vWp01QYMjYxi3uzHHd8yc9dtvd<br />ICYX4hUb+wBz1cfU0lc5Tsverr8nskWVVeglXDk+b6JYI7iMHqNi6kGeaXKJd5XY<br />TttODlXXBbxDjWozf9U5fwKShRqvAtkSPIZEHXnIfsHQ0RbfghoWGKxK08JmdLez<br />WYMBjVKBFUJZZZ4C6hVMQ/Pk1qLseFqLKpEIbkOp0Llw9IxtnD1I+/xVdQARAQAB<br />tEJCaW5ja0JhbmsgUmVzcG9uc2libGUgRGlzY2xvc3VyZSA8UmVzcG9uc2libGUt<br />RGlzY2xvc3VyZUBiaW5jay5ubD6JAlQEEwEIAD4WIQSbLkvareJQKwRwFivmr4xE<br />JHguFgUCXHafLQIbAwUJA8OHAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRDm<br />r4xEJHguFniDD/414pFYbDdu66BvAZqhlUcwWD/ZL6kThJK9YhWHQrtIcshyQ/ZW<br />IfMkFD5iJPyBlPh1Ugs5HPmqKq4/jNoybxC01ZNGwC+SNUCYuWB2swc9WjlPfTji<br />N493l75w5UjRtcDuxqGZ9+LOkbW802Y2ygHYvVrm8FuyRiprifnzJ4oaK0Yfjory<br />OoCL/VfRwFp0ptJorJ4kwhOtAtq+glX/DRit+JT2KP+NWWaGAZhhJWMnUn5R6Vhj<br />4QvXpXUlq4kqxaYPB1zEbDzO4CB3taryu5TX3O/eKVnJP+XZu1ECJzninlzaJhR2<br />uSfIH47IiM8BDQ0+OCM9ogsuk0grAOTVmPnpWmzl9cozti+pb+ggP3Cx2JiyAoVl<br />nuTex+Osv68t/fFjnGa91AI4Jh8zDltevsQA/TQMclxe025LGwgY49AYwGMYCcnJ<br />nOmduOM4uaPDRwHmse600eEIiyaGoRzF0NfXAFsg7Q4k6s8uN6xAnGu1YySwCbob<br />n50/IbjTe7fPdZv0/L+yurNLO1l+IcC9KIzJDk9KbEpUhqrqzKGDGu0tnu3TbPWq<br />5zRVXKpeQdkfymDjbybyyEgarqxQRMk532qo5DFjl/MH/3l21MXcqwFV1dqA983n<br />ezaeqT5bO+PLV53D7dL2qYnFXIaoGbtY8IIZwb6pqAFzQ8YmDV8tLZDaybkCDQRc<br />dp8tARAAr0Nz16s53p66K0C9c7CI2ReO84cqgUMj4mm8mT352RR/cfTQQtkl/eKA<br />ggt32tRtdUci4phXoLthCbydqLoBXrk69AcM5W7j7wRnJcFyE4c+AIj73hmGYlsY<br />uTp0jJk/AxGoUxqjEjX/bEd1q/Vi1jSltYD2tUQ+wA1LSnfqbd59R8bH1zXkPNlM<br />ThkY1FWaa8/jd8UozBNkB0CgKDamrynvXufDDvJW0DfZACvd+qOqIKdnW0gIbRsN<br />feo2yNKXremXqWcUis23bvH71QPn8K9wnrgBetVb80adxABiPI+PXlEuPt/XKJba<br />C3a5N+GqGEStDxU7mPu5gora1Mka8OnKeBz3lohRyJBE4gQ0rU0HcNtpPCCYFlI+<br />Wi1qWR+vAiMLXtgzYXDWzAyqW0ZkyXSk/OUGUYUJWAhE0mVUAjEEQZHq8ztCLGyb<br />91Ij+h/kucwobtAk9Hfo47rV0i8fL2Jk3pqJaXnp0P299t6IWMplYnegNMjfG6TP<br />K2cp/okQ8NoPMzSw8nML6i8Dv8LPUspi3rmM/hzJO09lO11DNz3+PgxqAXkdbVtG<br />k8vWYFWHHsJZo81VOfRjn3cgZYwKUR4eQpZ3GgNjfir9yStUkgRtJ/6xrMo9Fu7L<br />R/zBvAMH8u344N2xhIqtw0xnX0lj5UVl3MHyAwF5+ugltayeqMUAEQEAAYkCPAQY<br />AQgAJhYhBJsuS9qt4lArBHAWK+avjEQkeC4WBQJcdp8tAhsMBQkDw4cDAAoJEOav<br />jEQkeC4WvyUQAJPKQd0TqVh9RGEkXBNgZRwhYldtpyki+A3j2KC5X9StVNNS86l+<br />iqjnMjFwJeGTTHlsksbl+nXt/GPcIwWS8107OLJBKqHRsYbsp+dQJ5twUhjAxNWs<br />xCbi4Ml2sGZnO9PYSByeSWPxd1NhH9PhIPP1b0ae9c3h8uS3cAF+uMDPdqjUTCkL<br />bFpO4edY1dvT+p2Torc9rsZtnhuCGHbU0LZ2AQUd2WWF+3U1n2NLh0eZDEz4GmNr<br />I0tR8FS8ep9Lhh5xRlfdfnHjahfjBXCrGjcjTOZp6sR1YJXUpx3yVinUPFIk8hU3<br />aX84WwDWRw8cHP80FY335vK0rKcbBdmhRkYuZqvgbmGZDqFbwR6vcO6PpvWki4FK<br />4njmMWKplEPcdcbzxy4QYKKYFeiUssb4GN5HI7Tbmqxqpstme/eQCt5EgCBZ04Hr<br />I4w02diiQtgab8ddolS5ZjS3lanwS6rJqptqbPGgxlxEowXFJA9eFNqIBVSkhYWq<br />xVA9TVwIaoAy9+CqhKzmORMIZqZB//q6aNmifC6J4a7QOeN/+VC2jBPq5SmqkiBb<br />31QzacVgCmgmLaKVXb5p1gW5kAFa1+38NR9uvp/hqBavlx+DhKOY3MQtvrBBwCVi<br />TQM0l06iXu6eFXsfTx8ZHjguA6fWj68ORHF3o7bi5dZaxRFI8pUH0Zxf<br />=w2vf<br />-----END PGP PUBLIC KEY BLOCK-----<br /></p></div>
+            </div>
+        </div>
+        <div class="card panel">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_1" data-parent="#Accordion2fbfbdde6fab484995e6d405af4fb7b3" data-target="#contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_1" aria-controls="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_1">
+                <h4 class="panel-title">Directives de Divulgation Responsable</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_1" aria-labelledby="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_1">
+                <div class="card-block"><p>Nous analyserons les rapports l&eacute;gitimes et mettrons tout en &oelig;uvre pour r&eacute;soudre le probl&egrave;me de vuln&eacute;rabilit&eacute; informatique. Nous n&rsquo;entreprendrons pas d&rsquo;actions judiciaires et nous n&rsquo;enverrons pas
+    de signalement aux autorit&eacute;s si vous respectez les Directives de Divulgation Responsable suivantes :</p>
+<ul class="unordered">
+    <li>
+        <div>Fournissez des d&eacute;tails sur la faille, comprenant les &eacute;tapes que vous avez suivies pour d&eacute;couvrir cette vuln&eacute;rabilit&eacute;, ainsi que les informations ou un Proof of Concept permettant de reproduire le probl&egrave;me
+            ;</div>
+    </li>
+    <li>
+        <div>Veillez &agrave; ce que, durant toute votre &eacute;tude de la faille rapport&eacute;e, vous n&rsquo;endommagiez pas nos syst&egrave;mes ;</div>
+    </li>
+    <li>
+        <div>Ne faites pas appel &agrave; des techniques de social engineering pour acc&eacute;der &agrave; nos syst&egrave;mes informatiques ;</div>
+    </li>
+    <li>
+        <div>Veillez &agrave; ce que votre analyse ne perturbe &agrave; aucun moment les services de BinckBank ou autre ;</div>
+    </li>
+    <li>
+        <div>Ne publiez jamais de donn&eacute;es bancaires et/ou clients que vous auriez trouv&eacute;es au cours de votre analyse ;</div>
+    </li>
+    <li>
+        <div>N&rsquo;installez pas de backdoor dans nos syst&egrave;mes, m&ecirc;me aux fins de d&eacute;montrer notre vuln&eacute;rabilit&eacute;. Installer une backdoor fragilisera davantage encore la s&eacute;curit&eacute; de nos syst&egrave;mes ;</div>
+    </li>
+    <li>
+        <div>Ne modifiez ou n&rsquo;effacez jamais les donn&eacute;es que vous auriez trouv&eacute;es dans nos syst&egrave;mes. Si la vuln&eacute;rabilit&eacute; informatique d&eacute;tect&eacute;e vous oblige &agrave; copier des donn&eacute;es du syst&egrave;me,
+            ne copiez pas plus que n&eacute;cessaire pour d&eacute;montrer cette vuln&eacute;rabilit&eacute;. Si un &lsquo;record&rsquo; suffit, n&rsquo;en copiez pas davantage ;</div>
+    </li>
+    <li>
+        <div>Ne modifiez en rien le syst&egrave;me ;</div>
+    </li>
+    <li>
+        <div>Ne tentez pas de p&eacute;n&eacute;trer plus avant le syst&egrave;me que ne requiert votre analyse. Si votre tentative est couronn&eacute;e de succ&egrave;s, ne partagez pas cet acc&egrave;s avec autrui ;</div>
+    </li>
+    <li>
+        <div>Ne recourez pas &agrave; des techniques de type brute-force (ex. introduction r&eacute;p&eacute;t&eacute;e de mots de passe) dans le but de p&eacute;n&eacute;trer le syst&egrave;me ;</div>
+    </li>
+    <li>
+        <div>Donnez &agrave; BinckBank un temps raisonnable pour r&eacute;soudre le probl&egrave;me avant de rendre vos informations publiques.</div>
+    </li>
+</ul></div>
+            </div>
+        </div>
+        <div class="card panel">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_2" data-parent="#Accordion2fbfbdde6fab484995e6d405af4fb7b3" data-target="#contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_2" aria-controls="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_2">
+                <h4 class="panel-title">Cat&#233;gories de vuln&#233;rabilit&#233; informatique recherch&#233;es</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_2" aria-labelledby="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_2">
+                <div class="card-block"><p>Nous sommes avant tout int&eacute;ress&eacute;s par des rapports traitant des cat&eacute;gories de vuln&eacute;rabilit&eacute; informatique suivantes :</p>
+<ul class="unordered">
+    <li>
+        <div>Vuln&eacute;rabilit&eacute;s de type Remote Code execution ;</div>
+    </li>
+    <li>
+        <div>Vuln&eacute;rabilit&eacute;s de type Cross Site scripting ;</div>
+    </li>
+    <li>
+        <div>Vuln&eacute;rabilit&eacute;s de type SQL injection ;</div>
+    </li>
+    <li>
+        <div>Faiblesses de chiffrement ;</div>
+    </li>
+    <li>
+        <div>Vuln&eacute;rabilit&eacute;s permettant de contourner les m&eacute;canismes d&rsquo;authentification ;</div>
+    </li>
+    <li>
+        <div>Vuln&eacute;rabilit&eacute;s favorisant un acc&egrave;s non autoris&eacute; &agrave; des informations</div>
+    </li>
+</ul></div>
+            </div>
+        </div>
+        <div class="card panel">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_3" data-parent="#Accordion2fbfbdde6fab484995e6d405af4fb7b3" data-target="#contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_3" aria-controls="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_3">
+                <h4 class="panel-title">Cat&#233;gories de vuln&#233;rabilit&#233; n’entrant pas en ligne de compte</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_3" aria-labelledby="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_3">
+                <div class="card-block"><p>Les vuln&eacute;rabilit&eacute;s suivantes n&rsquo;entrent pas en ligne de compte pour notre programme de divulgation responsable :</p>
+<ul class="unordered">
+    <li>
+        <div>Notre politique relative &agrave; la pr&eacute;sence ou absence de SPF/DKIM/DMARC-records ;</div>
+    </li>
+    <li>
+        <div>Serveurs ou versions d&rsquo;applications visibles ou potentiellement obsol&egrave;tes, sans preuve d&eacute;montrable qu&rsquo;il est possible d&rsquo;en faire un mauvais usage ;</div>
+    </li>
+    <li>
+        <div>Rapports sur des cryptages SSL/TLS non s&ucirc;rs et autres mauvaises configurations ;</div>
+    </li>
+    <li>
+        <div>Vuln&eacute;rabilit&eacute;s g&eacute;n&eacute;riques li&eacute;es &agrave; des logiciels ou protocoles qui ne sont pas sous le contr&ocirc;le de BinckBank ;</div>
+    </li>
+    <li>
+        <div>Attaques en d&eacute;ni de service distribu&eacute; (DDOS) ;</div>
+    </li>
+    <li>
+        <div>Spam ou techniques de Social Engineering ;</div>
+    </li>
+    <li>
+        <div>Rapports sur des scans r&eacute;guliers tels que port scanners ou vulnerability scanners (gratuits).</div>
+    </li>
+</ul></div>
+            </div>
+        </div>
+        <div class="card panel">
+            <header class="card-header" role="tab" data-toggle="collapse" id="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_4" data-parent="#Accordion2fbfbdde6fab484995e6d405af4fb7b3" data-target="#contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_4" aria-controls="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_4">
+                <h4 class="panel-title">Votre vie priv&#233;e</h4>
+            </header>
+            <div class="collapse " role="tabpanel" id="contentAccordion2fbfbdde6fab484995e6d405af4fb7b3_4" aria-labelledby="headingAccordion2fbfbdde6fab484995e6d405af4fb7b3_4">
+                <div class="card-block"><p>Nous n&rsquo;utiliserons vos donn&eacute;es personnelles qu&rsquo;aux fins de rester en contact avec vous et d&rsquo;entreprendre les actions qui s&rsquo;imposent dans le cadre de la vuln&eacute;rabilit&eacute; informatique que vous nous avez rapport&eacute;e.
+    Nous ne communiquerons pas vos donn&eacute;es personnelles &agrave; des tiers sans votre autorisation, sauf si la loi nous y oblige, ou lorsqu&rsquo;une organisation externe reprend l&rsquo;analyse que vous nous avez rapport&eacute;e. Nous veillerons
+    dans ces cas pr&eacute;cis &agrave; ce que l&rsquo;autorit&eacute; pertinente traite confidentiellement vos donn&eacute;es personnelles.</p></div>
+            </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="hidden-footer" id="main-footer">
+        <div class="footer text-white">
+            <div class="container-fluid-lg" id="footer-top">
+                <div class="row" id="footer-row">
+                    <ul class="list-unstyled text-nowrap">
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>CONTACTEZ-NOUS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../contact.html"><span>Notre page contact</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE COMMERCIAL </span></li>
+                                    <li><span><img src="../images/librariesprovider6/contact/0800-940-9805014.gif?sfvrsn=4" data-displaymode="Original" alt=" Téléphone Binck 0800 940 980" title="0800 940 980"></span></li>
+                                    <li><a class="icon-before" href="mailto:info@binck.fr" title="Contactez notre service commercial" data-icon=""><span>info@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE CLIENT</span></li>
+                                    <li><span>01 70 36 70 80 (appel non surtax&eacute;)</span></li>
+                                    <li><a class="icon-before" href="mailto:clients@binck.fr" title="Contactez notre service client" data-icon=""><span>clients@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>ADRESSE</span></li>
+                                    <li><span>10 Rue de la Paix</span></li>
+                                    <li><span>FR-75085 Paris cedex 02</span></li>
+                                    <li><span> &nbsp; </span></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>BOURSE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../ouvrir-un-compte-en-ligne.html"><span>Ouvrir un compte</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/produits.html"><span>Produits de Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/comptes/compte-titres.html"><span>Compte-titres</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/comptes/pea.html"><span>PEA</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/comptes/pea-pme.html"><span>PEA-PME</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/outils-de-trading.html"><span>Outils de Trading</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/outils-d-analyses.html"><span>Outils d'analyses</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/club-des-traders.html"><span>Club des Traders</span></a></li>
+                                    <li><a class="icon-before" href="../bourse-en-ligne/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../faq.html"><span>FAQ Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../formulaires.html"><span>Formulaires</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>ASSURANCE VIE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://landing.av.binck.fr/acquisition"><span>Adh&eacute;rer au contrat</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/modes-de-gestion/gestion-libre.html"><span>Modes de Gestion</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/supports/tous-nos-supports.html"><span>Supports</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/performances-assurance-vie.html"><span>Performances</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/avantages-fiscalite.html"><span>Fiscalit&eacute;</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/adherer-assurance-vie.html"><span>Comment adh&eacute;rer</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/FAQ-assurance-vie.html"><span>FAQ Assurance Vie</span></a></li>
+                                    <li><a class="icon-before" href="../assurance-vie/lexique.html"><span>Lexique</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>QUI EST BINCK.FR</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../qui-est-binck/pourquoi-choisir-binck.html"><span>Pourquoi choisir Binck</span></a></li>
+                                    <li><a class="icon-before" href="../qui-est-binck/palmares.html"><span>Palmar&egrave;s</span></a></li>
+                                    <li><a class="icon-before" href="../qui-est-binck/presse.html"><span>Binck dans la presse</span></a></li>
+                                    <li><a class="icon-before" href="../qui-est-binck/communiques-de-presse.html"><span>Communiqu&eacute;s de presse</span></a></li>
+                                    <li><a class="icon-before" href="../qui-est-binck/rapports-financiers.html"><span>Rapports financiers</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>FORMATIONS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../formations-trading/espace-bourse-pratique.html"><span>Espace Bourse Pratique</span></a></li>
+                                    <li><a class="icon-before" href="../formations-trading/investir-en-bourse-sur-binck-fr.html"><span>Vid&eacute;os tutorielles</span></a></li>
+                                    <li><a class="icon-before" href="../binck-tv.html"><span>Binck TV</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span> ACTUALITES </span></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><a class="icon-before" href="../actualites/analyses.html"><span>Analyses</span></a></li>
+                                    <li><a class="icon-before" href="../actualites/calendrier-boursier.html"><span>Calendrier Boursier</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>NOUS TROUVER</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://www.facebook.com/BinckFR" data-icon=""><span>Facebook</span></a></li>
+                                    <li><a class="icon-before" href="https://twitter.com/BinckFR" data-icon=""><span>Twitter</span></a></li>
+                                    <li><a class="icon-before" href="https://www.youtube.com/user/BINCKFR" data-icon=""><span>Youtube</span></a></li>
+                                    <li><a class="icon-before" href="https://www.linkedin.com/company/binckbank/" data-icon=""><span>LinkedIn</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="fullruler">
+            <div class="container-fluid-lg text-nowrap" id="footer-bottom">
+                <div class="row row-eq-height-md">
+                    <div class="col-md-4 col-lg-2 text-xs-center text-md-left">
+                            <a class="no-border" href="../index.html" >
+                                <img alt="binck logo" height="16" src="../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                            </a>
+                    </div>
+                    <nav class="col-md-8 col-lg-10" role="navigation">
+                        <div class="row">
+                                <div class="col-xs-auto"><a href="securite.html">S&eacute;curit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../informations-legales.html">Informations l&eacute;gales<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../politique-de-confidentialite.html">Politique de confidentialit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../gestion-des-cookies.html">Gestion des cookies<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binckrecrute.fr/" target="_blank">Recrutement<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binck.com/nl/corporate/" target="_blank">Binck.com<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../plan-du-site.html">Plan du site<span></span></a></div>
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</div>
+</body>
+
+<!-- Mirrored from www.binck.fr/information/securite by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:22:19 GMT -->
+</html>

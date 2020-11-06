@@ -1,0 +1,2078 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.binck.fr/politique-de-confidentialite by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:22:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link href="Telerik.Web.UI.WebResourceb6a9.css?d=PMrIT5dOWaVYIcpFWUE4nMLWcdQIjXr7e7sRrUL6XRMyEGvH48LOQzat_9YOOsN0J6WPBFhfQ4EN__Y3UDQ8KVFySae_B1iqlXBugPHQ1XuXHNF00&amp;t=637317551186412526&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d11.0.6732.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3afr%3aca5aa0cb-9dda-4885-a4ae-598cf4f97af5%3a7a90d6a%3ad271177c%3adff30785" type="text/css" rel="stylesheet" />
+            <link rel="alternate" hreflang="fr_fr" />
+            
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+        <link rel="stylesheet" href="Content/font-awesome.min.css" />
+        
+           <link rel="stylesheet" href="Content/BinckPatternLAB/binck.bootstrap.css" />
+           <link href="Content/patternlabcf9e.css?v=bauX_oIE8src8FNJTNLBQqUcmCLmSn7CvalvEIB5d0M1" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" type="image/x-icon" href="Style/Corporate/images/myicon.ico" />
+    <style>
+        body {
+            min-width: 0 !important;
+        }
+    </style>
+<style type="text/css" media="all">.navbar-brand > img {
+    max-height: 20px;
+    max-width: 65vw;
+    height: auto;
+}
+</style><script type="text/javascript">
+(function () {
+    window.digitalData = window.digitalData || [];
+
+    var domains = [
+        { "domain": "binckspanje.com", "country": "es", "language": "nl", "website": "rs-spain" },
+        { "domain": "binckbank.com", "country": "en", "language": "en", "website": "binck" },
+        { "domain": "binck.com", "country": "en", "language": "en", "website": "rs-binck" },
+        { "domain": "binck.be", "country": "be", "language": "nl", "website": "rs-belgium" },
+        { "domain": "binck.it", "country": "it", "language": "it", "website": "rs-italy" },
+        { "domain": "binck.nl", "country": "nl", "language": "nl", "website": "rs-netherlands" },
+        { "domain": "binck.fr", "country": "fr", "language": "fr", "website": "rs-france" }
+    ];
+
+    var languageList = [
+        { "language": "en" }, { "language": "nl" }, { "language": "fr" }, { "language": "it" }
+    ];
+
+    function findObject(arr, key, val) {
+        var found;
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i][key] === val) {
+                found = arr[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+    var topLvl = document.domain.split(".").reverse();
+    var subdomain = "";
+    
+    if (topLvl.length === 3 && topLvl[2] !== "www") {
+        subdomain = topLvl.pop();
+    } else {
+        topLvl.length = 2;
+    }
+
+    topLvl = topLvl.reverse().join(".");
+
+    var domain = findObject(domains, "domain", topLvl);
+
+    if (!domain) {
+        throw new Error(topLvl + " not supported by dataLayer");
+    }
+
+    var languageCode = domain.language;
+    var parts = window.location.pathname.split("index.html");
+    var languageCodeInUrl;
+
+    if (parts.length > 1) {
+        languageCodeInUrl = findObject(languageList, "language", parts[1]);
+    }
+    
+    if (subdomain === "ouvriruncompte") {
+        languageCodeInUrl = findObject(languageList, "language", "fr");
+    }
+
+    if (languageCodeInUrl) {
+        languageCode = languageCodeInUrl.language;
+        parts.shift();
+    }
+
+    parts.shift();
+    if (subdomain !== "") {
+        parts.unshift(subdomain);
+    }
+
+    var sections = parts.concat();
+    sections.unshift(languageCode + "-" + domain.country);
+
+    function responseStatusCode() {
+        responseStatusCode = 200;
+        var titlepage = window.document.title.toLowerCase()
+        if (titlepage.indexOf('pagina niet gevonden') > -1 || titlepage.indexOf('error 404') > -1 || titlepage.indexOf('page not found') > -1 || titlepage.indexOf('page non trouvée') > -1) {
+            responseStatusCode = 404;
+        }
+        return responseStatusCode;
+    }
+
+    function getPageName() {
+        return parts.join(":").replace(/:$/, "");
+    }
+
+    function getSiteSectionAll() {
+        var sectionAll = "";
+        if (parts.length === 0 || parts[0] === "") {
+            sectionAll = "frontpage";
+        } else {
+            sectionAll = getPageName();
+        }
+        return sectionAll;
+    }
+
+    var pageName = getPageName();
+
+    window.digitalData.error = {
+        responseStatusCode: responseStatusCode(),
+    }
+    window.digitalData.page = {
+        hostName: window.location.hostname,
+        pageName: languageCode + "-" + domain.country + (pageName != "" ? ":" : "" ) + pageName,
+        siteSection1: sections[0] || '',
+        siteSection2: sections[1] || '',
+        siteSection3: sections[2] || '',
+        siteSection4: sections[3] || '',
+        siteSection5: sections[4] || '',
+        siteSectionAll: getSiteSectionAll(),
+        queryString: window.location.search,
+        website: domain.website,
+        language: languageCode
+    };
+})()
+</script><script type="text/javascript" src="../assets.adobedtm.com/launch-EN5a2ce50dc24d4c95ad125c65fa54d8b3.min.js"></script><meta name="Generator" content="Sitefinity 11.0.6732.0 PU" /><link rel="canonical" href="politique-de-confidentialite.html" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="Sitefinity/Public/ResponsiveDesign/layout_transformationscea1.html?pageDataId=1b8cb9cc-219e-61cd-bc43-ff0100e84d35&amp;pageSiteNode=118CB9CC-219E-61CD-BC43-FF0100E84D35/f77df8cb-219e-61cd-bc43-ff0100e84d35/SitefinitySiteMap" type="text/css" rel="stylesheet" /><title>
+	Politique de confidentialit&#233; - Binck.fr
+</title><meta name="description" content="Politique de confidentialité Binck.fr, courtier de bourse en ligne" /><meta name="keywords" content="données personnelles, vie privée, risques en bourse, instruments financiers à risque, politique de confidentialité" /></head>
+<body>
+    <script src="bundles/PatternLab3b9e?v=eaHEFy3f5naNK8Kf7OcOckvdcpgFonixou7UWowavXk1"></script>
+
+    <form method="post" action="https://www.binck.fr/politique-de-confidentialite" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSM" id="ctl06_TSM" value="" />
+<input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="gF0iJcvaw/SAfLZz3FwhMPOjJkcG+9kP390Y0+Tl5SakoDxw1XLYcPPrfE2erZf8Gks55Y/oSQwBo+SysTSnKkd/ASw=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource908c.js?d=pynGkmcFUV13He1Qd6_TZP_4ej2xu7z_XVotHnL9kuaGNPxbuoHGPHb-o8amqx79yDcwVA2&amp;t=637290829350350503" type="text/javascript"></script>
+
+
+<script src="WebResource74ff.js?d=yAZznlIeaGQJz8qTi4uqDSxm-bWuIiwJKKVOYfsBKOKGAYFrBb8CzgrpwJulWIFfZX6-Sq38e3w8f8tdivnh_jEm03mVBkvaobew0b5wtEF7AzpSEpk2-02-UP7Vfj_PgCuldAuwGtncSUrXnO_klSdbTGY1&amp;t=636751093820000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"Non numérique","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infini","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+Infini","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":true,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="Telerik.Web.UI.WebResourcef71e.js?_TSM_HiddenField_=ctl06_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr%3a4feca508-514b-48c0-a162-7fa9c360d783%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="92414C66" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="FEx20Bv5yLnpetXLmaTHq6Ojaw1oBhHdfdlvIRYUbzAQ/oRs9if/lgqChHbMAlamZWYqdHCWBZS9Fani3M9mVxnRA2XAyRflQ0X9se+k+meivpVR" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl06', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<input type="hidden" name="ctl00$ctl06" id="ctl06" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl06", "ctl00$ctl06");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <input type="hidden" name="ctl00$uniqueSubmitIdHiddenField" id="uniqueSubmitIdHiddenField" value="3981c845-ab5d-4f4e-9a16-5f764095d7fe" />
+        
+        
+        
+    <script type="text/javascript">
+	StatsClient.LogVisit('118cb9cc-219e-61cd-bc43-ff0100e84d35', 'cf25eea4-08c9-4ed6-bfa3-958f65bbe34b');
+</script><script type="text/javascript">
+if(typeof _satellite!=="undefined"){_satellite.pageBottom();}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='index.html';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl07_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=11.0.6732.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:fr:ca5aa0cb-9dda-4885-a4ae-598cf4f97af5:7a90d6a:d271177c:dff30785';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();//]]>
+</script>
+</form>
+    <div id="content" class="wrap">
+
+    <div id="dna-header">
+        <nav class="navbar navbar-inverse navbar-static-top" id="top-nav" role="navigation">
+            <div class="container-fluid-lg">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" >
+                        <img alt="binck logo" src="images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                    </a>
+                    <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-left" aria-expanded="false" data-icon="">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                        <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-right" aria-expanded="false" data-icon="">
+                            <span class="sr-only">Toggle selection</span>
+                        </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown nav-item open-on-hover">
+                                <a href="contact.html" class="nav-link">Contacts</a>
+                            </li>
+                                                    <li class="nav-link">
+                                <a id="header-button" class="btn btn-primary btn-sm navbar-btn mr-2 ml-2 hidden-xs" href="devenir-client.html" >Devenir client</a>
+                                <a class="nav-link visible-xs" href="devenir-client.html" >Devenir client</a>
+                            </li>
+                                                    <li class="nav-link">
+                                
+
+<a class="nav-link" href="connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<nav class="navbar navbar-light alt" id="secondary-nav">
+    <div class="container-fluid-lg">
+        <ul class="nav navbar-nav navbar-left secondary-nav navbar-collapse collapse" id="secondary-nav-left">
+                <li class="nav-item visible-xs">
+                    
+
+<a class="nav-link" href="connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="bourse-en-ligne.html">Bourse</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/bourses.html" style="text-transform: none;">
+                                                        Les Bourses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                        Produits
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                                                Achat d&#39;actions en bourse
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/fonds.html" style="text-transform: none;">
+                                                                                Fonds
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/trackers.html" style="text-transform: none;">
+                                                                                Trackers
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/turbos.html" style="text-transform: none;">
+                                                                                Turbos
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/certificats.html" style="text-transform: none;">
+                                                                                Certificats
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/warrants.html" style="text-transform: none;">
+                                                                                Warrants
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/options.html" style="text-transform: none;">
+                                                                                Options
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/futures.html" style="text-transform: none;">
+                                                                                Futures
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/produits/srd.html" style="text-transform: none;">
+                                                                                SRD
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/comptes.html" style="text-transform: none;">
+                                                        Comptes
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/comptes/compte-titres.html" style="text-transform: none;">
+                                                                                Le compte-titres
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/comptes/pea.html" style="text-transform: none;">
+                                                                                Le PEA
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/comptes/pea-pme.html" style="text-transform: none;">
+                                                                                Le PEA-PME
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/outils-de-trading.html" style="text-transform: none;">
+                                                        Outils de trading
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/nos-plateformes.html" style="text-transform: none;">
+                                                                                Nos plateformes
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/application-mobile.html" style="text-transform: none;">
+                                                                                Application mobile
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/prorealtime.html" style="text-transform: none;">
+                                                                                ProRealTime V11
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/protrader.html" style="text-transform: none;">
+                                                                                ProTrader
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/fiches-valeurs.html" style="text-transform: none;">
+                                                                                Fiches valeurs
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/ordres-conditionnels.html" style="text-transform: none;">
+                                                                                Ordres conditionnels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-de-trading/portefeuille-virtuel.html" style="text-transform: none;">
+                                                                                Portefeuille virtuel
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                        Outils d&#39;analyses
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                                                Analyses techniques
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/analyse-fondamentale.html" style="text-transform: none;">
+                                                                                Analyse fondamentale
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/aide-a-la-decision.html" style="text-transform: none;">
+                                                                                Aide &#224; la d&#233;cision
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="bourse-en-ligne/outils-d-analyses/portefeuilles-types.html" style="text-transform: none;">
+                                                                                Portefeuilles types
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/club-des-traders.html" style="text-transform: none;">
+                                                        Club des Traders
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="bourse-en-ligne/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="assurance-vie.html">Assurance Vie</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                        Modes de gestion
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                                                Gestion libre
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/modes-de-gestion/gestion-sous-mandat.html" style="text-transform: none;">
+                                                                                Gestion sous mandat
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                        Supports
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                                                Tous nos supports
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/fonds-euros.html" style="text-transform: none;">
+                                                                                Fonds euros
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/opc.html" style="text-transform: none;">
+                                                                                OPC
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/opc-indiciels.html" style="text-transform: none;">
+                                                                                OPC indiciels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="assurance-vie/supports/actions.html" style="text-transform: none;">
+                                                                                Actions
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/performances-assurance-vie.html" style="text-transform: none;">
+                                                        Performances
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/avantages-fiscalite.html" style="text-transform: none;">
+                                                        Fiscalit&#233;
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/adherer-assurance-vie.html" style="text-transform: none;">
+                                                        Comment adh&#233;rer
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/FAQ-assurance-vie.html" style="text-transform: none;">
+                                                        FAQ
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="assurance-vie/lexique.html" style="text-transform: none;">
+                                                        Lexique
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="qui-est-binck.html">Qui est Binck</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/pourquoi-choisir-binck.html" style="text-transform: none;">
+                                                        Pourquoi choisir Binck
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/trader-en-ligne.html" style="text-transform: none;">
+                                                        Trader en ligne
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/palmares.html" style="text-transform: none;">
+                                                        Palmar&#232;s
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/presse.html" style="text-transform: none;">
+                                                        Binck dans la presse
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                        Communiqu&#233;s de presse
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                                                2020
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2019.html" style="text-transform: none;">
+                                                                                2019
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2018.html" style="text-transform: none;">
+                                                                                2018
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2017.html" style="text-transform: none;">
+                                                                                2017
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2016.html" style="text-transform: none;">
+                                                                                2016
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2015.html" style="text-transform: none;">
+                                                                                2015
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2014.html" style="text-transform: none;">
+                                                                                2014
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2013.html" style="text-transform: none;">
+                                                                                2013
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2012.html" style="text-transform: none;">
+                                                                                2012
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="qui-est-binck/communiques-de-presse/2011.html" style="text-transform: none;">
+                                                                                2011
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="qui-est-binck/rapports-financiers.html" style="text-transform: none;">
+                                                        Rapports financiers
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="formations-trading.html">Formations</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="formations-trading/espace-bourse-pratique.html" style="text-transform: none;">
+                                                        Espace Bourse Pratique
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="formations-trading/dictionnaire-financier.html" style="text-transform: none;">
+                                                        Dictionnaire financier
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="formations-trading/investir-en-bourse-sur-binck-fr.html" style="text-transform: none;">
+                                                        Investir en bourse sur Binck.fr
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="actualites/analyses.html">Actualit&#233;s</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="actualites/analyses.html" style="text-transform: none;">
+                                                        Analyses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="actualites/calendrier-boursier.html" style="text-transform: none;">
+                                                        Calendrier boursier
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link  " href="binck-tv.html">Binck TV</a>
+                        </li>
+            
+                <li class="nav-item visible-xs">
+<a href="contact.html" class="nav-link">Contacts</a>                </li>
+                            <li class="nav-item visible-xs">
+                    <a class="nav-link" href="devenir-client.html" >Devenir client</a>
+                </li>
+                    </ul>
+        
+            <ul class="nav navbar-nav navbar-right secondary-nav navbar-collapse collapse" id="secondary-nav-right">
+                <div class="form-group has-search">
+                    <input id="search-box" class="form-control" type="search" placeholder="Recherche ..." data-toggle="pill" data-target="#searchresult" data-search-page="/search-results" data-index-catalog="searchfrance">
+                </div>
+            </ul>
+    </div>
+</nav>
+
+    </div>
+
+
+
+
+
+
+<div class="lane  bg-image  bg-darkgrey  has-halfrudder has-tail" 
+     style="background-image: url('images/librariesprovider6/bgd/header-10fe5c.jpg?sfvrsn=8a2a8034_0')" >
+    <div class="container text-center text-white " >
+<h1 class="h1  ">Politique de confidentialité</h1>                    <div class="littleruler"></div>
+        <p class="lead">La protection de la vie privée des clients est, pour Binck.fr, un pilier fondamental de la prestation de services</p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane tail">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpHeader_C094_Col00" class="sf_colsIn col-xs-12">
+<div class="card   call-out"    >            <header class="card-header ">
+                <h3 class="h3  ">SOMMAIRE</h3>
+            </header>
+        <div class="card-block ">
+            <p class="card-text"><ol>
+    <li>
+    <div><a href="#poly01">INTRODUCTION</a></div>
+    </li>
+    <li>
+    <div><a href="#poly02">BINCK.FR RESPONSABLE DU TRAITEMENT DE VOS DONN&Eacute;ES</a></div>
+    </li>
+    <li>
+    <div><a href="#poly03">POURQUOI BINCK.FR TRAITE VOS DONN&Eacute;ES &Agrave; CARACT&Egrave;RE PERSONNEL ?</a></div>
+    <br>
+    <a href="#poly04"><strong>3.1 Obligations l&eacute;gales</strong></a>
+    <ol>
+        <li>
+        <div><a href="#poly05">Lutte contre le blanchiment d&rsquo;argent et le financement du terrorisme et r&egrave;glementation sur les embargos</a></div>
+        </li>
+        <li>
+        <div><a href="#poly06">R&egrave;glementation fiscale</a></div>
+        </li>
+        <li>
+        <div><a href="#poly07">Autorit&eacute;s judiciaires</a></div>
+        </li>
+        <li>
+        <div><a href="#poly08">R&egrave;glementation relative &agrave; la protection de la vie priv&eacute;e</a></div>
+        </li>
+        <li>
+        <div><a href="#poly09">R&egrave;glementation sur la surveillance des institutions financi&egrave;res</a></div>
+        </li>
+        <li>
+        <div><a href="#poly10">R&egrave;glementation sur le d&eacute;lit d&rsquo;initi&eacute; et la manipulation de march&eacute;</a></div>
+        </li>
+        <li>
+        <div><a href="#poly11">R&egrave;glementation sur le reporting financier</a></div>
+        </li>
+        <li>
+        <div><a href="#poly12">R&egrave;glementation sur les comptes inactifs</a></div>
+        </li>
+    </ol>
+    <br>
+    <a href="#poly14"><strong>3.2 Conclusion et ex&eacute;cution du contrat</strong></a><br>
+    <br>
+    <a href="#poly15"><strong>3.3 Fonctionnement optimal de Binck.fr</strong></a><br>
+    <ol>
+        <li>
+        <div><a href="#poly16">Prestation optimale de services</a></div>
+        </li>
+        <li>
+        <div><a href="#poly17">L&rsquo;int&eacute;r&ecirc;t l&eacute;gitime de Binck.fr</a></div>
+        </li>
+        <li>
+        <div><a href="#poly18">Autorisation</a></div>
+        </li>
+    </ol>
+    <br>
+    <a href="#poly19"><strong>3.4 Fins commerciales</strong></a><br>
+    <ol>
+        <li>
+        <div><a href="#poly20">L&rsquo;int&eacute;r&ecirc;t l&eacute;gitime de Binck.fr</a></div>
+        </li>
+        <li>
+        <div><a href="#poly21">Autorisation</a></div>
+        </li>
+    </ol>
+    <br>
+    <a href="#poly22"><strong>3.5 Fonctionnement du site et de l&rsquo;application</strong></a><br>
+    <br>
+    </li>
+    <li>
+    <div><a href="#poly23">DROITS DE LA PERSONNE CONCERN&Eacute;E</a></div>
+    </li>
+    <br>
+    <a href="#poly24"><strong>4.1 Exercer vos droits</strong></a><br>
+    <br>
+    <li>
+    <div><a href="#poly25">&Eacute;CHANGE DE DONN&Eacute;ES</a></div>
+    </li>
+    <br>
+    <a href="#poly26"><strong>5.1 Donn&eacute;es publiques et donn&eacute;es re&ccedil;ues de tiers</strong></a><br>
+    <br>
+    <a href="#poly27"><strong>5.2 &Eacute;change au sein du Groupe auquel appartient Binck.fr</strong></a><br>
+    <br>
+    <a href="#poly28"><strong>5.3 Discr&eacute;tion</strong></a><br>
+    <br>
+    <a href="#poly29"><strong>5.4 Lieux du traitement</strong></a><br>
+    <br>
+    <li>
+    <div><a href="#poly30">PROTECTION ET CONFIDENTIALIT&Eacute;</a></div>
+    </li>
+    <li>
+    <div><a href="#poly31">P&Eacute;RIODE DE CONSERVATION</a></div>
+    </li>
+    <li>
+    <div><a href="#poly32">QUESTIONS OU R&Eacute;CLAMATIONS</a></div>
+    </li>
+</ol></p>
+        </div>
+</div>
+            </div> 
+        </div>
+    </div>
+</div><div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpHeader_C129_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck est particuli&egrave;rement attentif &agrave; vos attentes et nous souhaitons pr&eacute;server la confiance que vous nous portez. Concernant les donn&eacute;es personnelles que vous nous confiez, nous vous informons de mani&egrave;re transparente sur notre politique en mati&egrave;re de d&eacute;p&ocirc;t et d&rsquo;utilisation des cookies.
+<br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">1-Introduction</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>
+La protection de la vie priv&eacute;e des clients est, pour Binck.fr, un pilier fondamental de la prestation de services. Binck.fr s&rsquo;engage par cons&eacute;quent &agrave; traiter vos donn&eacute;es &agrave; caract&egrave;re personnel de mani&egrave;re l&eacute;gale et transparente. La pr&eacute;sente Politique de confidentialit&eacute; vous offre un aper&ccedil;u complet de la fa&ccedil;on dont Binck.fr collecte, traite et conserve vos donn&eacute;es. L&rsquo;encadr&eacute; &laquo; En bref &raquo; de chaque rubrique principale vous propose un r&eacute;sum&eacute; du contenu d&eacute;taill&eacute; du chapitre en question.<br>
+<br>
+Les informations contenues dans ce document s'appliquent aux donn&eacute;es &agrave; caract&egrave;re personnel de personnes physiques ou morales trait&eacute;es par Binck.fr dans le cadre de sa prestation de services. <br>
+<br>
+Il est recommand&eacute; de lire attentivement la pr&eacute;sente brochure, afin d&rsquo;en apprendre plus sur vos droits concernant vos donn&eacute;es personnelles, et sur la mani&egrave;re de les exercer. Binck.fr s&rsquo;efforce de garder vos informations personnelles correctes et &agrave; jour. Si vos donn&eacute;es doivent &ecirc;tre modifi&eacute;es, vous pouvez en faire part au moyen d'un courrier dat&eacute; et sign&eacute; ou d'un e-mail (<a href="mailto:info@binck.fr">info@binck.fr</a>).<br>
+<br>
+La r&eacute;glementation et la politique interne relatives au traitement des donn&eacute;es &agrave; caract&egrave;re personnel peuvent &ecirc;tre r&eacute;vis&eacute;es, afin de garantir que votre vie priv&eacute;e est et reste prot&eacute;g&eacute;e &agrave; tout moment. Le cas &eacute;ch&eacute;ant, le pr&eacute;sent document sera adapt&eacute; en temps voulu, afin que vous restiez toujours correctement inform&eacute;. Vous pouvez consulter la version la plus r&eacute;cente de la Politique de confidentialit&eacute; sur le site (<a href="index.html">www.binck.fr</a>).
+<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly02" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="lane    bg-white   " 
+      >
+    <div class="container text-center   " >
+                <p class="lead"> </p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane full-background">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpHeader_C131_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">2-Binck.fr responsable du traitement de vos données</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Le responsable du traitement de vos donn&eacute;es &agrave; caract&egrave;re personnel est BinckBank NV., ayant pour si&egrave;ge Barbara Strozzilaan 310, 1083 HN Amsterdam, Pays-Bas, inscrite &agrave; la Chambre de Commerce d&rsquo;Amsterdam sous le num&eacute;ro 33162223, agissant par sa succursale en France, enregistr&eacute;e au RCS de Nanterre sous le num&eacute;ro 495 193 849, et dont les bureaux sont situ&eacute;s au 10 rue de la Paix, 75002 Paris.<br>
+<br>
+Binck.fr est une d&eacute;nomination commerciale de BinckBank NV. Le terme &laquo; Binck.fr &raquo; utilis&eacute; dans les pr&eacute;sents fait toujours r&eacute;f&eacute;rence &agrave; la succursale fran&ccedil;aise de BinckBank NV.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly03" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C132_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">3-Pourquoi Binck.fr traite vos données à caractère personnel ?</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title">
+<strong>EN BREF</strong><br>
+Binck.fr traite toujours vos donn&eacute;es &agrave; caract&egrave;re personnel dans un but bien pr&eacute;cis, &agrave; savoir la &laquo; finalit&eacute; du traitement &raquo;. <strong>Il existe 5 finalit&eacute;s essentielles</strong>&nbsp;pour Binck.fr:<br>
+<br>
+1-Parce que Binck.fr a besoin de vos donn&eacute;es &agrave; caract&egrave;re personnel pour satisfaire &agrave; une obligation l&eacute;gale.<br>
+2-Parce que vos donn&eacute;es &agrave; caract&egrave;re personnel sont n&eacute;cessaires pour conclure ou ex&eacute;cuter un contrat.<br>
+3-Parce que Binck.fr doit pouvoir continuer &agrave; fonctionner de mani&egrave;re optimale tout en respectant son engagement envers vous.<br>
+4-Parce que Binck.fr entend pouvoir vous fournir des informations commerciales.<br>
+5-Parce que le site et l&rsquo;application doivent correspondre &agrave; vos pr&eacute;f&eacute;rences.
+</div>
+</div>
+<p class="text-right"><a href="#top" name="poly04" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">3.1 Obligations légales</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title">
+<strong>EN BREF</strong><br>
+Binck.fr a besoin de vos donn&eacute;es &agrave; caract&egrave;re personnel pour r&eacute;pondre &agrave; certaines obligations l&eacute;gales. Binck.fr ne peut se soustraire &agrave; ce type d&rsquo;obligations.<br>
+Ainsi, vos donn&eacute;es sont entre autres n&eacute;cessaires pour la lutte contre le blanchiment et le terrorisme, pour aider les autorit&eacute;s judiciaires dans leurs enqu&ecirc;tes et pour vous garantir une protection ad&eacute;quate en votre qualit&eacute; d'investisseur.
+</div>
+</div>
+<p>Binck.fr est tenue de traiter vos donn&eacute;es &agrave; caract&egrave;re personnel pour pouvoir r&eacute;pondre &agrave; des obligations l&eacute;gales. Vous trouverez ci-dessous une liste des principaux motifs l&eacute;gaux du traitement de donn&eacute;es.<br>
+<br>
+La r&egrave;glementation applicable peut &ecirc;tre amen&eacute;e &agrave; &eacute;voluer. Binck.fr veille &agrave; ce que sa Politique de confidentialit&eacute; y soit toujours conforme. Seules les donn&eacute;es n&eacute;cessaires pour r&eacute;pondre aux obligations l&eacute;gales sont collect&eacute;es, trait&eacute;es et conserv&eacute;es par Binck.fr selon cette finalit&eacute; et notamment les fondements ci-dessous.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly05" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.1. Lutte contre le blanchiment d’argent et le financement du terrorisme et règlementation sur les embargos</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck.fr est tenue de pr&eacute;venir et d&rsquo;identifier les pratiques de blanchiment et de les signaler aux autorit&eacute;s comp&eacute;tentes. &Agrave; cet effet, Binck.fr doit :</p>
+<ol>
+    <li>
+    <div>Identifier le client, les &eacute;ventuels mandataires du client et le b&eacute;n&eacute;ficiaire effectif (UBO) du client.</div>
+    </li>
+    <li>
+    <div>V&eacute;rifier l&rsquo;identit&eacute; de ces personnes.</div>
+    </li>
+    <li>
+    <div>&Eacute;tablir un profil de risque (de blanchiment) sur la base de donn&eacute;es personnelles et professionnelles (par exemple si le client est une personnalit&eacute; politique).</div>
+    </li>
+    <li>
+    <div>Contr&ocirc;ler les op&eacute;rations et les transactions, et le cas &eacute;ch&eacute;ant effectuer un signalement au service de Traitement du Renseignement et Action contre les Circuits FINanciers clandestins (TRACFIN) &agrave; la Cellule de Traitement des Informations Financi&egrave;res (CTIF).</div>
+    </li>
+    <br>
+</ol>
+<p>Binck.fr doit &eacute;galement contribuer &agrave; la lutte contre le financement du terrorisme et au respect de la r&egrave;glementation sur les embargos.<br>
+<br>
+Binck.fr traite &agrave; cet &eacute;gard les donn&eacute;es &agrave; caract&egrave;re personnel suivantes de chaque client, communiqu&eacute;es lors de l&rsquo;entr&eacute;e en relation :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Situation professionnelle</div>
+    </li>
+    <li>
+    <div>Situation financi&egrave;re</div>
+    </li>
+    <li>
+    <div>Fonction politique importante</div>
+    </li>
+    <li>
+    <div>Caract&eacute;ristiques personnelles</div>
+    </li>
+    <br>
+</ul>
+<p>Dans sa relation avec des personnes morales, Binck.fr doit &eacute;galement identifier les b&eacute;n&eacute;ficiaires effectifs de la personne morale cliente. Elle traite &agrave; cet effet les donn&eacute;es &agrave; caract&egrave;re personnel suivantes :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Situation professionnelle</div>
+    </li>
+    <li>
+    <div>Situation financi&egrave;re</div>
+    </li>
+    <li>
+    <div>Fonction politique importante</div>
+    </li>
+    <li>
+    <div>Caract&eacute;ristiques personnelles</div>
+    </li>
+    <br>
+</ul>
+<p>Enfin, pour certaines personnes politiquement expos&eacute;es, Binck.fr doit traiter les donn&eacute;es &agrave; caract&egrave;re personnel suivantes, renseign&eacute;es dans la d&eacute;claration PPE :</p>
+<ul class="unordered">
+    <li>Donn&eacute;es d&rsquo;identification</li>
+    <li>Origine du patrimoine</li>
+    <li>Situation professionnelle</li>
+    <li>Situation familiale</li>
+    <li>Fonction politique importante</li>
+    <br>
+</ul>
+<p>Binck.fr collecte vos donn&eacute;es &agrave; caract&egrave;re personnel lors de l&rsquo;ouverture de votre compte et via les canaux suivants : moteurs de recherche en ligne, instances publiques et partenaires professionnels.</p>
+<p class="text-right"><a href="#top" name="poly06" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.2. Règlementation fiscale</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck.fr est tenue de traiter les donn&eacute;es de ses clients, de leurs comptes et des contrats afin d&rsquo;assurer sa conformit&eacute; aux obligations fiscales. Binck.fr doit fournir des informations &agrave; diverses autorit&eacute;s fiscales, et d&egrave;s lors communiquer certaines de vos donn&eacute;es &agrave; ces derni&egrave;res.<br>
+<br>
+Binck.fr traite &agrave; cet &eacute;gard les donn&eacute;es &agrave; caract&egrave;re personnel suivantes :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Caract&eacute;ristiques personnelles</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly07" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.3. Autorités judiciaires</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck.fr doit fournir aux autorit&eacute;s judiciaires (Police, Justice, Douanes&hellip;) toute information demand&eacute;e dans le cadre d&rsquo;une r&eacute;quisition judicaire. Le secret bancaire ne leur est pas opposable.<br>
+<br>
+Les renseignements demand&eacute;s pourront concerner toute donn&eacute;e collect&eacute;e, trait&eacute;e et conserv&eacute;e par Binck.fr.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly08" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.4. Règlementation relative à la protection de la vie privée</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck.fr doit aussi traiter vos donn&eacute;es &agrave; caract&egrave;re personnel en vue de prot&eacute;ger votre vie priv&eacute;e. En effet, Binck.fr doit pouvoir r&eacute;agir de mani&egrave;re appropri&eacute;e lorsque vous souhaitez exercer vos droits ou lorsque la Commission nationale de l'informatique et des libert&eacute;s (CNIL) l&rsquo;interroge.<br>
+<br>
+Binck.fr traitera &agrave; cet &eacute;gard les donn&eacute;es &agrave; caract&egrave;re personnel suivantes :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Pr&eacute;f&eacute;rences</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly09" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.5. Règlementation sur la surveillance des institutions financières</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Dans le cadre de la r&egrave;glementation sur la surveillance des institutions financi&egrave;res, notamment la Directive sur les march&eacute;s d&rsquo;instruments financiers (MiFID), Binck.fr entend apprendre &agrave; mieux conna&icirc;tre ses clients.&nbsp;<br>
+<br>
+Binck.fr doit &eacute;galement enregistrer et conserver les communications t&eacute;l&eacute;phoniques et &eacute;lectroniques (ainsi que les &eacute;changes de donn&eacute;es qui y sont li&eacute;es) entre vous et Binck.fr (ou les tiers d&eacute;sign&eacute;s). Ces informations sont uniquement conserv&eacute;es pendant une p&eacute;riode dont la dur&eacute;e est limit&eacute;e par la r&egrave;glementation (voir ci-dessous).&nbsp;<br>
+<br>
+Binck.fr traite &agrave; cet &eacute;gard les donn&eacute;es &agrave; caract&egrave;re personnel suivantes, renseign&eacute;es dans le contrat du client, le processus d&rsquo;ouverture de compte et l&rsquo;environnement client s&eacute;curis&eacute; :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Exp&eacute;rience et connaissance des instruments financiers</div>
+    </li>
+    <li>
+    <div>Situation financi&egrave;re</div>
+    </li>
+    <li>
+    <div>Situation professionnelle</div>
+    </li>
+    <li>
+    <div>Caract&eacute;ristiques personnelles</div>
+    </li>
+    <li>
+    <div>Enregistrements des appels</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly10" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.6. Règlementation sur le délit d’initié et la manipulation de marché</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck.fr est tenue de pr&eacute;venir, d&rsquo;identifier et de d&eacute;clarer les d&eacute;lits d&rsquo;initi&eacute; et les manipulations de march&eacute; ainsi que les tentatives.<br>
+<br>
+Binck.fr traitera &agrave; cet &eacute;gard les donn&eacute;es &agrave; caract&egrave;re personnel suivantes :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Exp&eacute;rience et connaissance des instruments financiers</div>
+    </li>
+    <li>
+    <div>Situation financi&egrave;re</div>
+    </li>
+    <li>
+    <div>Transactions r&eacute;alis&eacute;es</div>
+    </li>
+    <li>
+    <div>Situation professionnelle</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly11" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.7. Règlementation sur le reporting financier</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck.fr doit &eacute;galement traiter vos donn&eacute;es &agrave; caract&egrave;re personnel en vue de r&eacute;pondre aux obligations de reporting &agrave; l&rsquo;&eacute;gard des autorit&eacute;s administratives. Les &eacute;tablissements de cr&eacute;dit doivent pouvoir pr&eacute;senter des rapports et r&eacute;pondre aux questions des organismes de surveillance (par exemple : l'AMF, l'ACPR, la BCE) en vertu de la r&egrave;glementation en vigueur relative &agrave; la surveillance des institutions financi&egrave;res.<br>
+<br>
+Les renseignements demand&eacute;s pourront concerner toutes les donn&eacute;es collect&eacute;es, trait&eacute;es et conserv&eacute;es par Binck.fr dans le cadre de la relation entre vous et la banque.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly12" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.1.8. Règlementation sur les comptes inactifs</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Dans le cas d'un compte inactif, les donn&eacute;es &agrave; caract&egrave;re personnel sont utilis&eacute;es pour identifier le titulaire ou le b&eacute;n&eacute;ficiaire du compte et solliciter une manifestation de sa part.<br>
+<br>
+Binck.fr traitera &agrave; cet &eacute;gard les donn&eacute;es &agrave; caract&egrave;re personnel suivantes :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Transactions r&eacute;alis&eacute;es</div>
+    </li>
+    <li>
+    <div>Donn&eacute;es de connexion</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly13" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">3.2 Conclusion et exécution du contrat</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Pour conclure un contrat avec vous et en assurer la bonne ex&eacute;cution, Binck.fr doit disposer de diverses donn&eacute;es &agrave; caract&egrave;re personnel.<br>
+<br>
+&Agrave; d&eacute;faut, Binck.fr ne sera pas en mesure d&rsquo;initier ou de poursuivre sa relation avec vous.
+</div>
+</div>
+<p>Binck.fr collecte, traite et conserve &eacute;galement vos donn&eacute;es &agrave; caract&egrave;re personnel en vue de conclure et d&rsquo;ex&eacute;cuter des contrats. Binck.fr doit en effet &ecirc;tre en mesure de conclure un contrat avec vous, de g&eacute;rer votre compte, d&rsquo;ex&eacute;cuter des ordres, d&rsquo;assurer des d&eacute;p&ocirc;ts, de faciliter des op&eacute;rations avec des instruments financiers et de vous informer correctement.<br>
+<br>
+Binck.fr doit en outre pouvoir assurer la gestion des clients et des comptes, contr&ocirc;ler et surveiller la r&eacute;gularit&eacute; des op&eacute;rations et pr&eacute;venir les irr&eacute;gularit&eacute;s. Le traitement administratif de vos donn&eacute;es &agrave; caract&egrave;re personnel est associ&eacute; &agrave; ces diff&eacute;rentes t&acirc;ches.<br>
+<br>
+Les donn&eacute;es trait&eacute;es dans ce cadre sont n&eacute;cessaires &agrave; la cr&eacute;ation et &agrave; la poursuite de la relation entre vous et Binck.fr. Si vous souhaitez pouvoir b&eacute;n&eacute;ficier de certains services, vous devrez communiquer des donn&eacute;es &agrave; caract&egrave;re personnel.<br>
+<br>
+Les informations requises sont notamment collect&eacute;es dans la documentation d&rsquo;ouverture de compte, la convention de compte, pendant le processus d&rsquo;ouverture de compte, dans l&rsquo;environnement client s&eacute;curis&eacute;, et au cours des &eacute;changes ult&eacute;rieurs entre vous et Binck.fr. Celle-ci traitera &agrave; cet &eacute;gard les donn&eacute;es &agrave; caract&egrave;re personnel suivantes :</p>
+<ul class="unordered">
+    <li>
+    <div>Donn&eacute;es d&rsquo;identification</div>
+    </li>
+    <li>
+    <div>Enregistrements des appels</div>
+    </li>
+    <li>
+    <div>Situation financi&egrave;re</div>
+    </li>
+    <li>
+    <div>Caract&eacute;ristiques personnelles</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly15" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">3.3 Fonctionnement optimal de Binck.fr</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Pour assurer un fonctionnement optimal &agrave; votre &eacute;gard, Binck.fr peut collecter, traiter et conserver vos donn&eacute;es &agrave; caract&egrave;re personnel, dans certaines limites. <br>
+<br>
+Ce traitement reposera sur divers fondements l&eacute;gaux, d&eacute;pendant eux-m&ecirc;mes de la situation concr&egrave;te.
+</div>
+</div>
+<p class="text-right"><a href="#top" name="poly16" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.3.1. Prestation optimale de services</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Lorsque le fonctionnement optimal de Binck.fr tient au besoin de pouvoir conclure et ex&eacute;cuter correctement des contrats avec les clients, Binck.fr invoquera cette n&eacute;cessit&eacute; pour collecter, traiter et conserver vos donn&eacute;es &agrave; caract&egrave;re personnel.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly17" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.3.2. L’intérêt légitime de Binck.fr</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Si tel n&rsquo;est pas le cas, Binck.fr pourra alors invoquer son &laquo; int&eacute;r&ecirc;t l&eacute;gitime &raquo;. Dans une telle &eacute;ventualit&eacute;, Binck.fr veillera &agrave; ce que cette utilisation n&rsquo;affecte pas s&eacute;rieusement vos droits et libert&eacute;s. <br>
+<br>
+Binck.fr peut avoir recours &agrave; l&rsquo;int&eacute;r&ecirc;t l&eacute;gitime pour le traitement des donn&eacute;es &agrave; caract&egrave;re personnel aux fins suivantes :</p>
+<ul class="unordered">
+    <li>
+    <div>Informer proactivement les clients &agrave; propos des services de Binck.fr.</div>
+    </li>
+    <li>
+    <div>	Rendre possible la participation &agrave; des activit&eacute;s de formation.</div>
+    </li>
+    <li>
+    <div>	Rendre possible la participation &agrave; des op&eacute;rations commerciales (par exemple : le parrainage). </div>
+    </li>
+    <li>
+    <div>	Traiter les r&eacute;clamations.</div>
+    </li>
+    <li>
+    <div>	Assurer la formation et l&rsquo;encadrement des &eacute;quipes de Binck.fr.</div>
+    </li>
+    <li>
+    <div>	Am&eacute;liorer le fonctionnement interne.</div>
+    </li>
+    <li>
+    <div>Elaborer des statistiques.</div>
+    </li>
+    <li>
+    <div>Evaluer et g&eacute;rer les risques.</div>
+    </li>
+    <li>
+    <div>Effectuer du ciblage commercial.</div>
+    </li>
+    <li>
+    <div>Rendre possible le profilage et l&rsquo;analyse pr&eacute;dictive.</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly18" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.3.3. Autorisation</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Au-del&agrave; de la conclusion/ex&eacute;cution d'un contrat ou d&rsquo;un quelconque int&eacute;r&ecirc;t l&eacute;gitime, Binck.fr pourra se fonder sur  votre autorisation pour collecter, traiter et conserver vos donn&eacute;es &agrave; caract&egrave;re personnel en vue d&rsquo;assurer son fonctionnement optimal.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly19" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">3.4 Fins commerciales</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Binck.fr se doit d'&eacute;voquer aussi dans cette Politique de confidentialit&eacute;, l&rsquo;utilisation de ces donn&eacute;es &agrave; des fins commerciales. <br>
+<br>
+Binck.fr veillera &agrave; d&eacute;terminer pr&eacute;cis&eacute;ment le motif l&eacute;gal du traitement pour chaque communication marketing, et vous fournira toutes les informations utiles &agrave; ce niveau. Le cas &eacute;ch&eacute;ant, Binck.fr vous demandera votre consentement.<br>
+<br>
+Vous pouvez &agrave; tout moment vous opposer &agrave; l&rsquo;utilisation de vos donn&eacute;es &agrave; des fins de marketing direct.
+</div>
+</div>
+<p>Binck.fr entend pouvoir vous contacter en tant que client potentiel ou existant, et vous tenir inform&eacute; des produits et services offerts, des promotions, actions commerciales et formations. Ces informations peuvent vous &ecirc;tre transmises par diff&eacute;rentes voies : via le site Internet ou l&rsquo;application, par e-mail, par courrier, par t&eacute;l&eacute;phone, &agrave; l&rsquo;occasion d&rsquo;un &eacute;v&eacute;nement. Binck.fr met tout en &oelig;uvre pour garantir une communication pr&eacute;cise des informations. Binck.fr veillera &agrave; d&eacute;terminer pr&eacute;cis&eacute;ment le motif l&eacute;gal du traitement pour chaque communication de marketing.<br>
+<br>
+Si vous ne souhaitez pas recevoir nos emails ou newsletters, vous pouvez &agrave; tout moment retirer votre consentement et vous d&eacute;sinscrire en cliquant sur le lien int&eacute;gr&eacute; directement dans nos emails ou newsletters.<br>
+<br>
+Si vous ne souhaitez pas recevoir de marketing direct de la part de Binck.fr, vous pouvez exercer &agrave; tout moment votre droit d&rsquo;opposition (voir ci-dessous) au marketing direct.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly20" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.4.1. L’intérêt légitime de Binck.fr</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>En l&rsquo;absence d&rsquo;autorisation, Binck.fr peut vous envoyer des offres ou des messages promotionnels si cela correspond &agrave; un int&eacute;r&ecirc;t l&eacute;gitime. Le cas &eacute;ch&eacute;ant, Binck.fr utilisera un nombre, aussi limit&eacute; que possible, de donn&eacute;es et veillera &agrave;  ne pas affecter s&eacute;rieusement vos droits et libert&eacute;s.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly21" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h4  text-left">3.4.2. Autorisation</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Moyennant votre accord explicite, Binck.fr peut vous contacter de mani&egrave;re personnalis&eacute;e. Vos donn&eacute;es &agrave; caract&egrave;re personnel sont alors utilis&eacute;es pour vous envoyer des informations correspondant &agrave; votre situation personnelle. Binck.fr utilisera toutes les donn&eacute;es &agrave; caract&egrave;re personnel recueillies &agrave; cette fin pour vous adresser de telles communications de marketing direct.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly22" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">3.5 Fonctionnement du site et de l’application</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Afin de s&rsquo;assurer que le site internet et l&rsquo;application sont g&eacute;r&eacute;s de fa&ccedil;on ad&eacute;quate et correspondent autant que possible &agrave; vos pr&eacute;f&eacute;rences, Binck.fr collecte des informations sur les op&eacute;rations effectu&eacute;es sur le site et l&rsquo;application, au moyen de cookies. Vous trouverez de plus amples informations sur l&rsquo;utilisation des cookies sur le site (<a href="index.html">www.binck.fr</a>)<br>
+<br>
+</p>
+<div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Vous disposez bien entendu &eacute;galement de plusieurs droits &agrave; l&rsquo;&eacute;gard de Binck.fr.<br>
+<br>
+Vous &ecirc;tes ainsi libre de consulter vos donn&eacute;es, de les (faire) corriger ou effacer, de limiter le traitement &agrave; certains cas sp&eacute;cifiques, de vous opposer au traitement, de refuser le traitement enti&egrave;rement automatique de vos donn&eacute;es, et enfin de transf&eacute;rer vos donn&eacute;es.<br>
+<br>
+Vous pouvez exercer ces droits en adressant un courrier ou un e-mail (<a href="mailto:info@binck.fr">info@binck.fr</a>). </div>
+</div>
+<p class="text-right"><a href="#top" name="poly23" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="lane    bg-white   " 
+      >
+    <div class="container text-center   " >
+                <p class="lead"> </p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane full-background">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C134_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">4-Droits de la personne concernée</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>En vertu du R&egrave;glement g&eacute;n&eacute;ral sur la protection des donn&eacute;es (RGPD), vous b&eacute;n&eacute;ficiez de plusieurs droits &agrave; l&rsquo;&eacute;gard de Binck.fr :</p>
+<ul class="unordered">
+    <li>
+    <div>Le droit &agrave; la portabilit&eacute; des donn&eacute;es : droit de transf&eacute;rer vos donn&eacute;es &agrave; caract&egrave;re personnel &agrave; un tiers.</div>
+    </li>
+    <li>
+    <div>Le droit &agrave; l&rsquo;oubli : droit d&rsquo;&ecirc;tre &laquo; oubli&eacute; &raquo; des bases de donn&eacute;es de Binck.fr.</div>
+    </li>
+    <li>
+    <div>Le droit de consultation : droit de consulter les donn&eacute;es vous concernant.</div>
+    </li>
+    <li>
+    <div>Le droit de rectification et d'ajout : droit de modifier les donn&eacute;es &agrave; caract&egrave;re personnel.</div>
+    </li>
+    <li>
+    <div>Le droit de limitation du traitement : droit de limiter la quantit&eacute; de donn&eacute;es trait&eacute;es.</div>
+    </li>
+    <li>
+    <div>Le droit relatif &agrave; la d&eacute;cision automatis&eacute;e et au profilage : droit &agrave; un regard humain lors de la prise de d&eacute;cision.</div>
+    </li>
+    <li>
+    <div>Le droit de s&rsquo;opposer au traitement des donn&eacute;es.</div>
+    </li>
+</ul>
+<p class="text-right"><a href="#top" name="poly24" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">4.1 Exercer vos droits</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Si vous d&eacute;sirez faire usage de ces droits ou si vous avez d&rsquo;autres questions concernant la Politique de confidentialit&eacute;, vous pouvez adresser votre instruction par e-mail &agrave; <a href="mailto:info@binck.fr" title="" class="" target="">info@binck.fr</a>&nbsp;ou par courrier dat&eacute; et sign&eacute;.&nbsp;<br>
+<br>
+Quand vous nous envoyez une demande relative &agrave; vos droits, veillez &agrave; renseigner vos coordonn&eacute;es compl&egrave;tes (nom, pr&eacute;nom, e-mail(s), adresse postale compl&egrave;te) et nous vous prions d&rsquo;y joindre une copie recto/verso de votre carte d&rsquo;identit&eacute;, et ceci afin de garantir la s&eacute;curit&eacute; de vos donn&eacute;es.<br>
+<br>
+Si vous &ecirc;tes client, vous pouvez aussi consulter et modifier certaines de vos donn&eacute;es personnelles dans l&rsquo;espace client s&eacute;curis&eacute;.<br>
+<br>
+</p>
+<div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Dans la plupart des cas, Binck.fr collecte vos donn&eacute;es &agrave; caract&egrave;re personnel directement aupr&egrave;s de vous. Il peut cependant arriver que Binck.fr passe par d'autres canaux, notamment pour les donn&eacute;es appartenant au domaine public, que vous avez vous-m&ecirc;me publi&eacute;es ou que Binck.fr re&ccedil;oit d&rsquo;instances professionnelles tierces.<br>
+<br>
+Une fois recueillies, vos donn&eacute;es peuvent &ecirc;tre &eacute;chang&eacute;es entre les entit&eacute;s de BinckBank NV, pour autant qu&rsquo;un motif valable le justifie.<br>
+<br>
+Enfin, vos donn&eacute;es peuvent &ecirc;tre communiqu&eacute;es par Binck.fr &agrave; des tiers, mais uniquement dans un nombre limit&eacute; de cas, ou moyennant votre autorisation.<br>
+<br>
+Binck.fr peut faire appel &agrave; des tiers pour le traitement de vos donn&eacute;es &agrave; des fins diverses. Ces tiers peuvent &ecirc;tre &eacute;tablis en Europe ou ailleurs. </div>
+</div>
+<p class="text-right"><a href="#top" name="poly25" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C137_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">5-Echange de données</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p class="text-right"><a href="#top" name="poly26" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">5.1 Données publiques et données reçues de tiers</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Il arrive que Binck.fr traite des donn&eacute;es publiques. Il peut s'agir de donn&eacute;es soumises &agrave; une obligation de publication (par exemple la d&eacute;signation de l&rsquo;administrateur d'une soci&eacute;t&eacute;), de donn&eacute;es connues du public ou de donn&eacute;es rendues publiques par vous-m&ecirc;me (par exemple des informations sur vos r&eacute;seaux sociaux).<br>
+<br>
+Par ailleurs, Binck.fr peut obtenir des donn&eacute;es &agrave; caract&egrave;re personnel aupr&egrave;s de tiers. Ces partenaires qui collectent des donn&eacute;es et les transmettent &agrave; Binck.fr doivent &eacute;galement respecter les dispositions l&eacute;gales et r&eacute;glementaires, et veilleront entre autres &agrave; ce que vous soyez suffisamment inform&eacute; &agrave; propos de la collecte, du traitement et de l&rsquo;&eacute;ventuel transfert de donn&eacute;es &agrave; caract&egrave;re personnel par leurs soins. Binck.fr s'enqui&egrave;re de la validit&eacute; de cette collecte de donn&eacute;es, et n&rsquo;utilise pas ces donn&eacute;es &agrave; des fins autres que celles dont la tierce partie vous a inform&eacute;.<br>
+<br>
+Les donn&eacute;es susmentionn&eacute;es peuvent &ecirc;tre utilis&eacute;es aux fins d&eacute;crites dans la pr&eacute;sente Politique de confidentialit&eacute;, et en vue de contr&ocirc;ler l&rsquo;exactitude des donn&eacute;es communiqu&eacute;es.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly27" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">5.2 Échange au sein du Groupe auquel appartient Binck.fr</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Certaines de vos donn&eacute;es &agrave; caract&egrave;re personnel peuvent &ecirc;tre mises &agrave; la disposition d&rsquo;une entit&eacute; du Groupe auquel appartient BinckBank NV., pour autant qu&rsquo;un motif fond&eacute; existe (obligation l&eacute;gale, n&eacute;cessit&eacute; pour la conclusion ou l&rsquo;ex&eacute;cution d&rsquo;un contrat, int&eacute;r&ecirc;t l&eacute;gitime).<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly28" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">5.3 Discrétion</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Binck.fr accorde une importance toute particuli&egrave;re au respect de la r&egrave;glementation relative &agrave; la protection de la vie priv&eacute;e, d'une part, et de son devoir de discr&eacute;tion, d&rsquo;autre part. C&rsquo;est pourquoi vos donn&eacute;es &agrave; caract&egrave;re personnel ne seront transmises &agrave; des tiers par Binck.fr que dans l&rsquo;un des cas suivants :<br>
+<br>
+a) Si la demande est bas&eacute;e sur une disposition l&eacute;gale ou un int&eacute;r&ecirc;t l&eacute;gal.<br>
+b) Si cette communication est n&eacute;cessaire &agrave; l&rsquo;ex&eacute;cution du contrat.<br>
+c) Si Binck.fr peut se pr&eacute;valoir de son int&eacute;r&ecirc;t l&eacute;gitime et vous en a inform&eacute; (sans pr&eacute;judice de votre droit de contestation, voir ci-dessous).<br>
+<br>
+&Agrave; l&rsquo;exception des cas pr&eacute;cis&eacute;s dans la pr&eacute;sente Politique confidentialit&eacute;, Binck.fr ne communique pas vos donn&eacute;es &agrave; des tiers, sauf si vous lui donnez votre autorisation expresse.<br>
+<br>
+Si le traitement doit aboutir &agrave; une publication des donn&eacute;es, Binck.fr veillera &agrave; pr&eacute;senter ces derni&egrave;res de mani&egrave;re anonyme, par exemple sous la forme d&rsquo;un graphique ou d'un histogramme.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly29" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h3  text-left">5.4 Lieux du traitement</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Le traitement des donn&eacute;es &agrave; caract&egrave;re personnel est effectu&eacute; tant au sein de Binck.fr qu&rsquo;aupr&egrave;s de prestataires. Binck.fr peut solliciter directement ou indirectement des prestataires, entre autres :<br>
+<br>
+a) D'autres entit&eacute;s de BinckBank NV.<br>
+b) Des avocats et autres consultants.<br>
+c) Des bureaux d'&eacute;tudes de march&eacute;.<br>
+d) Des agences de marketing et de communication, ainsi que des entreprises similaires, pour communiquer avec vous via des canaux appropri&eacute;s.<br>
+e) Des fournisseurs de services de protection techniques et informatiques<br>
+f) Des entreprises pour l&rsquo;archivage num&eacute;rique ou physique et la mise &agrave; disposition des informations.<br>
+g) Des tiers qui utilisent des cookies (plus d&rsquo;informations sur l&rsquo;utilisation des cookies sur&nbsp;<a href="index.html">www.binck.fr</a>).&nbsp;<br>
+<br>
+Ces entreprises peuvent utiliser les donn&eacute;es &agrave; caract&egrave;re personnel de clients de Binck.fr &agrave; des fins administratives et commerciales, pour la gestion des risques, la s&eacute;curit&eacute; et la lutte contre la fraude, aux m&ecirc;mes conditions que Binck.fr elle-m&ecirc;me et sous la surveillance de cette derni&egrave;re.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly30" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="lane    bg-white   " 
+      >
+    <div class="container text-center   " >
+                <p class="lead"> </p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane full-background">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C139_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">6-Protection et confidentialité</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Les collaborateurs de Binck.fr ont uniquement un acc&egrave;s aux donn&eacute;es n&eacute;cessaires &agrave; l&rsquo;exercice de leur fonction, et sont tenus d&rsquo;en respecter le caract&egrave;re strictement confidentiel.<br>
+<br>
+Les syst&egrave;mes de Binck.fr sont &eacute;quip&eacute;s des protections les plus efficaces, afin que vos donn&eacute;es ne puissent pas tomber entre de mauvaises mains. </div>
+</div>
+<p>
+L'acc&egrave;s &agrave; vos donn&eacute;es &agrave; caract&egrave;re personnel est soumis &agrave; certaines restrictions au sein de Binck.fr. Seules les personnes autoris&eacute;es peuvent consulter vos donn&eacute;es, et leur acc&egrave;s est limit&eacute; aux donn&eacute;es qui leur sont n&eacute;cessaires &agrave; l&rsquo;exercice de leur fonction.<br>
+<br>
+Les personnes qui peuvent consulter vos donn&eacute;es sont en outre tenues au secret professionnel, et doivent respecter toutes les mesures impos&eacute;es par Binck.fr pour garantir la confidentialit&eacute; de vos donn&eacute;es &agrave; caract&egrave;re personnel et la s&eacute;curit&eacute; des syst&egrave;mes dans lesquels vos donn&eacute;es sont enregistr&eacute;es.<br>
+<br>
+Binck.fr a par ailleurs pris diverses mesures g&eacute;n&eacute;rales sur le plan technique et sur le plan organisationnel pour prot&eacute;ger vos donn&eacute;es &agrave; caract&egrave;re personnel. <br>
+<br>
+Le site Internet et l&rsquo;application de Binck.fr peuvent contenir des liens vers des sites ou des informations de tiers. Binck.fr n&rsquo;exerce aucun contr&ocirc;le sur ces sites ou informations de tiers. Les h&eacute;bergeurs de ces sites ou informations peuvent avoir leur propre Politique de confidentialit&eacute;. Binck.fr vous recommande d&egrave;s lors d&rsquo;en prendre connaissance. Binck.fr n&rsquo;est pas responsable du contenu de ces sites ou de leur utilisation, ni des r&egrave;gles qu'ils appliquent en mati&egrave;re de confidentialit&eacute;.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly31" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C140_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">7-Période de conservation</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Vos donn&eacute;es &agrave; caract&egrave;re personnel sont uniquement conserv&eacute;es pendant une p&eacute;riode pr&eacute;d&eacute;termin&eacute;e. Binck.fr se r&eacute;f&egrave;re au d&eacute;lai l&eacute;gal de conservation pour d&eacute;terminer la p&eacute;riode durant laquelle elle doit conserver les donn&eacute;es afin d&rsquo;atteindre la finalit&eacute; du traitement. </div>
+</div>
+<p>
+Binck.fr ne conservera pas vos donn&eacute;es plus longtemps que n&eacute;cessaire, et applique les prescriptions l&eacute;gales comme point de d&eacute;part. Les d&eacute;lais de conservation l&eacute;gaux suivants sont particuli&egrave;rement importants :</p>
+<ul class="unordered">
+    <li>
+    <div><strong>Lutte contre le blanchiment d&rsquo;argent et le financement du terrorisme </strong>: 5 ans &agrave; compter de l&rsquo;ex&eacute;cution de l&rsquo;op&eacute;ration.</div>
+    </li>
+    <li>
+    <div><strong>El&eacute;ments d&rsquo;identit&eacute; des clients</strong> : 5 ans &agrave; compter de la cessation de la relation commerciale.</div>
+    </li>
+</ul>
+<p>
+<br>
+Les informations contractuelles et les donn&eacute;es concernant votre relation avec Binck.fr sont conserv&eacute;es pendant une dur&eacute;e de maximum 10 ans apr&egrave;s la fin de la relation contractuelle.<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly32" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="lane    bg-white   " 
+      >
+    <div class="container text-center   " >
+                <p class="lead"> </p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane full-background">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C142_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">8-Questions ou réclamations</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <div class="alert alert-info">
+<div class="alert-title"><strong>EN BREF</strong><br>
+Vous pouvez toujours adresser vos questions ou r&eacute;clamations &agrave; propos du traitement de vos donn&eacute;es &agrave; caract&egrave;re personnel, de la mani&egrave;re d&eacute;crite ci-dessous. </div>
+</div>
+<p>
+Si vous avez des questions ou des r&eacute;clamations &agrave; propos du traitement de vos donn&eacute;es &agrave; caract&egrave;re personnel, Binck.fr tentera dans un premier temps de vous apporter une aide utile.<br>
+<br>
+Toute r&eacute;clamation relative &agrave; la collecte et au traitement de vos donn&eacute;es &agrave; caract&egrave;re personnel peut &ecirc;tre introduite conform&eacute;ment aux Conditions G&eacute;n&eacute;rales de Binck.fr disponibles sur le site (<a href="index.html">www.binck.fr</a>). <br>
+<br>
+Pour des questions g&eacute;n&eacute;rales ou des r&eacute;clamations &agrave; propos de vos donn&eacute;es &agrave; caract&egrave;re personnel ou de la pr&eacute;sente Politique de confidentialit&eacute;, vous pouvez aussi prendre directement contact avec le D&eacute;l&eacute;gu&eacute; &agrave; la protection des donn&eacute;es (DPO) de Binck.fr dont les coordonn&eacute;es sont les suivantes :<br>
+<br>
+<strong>Adresse postale</strong><br>
+BinckBank NV.<br>
+&Agrave; l'attention de : D&eacute;l&eacute;gu&eacute; &agrave; la protection des donn&eacute;es<br>
+Barbara Strozzilaan 310<br>
+1083 HN Amsterdam, Pays-Bas<br>
+<br>
+<strong>Adresse e-mail</strong><br>
+<a href="mailto:privacy@binck.nl">privacy@binck.nl</a><br>
+<br>
+Notre Politique de confidentialit&eacute; concerne toutes les personnes physiques dont les donn&eacute;es &agrave; caract&egrave;re personnel sont trait&eacute;es, que vous soyez simple utilisateur du site internet ou l&rsquo;un de nos clients.<br>
+<br>
+Si vous n&rsquo;&ecirc;tes pas d'accord avec le point de vue de Binck.fr, vous pouvez &eacute;galement introduire une plainte aupr&egrave;s de la commission nationale de l'informatique et des libert&eacute;s (<a href="https://www.cnil.fr/plaintes">https://www.cnil.fr/plaintes</a>).<br>
+<br>
+</p>
+<p class="text-right"><a href="#top" name="poly33" class="btn btn-secondary">Haut de page</a><br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="hidden-footer" id="main-footer">
+        <div class="footer text-white">
+            <div class="container-fluid-lg" id="footer-top">
+                <div class="row" id="footer-row">
+                    <ul class="list-unstyled text-nowrap">
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>CONTACTEZ-NOUS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="contact.html"><span>Notre page contact</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE COMMERCIAL </span></li>
+                                    <li><span><img src="images/librariesprovider6/contact/0800-940-9805014.gif?sfvrsn=4" data-displaymode="Original" alt=" Téléphone Binck 0800 940 980" title="0800 940 980"></span></li>
+                                    <li><a class="icon-before" href="mailto:info@binck.fr" title="Contactez notre service commercial" data-icon=""><span>info@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE CLIENT</span></li>
+                                    <li><span>01 70 36 70 80 (appel non surtax&eacute;)</span></li>
+                                    <li><a class="icon-before" href="mailto:clients@binck.fr" title="Contactez notre service client" data-icon=""><span>clients@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>ADRESSE</span></li>
+                                    <li><span>10 Rue de la Paix</span></li>
+                                    <li><span>FR-75085 Paris cedex 02</span></li>
+                                    <li><span> &nbsp; </span></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>BOURSE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="ouvrir-un-compte-en-ligne.html"><span>Ouvrir un compte</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/produits.html"><span>Produits de Bourse</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/comptes/compte-titres.html"><span>Compte-titres</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/comptes/pea.html"><span>PEA</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/comptes/pea-pme.html"><span>PEA-PME</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/outils-de-trading.html"><span>Outils de Trading</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/outils-d-analyses.html"><span>Outils d'analyses</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/club-des-traders.html"><span>Club des Traders</span></a></li>
+                                    <li><a class="icon-before" href="bourse-en-ligne/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="faq.html"><span>FAQ Bourse</span></a></li>
+                                    <li><a class="icon-before" href="formulaires.html"><span>Formulaires</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>ASSURANCE VIE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://landing.av.binck.fr/acquisition"><span>Adh&eacute;rer au contrat</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/modes-de-gestion/gestion-libre.html"><span>Modes de Gestion</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/supports/tous-nos-supports.html"><span>Supports</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/performances-assurance-vie.html"><span>Performances</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/avantages-fiscalite.html"><span>Fiscalit&eacute;</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/adherer-assurance-vie.html"><span>Comment adh&eacute;rer</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/FAQ-assurance-vie.html"><span>FAQ Assurance Vie</span></a></li>
+                                    <li><a class="icon-before" href="assurance-vie/lexique.html"><span>Lexique</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>QUI EST BINCK.FR</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="qui-est-binck/pourquoi-choisir-binck.html"><span>Pourquoi choisir Binck</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/palmares.html"><span>Palmar&egrave;s</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/presse.html"><span>Binck dans la presse</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/communiques-de-presse.html"><span>Communiqu&eacute;s de presse</span></a></li>
+                                    <li><a class="icon-before" href="qui-est-binck/rapports-financiers.html"><span>Rapports financiers</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>FORMATIONS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="formations-trading/espace-bourse-pratique.html"><span>Espace Bourse Pratique</span></a></li>
+                                    <li><a class="icon-before" href="formations-trading/investir-en-bourse-sur-binck-fr.html"><span>Vid&eacute;os tutorielles</span></a></li>
+                                    <li><a class="icon-before" href="binck-tv.html"><span>Binck TV</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span> ACTUALITES </span></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><a class="icon-before" href="actualites/analyses.html"><span>Analyses</span></a></li>
+                                    <li><a class="icon-before" href="actualites/calendrier-boursier.html"><span>Calendrier Boursier</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>NOUS TROUVER</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://www.facebook.com/BinckFR" data-icon=""><span>Facebook</span></a></li>
+                                    <li><a class="icon-before" href="https://twitter.com/BinckFR" data-icon=""><span>Twitter</span></a></li>
+                                    <li><a class="icon-before" href="https://www.youtube.com/user/BINCKFR" data-icon=""><span>Youtube</span></a></li>
+                                    <li><a class="icon-before" href="https://www.linkedin.com/company/binckbank/" data-icon=""><span>LinkedIn</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="fullruler">
+            <div class="container-fluid-lg text-nowrap" id="footer-bottom">
+                <div class="row row-eq-height-md">
+                    <div class="col-md-4 col-lg-2 text-xs-center text-md-left">
+                            <a class="no-border" href="index.html" >
+                                <img alt="binck logo" height="16" src="images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                            </a>
+                    </div>
+                    <nav class="col-md-8 col-lg-10" role="navigation">
+                        <div class="row">
+                                <div class="col-xs-auto"><a href="information/securite.html">S&eacute;curit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="informations-legales.html">Informations l&eacute;gales<span></span></a></div>
+                                <div class="col-xs-auto"><a href="politique-de-confidentialite.html">Politique de confidentialit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="gestion-des-cookies.html">Gestion des cookies<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binckrecrute.fr/" target="_blank">Recrutement<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binck.com/nl/corporate/" target="_blank">Binck.com<span></span></a></div>
+                                <div class="col-xs-auto"><a href="plan-du-site.html">Plan du site<span></span></a></div>
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</div>
+</body>
+
+<!-- Mirrored from www.binck.fr/politique-de-confidentialite by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:22:22 GMT -->
+</html>

@@ -1,0 +1,1586 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.binck.fr/formations-trading/espace-bourse-pratique/les-options by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:23:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link href="../../Telerik.Web.UI.WebResourceb6a9.css?d=PMrIT5dOWaVYIcpFWUE4nMLWcdQIjXr7e7sRrUL6XRMyEGvH48LOQzat_9YOOsN0J6WPBFhfQ4EN__Y3UDQ8KVFySae_B1iqlXBugPHQ1XuXHNF00&amp;t=637317551186412526&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d11.0.6732.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3afr%3aca5aa0cb-9dda-4885-a4ae-598cf4f97af5%3a7a90d6a%3ad271177c%3adff30785" type="text/css" rel="stylesheet" />
+            <link rel="alternate" hreflang="fr_fr" />
+            
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+        <link rel="stylesheet" href="../../Content/font-awesome.min.css" />
+        
+           <link rel="stylesheet" href="../../Content/BinckPatternLAB/binck.bootstrap.css" />
+           <link href="../../Content/patternlabcf9e.css?v=bauX_oIE8src8FNJTNLBQqUcmCLmSn7CvalvEIB5d0M1" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" type="image/x-icon" href="../../Style/Corporate/images/myicon.ico" />
+    <style>
+        body {
+            min-width: 0 !important;
+        }
+    </style>
+<style type="text/css" media="all">.navbar-brand > img {
+    max-height: 20px;
+    max-width: 65vw;
+    height: auto;
+}
+</style><script type="text/javascript">
+(function () {
+    window.digitalData = window.digitalData || [];
+
+    var domains = [
+        { "domain": "binckspanje.com", "country": "es", "language": "nl", "website": "rs-spain" },
+        { "domain": "binckbank.com", "country": "en", "language": "en", "website": "binck" },
+        { "domain": "binck.com", "country": "en", "language": "en", "website": "rs-binck" },
+        { "domain": "binck.be", "country": "be", "language": "nl", "website": "rs-belgium" },
+        { "domain": "binck.it", "country": "it", "language": "it", "website": "rs-italy" },
+        { "domain": "binck.nl", "country": "nl", "language": "nl", "website": "rs-netherlands" },
+        { "domain": "binck.fr", "country": "fr", "language": "fr", "website": "rs-france" }
+    ];
+
+    var languageList = [
+        { "language": "en" }, { "language": "nl" }, { "language": "fr" }, { "language": "it" }
+    ];
+
+    function findObject(arr, key, val) {
+        var found;
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i][key] === val) {
+                found = arr[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+    var topLvl = document.domain.split(".").reverse();
+    var subdomain = "";
+    
+    if (topLvl.length === 3 && topLvl[2] !== "www") {
+        subdomain = topLvl.pop();
+    } else {
+        topLvl.length = 2;
+    }
+
+    topLvl = topLvl.reverse().join(".");
+
+    var domain = findObject(domains, "domain", topLvl);
+
+    if (!domain) {
+        throw new Error(topLvl + " not supported by dataLayer");
+    }
+
+    var languageCode = domain.language;
+    var parts = window.location.pathname.split("../../index.html");
+    var languageCodeInUrl;
+
+    if (parts.length > 1) {
+        languageCodeInUrl = findObject(languageList, "language", parts[1]);
+    }
+    
+    if (subdomain === "ouvriruncompte") {
+        languageCodeInUrl = findObject(languageList, "language", "fr");
+    }
+
+    if (languageCodeInUrl) {
+        languageCode = languageCodeInUrl.language;
+        parts.shift();
+    }
+
+    parts.shift();
+    if (subdomain !== "") {
+        parts.unshift(subdomain);
+    }
+
+    var sections = parts.concat();
+    sections.unshift(languageCode + "-" + domain.country);
+
+    function responseStatusCode() {
+        responseStatusCode = 200;
+        var titlepage = window.document.title.toLowerCase()
+        if (titlepage.indexOf('pagina niet gevonden') > -1 || titlepage.indexOf('error 404') > -1 || titlepage.indexOf('page not found') > -1 || titlepage.indexOf('page non trouvée') > -1) {
+            responseStatusCode = 404;
+        }
+        return responseStatusCode;
+    }
+
+    function getPageName() {
+        return parts.join(":").replace(/:$/, "");
+    }
+
+    function getSiteSectionAll() {
+        var sectionAll = "";
+        if (parts.length === 0 || parts[0] === "") {
+            sectionAll = "frontpage";
+        } else {
+            sectionAll = getPageName();
+        }
+        return sectionAll;
+    }
+
+    var pageName = getPageName();
+
+    window.digitalData.error = {
+        responseStatusCode: responseStatusCode(),
+    }
+    window.digitalData.page = {
+        hostName: window.location.hostname,
+        pageName: languageCode + "-" + domain.country + (pageName != "" ? ":" : "" ) + pageName,
+        siteSection1: sections[0] || '',
+        siteSection2: sections[1] || '',
+        siteSection3: sections[2] || '',
+        siteSection4: sections[3] || '',
+        siteSection5: sections[4] || '',
+        siteSectionAll: getSiteSectionAll(),
+        queryString: window.location.search,
+        website: domain.website,
+        language: languageCode
+    };
+})()
+</script><script type="text/javascript" src="../../../assets.adobedtm.com/launch-EN5a2ce50dc24d4c95ad125c65fa54d8b3.min.js"></script><meta name="Generator" content="Sitefinity 11.0.6732.0 PU" /><link rel="canonical" href="les-options.html" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="../../Sitefinity/Public/ResponsiveDesign/layout_transformations1148.html?pageDataId=8ce0facb-219e-61cd-bc43-ff0300e84d35&amp;pageSiteNode=8BE0FACB-219E-61CD-BC43-FF0300E84D35/f77df8cb-219e-61cd-bc43-ff0100e84d35/SitefinitySiteMap" type="text/css" rel="stylesheet" /><title>
+	Formation Trading en Ligne - Tout Savoir sur Les Options
+</title><meta name="description" content="Binck vous accompagne et vous aide à mieux comprendre le Trading pour ne plus commettre d&#39;erreurs en Bourse : les options, fonctionnement et définition" /><meta name="keywords" content="options, sous-jacent, call, put, prix d’exercice" /></head>
+<body>
+    <script src="../../bundles/PatternLab3b9e?v=eaHEFy3f5naNK8Kf7OcOckvdcpgFonixou7UWowavXk1"></script>
+
+    <form method="post" action="https://www.binck.fr/formations-trading/espace-bourse-pratique/les-options" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSM" id="ctl06_TSM" value="" />
+<input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="bFIyUHi+FTkkhNXiW3o7mjocPW0YgQNeJW1EZY4VhLFx5ueICHjByZoDGdVvZTwX1O7UoMVJWja81/CWqm81H8asnXs=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource908c.js?d=pynGkmcFUV13He1Qd6_TZP_4ej2xu7z_XVotHnL9kuaGNPxbuoHGPHb-o8amqx79yDcwVA2&amp;t=637290829350350503" type="text/javascript"></script>
+
+
+<script src="../../WebResource74ff.js?d=yAZznlIeaGQJz8qTi4uqDSxm-bWuIiwJKKVOYfsBKOKGAYFrBb8CzgrpwJulWIFfZX6-Sq38e3w8f8tdivnh_jEm03mVBkvaobew0b5wtEF7AzpSEpk2-02-UP7Vfj_PgCuldAuwGtncSUrXnO_klSdbTGY1&amp;t=636751093820000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"Non numérique","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infini","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+Infini","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":true,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="../../Telerik.Web.UI.WebResourcef71e.js?_TSM_HiddenField_=ctl06_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr%3a4feca508-514b-48c0-a162-7fa9c360d783%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="22D2E01A" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Tdrf5qaFP9j2cxg1VqcfYQkVdw/EJj6P11fUQ6nf9MCPAUybYnRbfCo8KTl6RoJ4F+bckhqOvAe/G97kcPzhm89/iHk8xy1Vlcl/K/k+t2cgo59J" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl06', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<input type="hidden" name="ctl00$ctl06" id="ctl06" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl06", "ctl00$ctl06");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <input type="hidden" name="ctl00$uniqueSubmitIdHiddenField" id="uniqueSubmitIdHiddenField" value="65c66c62-d74b-4d29-a1c9-46d1008863d7" />
+        
+        
+        
+    <script type="text/javascript">
+	StatsClient.LogVisit('8be0facb-219e-61cd-bc43-ff0300e84d35', 'fe07d0d2-580c-42b9-b45f-9025b14a1761');
+</script><script type="text/javascript">
+if(typeof _satellite!=="undefined"){_satellite.pageBottom();}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='../../index.html';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl07_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=11.0.6732.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:fr:ca5aa0cb-9dda-4885-a4ae-598cf4f97af5:7a90d6a:d271177c:dff30785';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();//]]>
+</script>
+</form>
+    <div id="content" class="wrap">
+
+    <div id="dna-header">
+        <nav class="navbar navbar-inverse navbar-static-top" id="top-nav" role="navigation">
+            <div class="container-fluid-lg">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../../index.html" >
+                        <img alt="binck logo" src="../../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                    </a>
+                    <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-left" aria-expanded="false" data-icon="">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                        <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-right" aria-expanded="false" data-icon="">
+                            <span class="sr-only">Toggle selection</span>
+                        </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown nav-item open-on-hover">
+                                <a href="../../contact.html" class="nav-link">Contacts</a>
+                            </li>
+                                                    <li class="nav-link">
+                                <a id="header-button" class="btn btn-primary btn-sm navbar-btn mr-2 ml-2 hidden-xs" href="../../devenir-client.html" >Devenir client</a>
+                                <a class="nav-link visible-xs" href="../../devenir-client.html" >Devenir client</a>
+                            </li>
+                                                    <li class="nav-link">
+                                
+
+<a class="nav-link" href="../../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<nav class="navbar navbar-light alt" id="secondary-nav">
+    <div class="container-fluid-lg">
+        <ul class="nav navbar-nav navbar-left secondary-nav navbar-collapse collapse" id="secondary-nav-left">
+                <li class="nav-item visible-xs">
+                    
+
+<a class="nav-link" href="../../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../bourse-en-ligne.html">Bourse</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/bourses.html" style="text-transform: none;">
+                                                        Les Bourses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                        Produits
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                                                Achat d&#39;actions en bourse
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/fonds.html" style="text-transform: none;">
+                                                                                Fonds
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/trackers.html" style="text-transform: none;">
+                                                                                Trackers
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/turbos.html" style="text-transform: none;">
+                                                                                Turbos
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/certificats.html" style="text-transform: none;">
+                                                                                Certificats
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/warrants.html" style="text-transform: none;">
+                                                                                Warrants
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/options.html" style="text-transform: none;">
+                                                                                Options
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/futures.html" style="text-transform: none;">
+                                                                                Futures
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/srd.html" style="text-transform: none;">
+                                                                                SRD
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/comptes.html" style="text-transform: none;">
+                                                        Comptes
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/comptes/compte-titres.html" style="text-transform: none;">
+                                                                                Le compte-titres
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/comptes/pea.html" style="text-transform: none;">
+                                                                                Le PEA
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/comptes/pea-pme.html" style="text-transform: none;">
+                                                                                Le PEA-PME
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading.html" style="text-transform: none;">
+                                                        Outils de trading
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/nos-plateformes.html" style="text-transform: none;">
+                                                                                Nos plateformes
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/application-mobile.html" style="text-transform: none;">
+                                                                                Application mobile
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/prorealtime.html" style="text-transform: none;">
+                                                                                ProRealTime V11
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/protrader.html" style="text-transform: none;">
+                                                                                ProTrader
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/fiches-valeurs.html" style="text-transform: none;">
+                                                                                Fiches valeurs
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/ordres-conditionnels.html" style="text-transform: none;">
+                                                                                Ordres conditionnels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/portefeuille-virtuel.html" style="text-transform: none;">
+                                                                                Portefeuille virtuel
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                        Outils d&#39;analyses
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                                                Analyses techniques
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/analyse-fondamentale.html" style="text-transform: none;">
+                                                                                Analyse fondamentale
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/aide-a-la-decision.html" style="text-transform: none;">
+                                                                                Aide &#224; la d&#233;cision
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/portefeuilles-types.html" style="text-transform: none;">
+                                                                                Portefeuilles types
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/club-des-traders.html" style="text-transform: none;">
+                                                        Club des Traders
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../assurance-vie.html">Assurance Vie</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                        Modes de gestion
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                                                Gestion libre
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/modes-de-gestion/gestion-sous-mandat.html" style="text-transform: none;">
+                                                                                Gestion sous mandat
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                        Supports
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                                                Tous nos supports
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/fonds-euros.html" style="text-transform: none;">
+                                                                                Fonds euros
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/opc.html" style="text-transform: none;">
+                                                                                OPC
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/opc-indiciels.html" style="text-transform: none;">
+                                                                                OPC indiciels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/actions.html" style="text-transform: none;">
+                                                                                Actions
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/performances-assurance-vie.html" style="text-transform: none;">
+                                                        Performances
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/avantages-fiscalite.html" style="text-transform: none;">
+                                                        Fiscalit&#233;
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/adherer-assurance-vie.html" style="text-transform: none;">
+                                                        Comment adh&#233;rer
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/FAQ-assurance-vie.html" style="text-transform: none;">
+                                                        FAQ
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/lexique.html" style="text-transform: none;">
+                                                        Lexique
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../qui-est-binck.html">Qui est Binck</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/pourquoi-choisir-binck.html" style="text-transform: none;">
+                                                        Pourquoi choisir Binck
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/trader-en-ligne.html" style="text-transform: none;">
+                                                        Trader en ligne
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/palmares.html" style="text-transform: none;">
+                                                        Palmar&#232;s
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/presse.html" style="text-transform: none;">
+                                                        Binck dans la presse
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                        Communiqu&#233;s de presse
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                                                2020
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2019.html" style="text-transform: none;">
+                                                                                2019
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2018.html" style="text-transform: none;">
+                                                                                2018
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2017.html" style="text-transform: none;">
+                                                                                2017
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2016.html" style="text-transform: none;">
+                                                                                2016
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2015.html" style="text-transform: none;">
+                                                                                2015
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2014.html" style="text-transform: none;">
+                                                                                2014
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2013.html" style="text-transform: none;">
+                                                                                2013
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2012.html" style="text-transform: none;">
+                                                                                2012
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2011.html" style="text-transform: none;">
+                                                                                2011
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/rapports-financiers.html" style="text-transform: none;">
+                                                        Rapports financiers
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown open">
+                            <a class="nav-link dropdown-toggle active" href="../../formations-trading.html">Formations</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  open">
+                                                    <a class="nav-link active" href="../espace-bourse-pratique.html" style="text-transform: none;">
+                                                        Espace Bourse Pratique
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../dictionnaire-financier.html" style="text-transform: none;">
+                                                        Dictionnaire financier
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../investir-en-bourse-sur-binck-fr.html" style="text-transform: none;">
+                                                        Investir en bourse sur Binck.fr
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../actualites/analyses.html">Actualit&#233;s</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../actualites/analyses.html" style="text-transform: none;">
+                                                        Analyses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../actualites/calendrier-boursier.html" style="text-transform: none;">
+                                                        Calendrier boursier
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link  " href="../../binck-tv.html">Binck TV</a>
+                        </li>
+            
+                <li class="nav-item visible-xs">
+<a href="../../contact.html" class="nav-link">Contacts</a>                </li>
+                            <li class="nav-item visible-xs">
+                    <a class="nav-link" href="../../devenir-client.html" >Devenir client</a>
+                </li>
+                    </ul>
+        
+            <ul class="nav navbar-nav navbar-right secondary-nav navbar-collapse collapse" id="secondary-nav-right">
+                <div class="form-group has-search">
+                    <input id="search-box" class="form-control" type="search" placeholder="Recherche ..." data-toggle="pill" data-target="#searchresult" data-search-page="/search-results" data-index-catalog="searchfrance">
+                </div>
+            </ul>
+    </div>
+</nav>
+    <nav class="levelmenu alt">
+        <div class="container-fluid-lg">
+            <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                    <li class="nav-item  open">
+                        <a class="nav-link  active" href="../espace-bourse-pratique.html">Espace Bourse Pratique</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="../dictionnaire-financier.html">Dictionnaire financier</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="../investir-en-bourse-sur-binck-fr.html">Investir en bourse sur Binck.fr</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+
+
+
+
+
+
+<div class="lane  bg-image  bg-darkgrey  has-halfrudder has-tail" 
+     style="background-image: url('../../images/librariesprovider6/bgd/header-03751f.jpg?sfvrsn=6d74b834_2')" >
+    <div class="container text-center text-white " >
+<h1 class="h1  ">Formation à la bourse en ligne : les options</h1>                    <div class="littleruler"></div>
+        <p class="lead">Produits de la Bourse</p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div><div class="lane tail">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpHeader_C152_Col00" class="sf_colsIn col-xs-12">
+<div class="card has-bubble binck-icon " data-icon="*"   >        <div class="card-block ">
+            <h2 class="h2  ">LES OPTIONS</h2>
+            <p class="card-text">Accessibles via un compte-titres ordinaire chez certains courtiers en ligne,<strong> les options sont des contrats financiers qui donnent le droit mais pas l'obligation d'exercer les termes d'un contrat fix&eacute; &agrave; l'avance entre un acheteur et un vendeur.</strong> Ces termes sont : le sous-jacent (actions, indices, mati&egrave;res premi&egrave;res etc...), la quantit&eacute; et le prix d'un instrument financier. Elles permettent de r&eacute;pondre &agrave; plusieurs types de strat&eacute;gies (couverture d'un portefeuille, utilisation d'un effet de levier...). En raison du risque qu'ils comportent ces produits sont destin&eacute;s aux investisseurs avertis et exp&eacute;riment&eacute;s.
+<br>
+<br></p>
+        </div>
+</div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C153_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">Définition</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Une option est un <strong>DROIT</strong> (contrat) d'<strong>ACHETER</strong> (ou de <strong>VENDRE</strong>) :<br>
+&bull; un <strong>ACTIF</strong> (action, indice, devise, mati&egrave;re premi&egrave;re&hellip;)<br>
+&bull; &agrave; un <strong>PRIX</strong> et une <strong>QUANTITE</strong> d&eacute;termin&eacute;,<br>
+&bull; pendant une <strong>PERIODE</strong> donn&eacute;e<br>
+&bull; moyennant le paiement d'une <strong>PRIME</strong>.<br>
+<br>
+L'acheteur de l'option paie la prime au moment de la conclusion du contrat au vendeur. Ce dernier aura l'obligation d'appliquer les termes du contrat si l'acheteur l'exige.<br>
+<br>
+Parall&egrave;lement, le vendeur de l'option s'<strong>ENGAGE</strong>, si l'acheteur exerce son <strong>DROIT</strong>, &agrave; <strong>VENDRE</strong> ou <strong>ACHETER</strong> un <strong>ACTIF</strong> &agrave; un <strong>PRIX</strong> d&eacute;termin&eacute; pendant une PERIODE donn&eacute;e, moyennant le paiement d'une PRIME au vendeur de l'option.<br>
+<br>
+En sa qualit&eacute; d'acheteur d'une option, l'investisseur dispose d'un droit, qu'il peut utiliser pendant une p&eacute;riode d&eacute;termin&eacute;e (jusqu'&agrave; l'&eacute;ch&eacute;ance ou &agrave; l'&eacute;ch&eacute;ance).<br>
+<br>
+L'acheteur ach&egrave;te l'option &agrave; une contrepartie (le vendeur). Le vendeur accorde un droit &agrave; l'acheteur de l'option et s'engage &agrave; honorer son obligation d&egrave;s que l'acheteur en fait la demande.<br>
+<br>
+Les contrats d'options ont un caract&egrave;re optionnel. Jusqu'&agrave; la date d'expiration (ou &agrave; la date d'expiration seulement selon les cas), l'acheteur du contrat a le choix d'acheter ou de vendre l'actif sous-jacent au prix convenu. Si les conditions de march&eacute; sont favorables aux r&eacute;alisations des anticipations de l'acheteur, alors il d&eacute;cidera d'exercer son droit &agrave; l'achat ou &agrave; la vente. Dans ce cas, le vendeur du contrat aura quant &agrave; lui l'obligation de vendre ou d'acheter l'actif sous-jacent, selon les standards du contrat n&eacute;goci&eacute;. L'acheteur de l'option verse une prime au vendeur qui lui est acquise d&eacute;finitivement pour compenser cette obligation.<br>
+<br>
+Les options se n&eacute;gocient sur un march&eacute; appel&eacute; le &ldquo;Monep&rdquo; (March&eacute; d'options n&eacute;gociables de Paris)<br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Caractéristiques d'une option</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <h4>1 - Actif sous-jacent</h4>
+<p>C'est l'actif sur lequel porte l'option de vente ou d'achat. L'actif sous-jacent d'un contrat d'options peut &ecirc;tre un actif physique (mati&egrave;res premi&egrave;res ou agricoles), un instrument financier (actions, obligations, taux d'int&eacute;r&ecirc;t, cours de change) ou encore un indice boursier ou climatique.
+<br>
+<br>
+</p>
+<h4>2 - Ech&eacute;ance</h4>
+<p>C'est la date de fin de validit&eacute; du contrat. Pour les contrats d'options, les dates d'&eacute;ch&eacute;ance sont standardis&eacute;es (le 3&egrave;me vendredi du mois d'&eacute;ch&eacute;ance).<br>
+Par ailleurs, il faut distinguer deux types d'options selon le mode d'exercice :<br>
+<br>
+&bull; <strong>Europ&eacute;enne</strong> : l'exercice se fait <strong>&agrave;</strong> l'&eacute;ch&eacute;ance uniquement.<br>
+&bull; <strong>Am&eacute;ricaine</strong> : l'exercice se fait <strong>jusqu'&agrave;</strong> l'&eacute;ch&eacute;ance. L'option peut &ecirc;tre exerc&eacute;e pendant toute la dur&eacute;e du contrat.
+<br>
+<br>
+</p>
+<h4>3 - Call</h4>
+<p>Un &laquo; call &raquo; accorde &agrave; son acheteur le droit d'acheter, pendant une p&eacute;riode (ou &agrave; une &eacute;ch&eacute;ance) et &agrave; un prix convenus &agrave; l'avance, une certaine quantit&eacute; d'actifs sous-jacents. Lorsque l'acheteur exerce son call et fait valoir son droit d'achat, le vendeur du call est oblig&eacute; de livrer les actifs sous-jacents au prix fix&eacute; au pr&eacute;alable. Gr&acirc;ce au call, l'acheteur fixe &agrave; l'avance le prix d'achat de l'actif sous-jacent. L'acheteur du call verse une prime au vendeur pour r&eacute;mun&eacute;rer son obligation de vente. Elle reste d&eacute;finitivement acquise au vendeur m&ecirc;me si l'acheteur d&eacute;cide de ne pas exercer son option.<br>
+<br>
+<strong>Anticipation</strong> : l'acheteur d'un call anticipe en g&eacute;n&eacute;ral une hausse du sous-jacent. Il exercera son option d'achat si le cours du sous-jacent &eacute;volue dans un sens favorable &agrave; ses anticipations et d&eacute;passe le prix d'exercice.
+<br>
+<br>
+</p>
+<h4>4 - Put</h4>
+<p>Un &laquo; put &raquo; accorde &agrave; son acheteur le droit de vendre, pendant une p&eacute;riode et &agrave; un prix convenus &agrave; l'avance, une certaine quantit&eacute; d'actifs sous-jacents. Lorsque l'acheteur exerce son put et fait valoir son droit de vente, le vendeur du put est oblig&eacute; d'acheter l'actif sousjacent au prix fix&eacute; au pr&eacute;alable. Gr&acirc;ce au put, l'acheteur fixe &agrave; l'avance le prix de vente de l'actif sous-jacent. L'acheteur du put verse une prime au vendeur pour r&eacute;mun&eacute;rer son obligation d'achat. Elle reste d&eacute;finitivement acquise au vendeur m&ecirc;me si l'acheteur d&eacute;cide de ne pas exercer son option.<br>
+<br>
+<strong>Anticipation</strong> : l'acheteur d'un put anticipe en g&eacute;n&eacute;ral une baisse du sous-jacent. Il exercera son option d'achat si le cours du sous-jacent &eacute;volue dans un sens favorable &agrave; ses anticipations et d&eacute;passe le prix d'exercice.
+<br>
+<br>
+</p>
+<h4>5 - Le prix d'exercice (ou strike)</h4>
+<p>C'est le prix auquel l'acheteur de l'option peut :<br>
+<br>
+&bull; acheter l'actif sous-jacent (call)<br>
+&bull; vendre l'actif sous-jacent (put)<br>
+<br>
+Ce prix d'exercice est d&eacute;termin&eacute; lors de la n&eacute;gociation de l'option et n'est pas modifiable pendant toute la dur&eacute;e de vie de l'option.<br>
+<br>
+Le prix d'exercice est &eacute;galement le prix auquel le vendeur devra livrer les actions dans le cas d'un call, ou le prix auquel il devra les acheter dans le cas d'un put. Attention, le vendeur n'aura l'obligation de le faire que si l'acheteur demande l'exercice de l'option.
+<br>
+<br>
+</p>
+<h4>6 - L'exercice</h4>
+<p>L'acheteur d'une option acquiert un droit d'acheter pour le call et un droit de vendre pour le put. C'est lui qui va d&eacute;cider de faire valoir (d'exercer) ou non ce droit en fonction de la r&eacute;alisation de ses anticipations.
+<br>
+<br>
+</p>
+<table class="table table-striped table-hover" >
+    <colgroup><col><col><col></colgroup>
+    <thead>
+        <tr>
+            <th></th>
+            <th><strong>Acheteur d'une option</strong></th>
+            <th><strong>Vendeur d'une option</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>CALL</strong></td>
+            <td>L&rsquo;acheteur de call d&eacute;cide d&rsquo;acheter le sous-jacent au prix d&rsquo;exercice</td>
+            <td>Le vendeur de call doit vendre le sousjacent au prix d&rsquo;exercice (si l&rsquo;acheteur exerce son droit)</td>
+        </tr>
+        <tr>
+            <td><strong>PUT</strong></td>
+            <td>L&rsquo;acheteur de put d&eacute;cide de vendre le sous-jacent au prix d&rsquo;exercice</td>
+            <td>Le vendeur de put doit acheter le sousjacent au prix d&rsquo;exercice (si l&rsquo;acheteur exerce son droit)</td>
+        </tr>
+        <tr>
+            <td colspan="3">A quel moment est-il int&eacute;ressant d'exercer son option ?</td>
+        </tr>
+        <tr>
+            <td><strong>CALL</strong></td>
+            <td colspan="2">Prix d&rsquo;exercice &lt; cours de l&rsquo;action</td>
+        </tr>
+        <tr>
+            <td><strong>PUT</strong></td>
+            <td colspan="2">Prix d&rsquo;exercice &gt; cours de l&rsquo;action</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<h4>7 - La prime : le prix de l'option</h4>
+<p>En contrepartie de l'engagement d'acheter ou de vendre des actions &agrave; un prix d&eacute;termin&eacute;, le vendeur de l'option demande une r&eacute;tribution : la prime, c'est-&agrave;-dire le prix de l'option. La prime est vers&eacute;e par l'acheteur au vendeur lors de la conclusion de l'engagement et reste acquise au vendeur de l'option m&ecirc;me si l'acheteur d&eacute;cide de ne pas exercer son droit.<br>
+<br>
+Contrairement au prix d'exercice, la prime de l'option n'est jamais fixe ; elle varie au gr&eacute; des transactions selon l'offre et la demande.<br>
+<br>
+<strong>Exemple</strong> : la prime de l'option s'applique par titre et doit donc &ecirc;tre multipli&eacute;e par la taille du contrat. Pour un call A avec une &eacute;ch&eacute;ance en septembre, de prix d'exercice 100&euro;, la prime s'&eacute;levant &agrave; 0.45&euro;, l'investisseur re&ccedil;oit le droit d'acheter l'action A au prix de 100&euro; ; la prime = 0,45&euro; x 10 ou 100 (selon la taille du contrat).
+<br>
+<br>
+</p>
+<h4>8 - La quotit&eacute; de n&eacute;gociation</h4>
+<p>Pour les options sur actions la quotit&eacute; repr&eacute;sente la quantit&eacute; de titres sur laquelle porte un contrat d'options :<br>
+<br>
+&bull; 100 titres par contrat pour les options de type am&eacute;ricain<br>
+&bull; 10 titres par contrat pour les options de type europ&eacute;en
+<br>
+<br>
+</p>
+<h4>9 - Le multiplicateur</h4>
+<p>Pour les options sur indice on parle de multiplicateur : c'est le montant par lequel on multiplie l'indice pour obtenir la valeur sur laquelle porte le contrat.<br>
+<br>
+Option sur l'indice CAC40&reg; = 10&euro; x indice
+<br>
+<br>
+</p>
+<h4>10 - La valeur d'une option</h4>
+<p>A l'instar du prix d'une action, le prix d'une option (la prime) qui est d&eacute;termin&eacute; par l'offre et la demande d&eacute;pendra aussi des anticipations de r&eacute;sultats de la valeur &agrave; l'&eacute;ch&eacute;ance.<br>
+<br>
+La valeur d'une option est compos&eacute;e de deux parties : la valeur intrins&egrave;que et la valeur temps.<br>
+Prix d'une option = valeur intrins&egrave;que + valeur temps<br>
+<br>
+<strong>La valeur intrins&egrave;que</strong><br>
+La valeur intrins&egrave;que repr&eacute;sente le profit qui serait obtenu imm&eacute;diatement si l'on d&eacute;cidait d'exercer l'option.<br>
+L'acheteur d'une option d'achat (call) ne d&eacute;cide d'exercer (acheter les titres) que si le cours du sous-jacent est sup&eacute;rieur &agrave; son prix d'exercice : la valeur intrins&egrave;que repr&eacute;sente dans ce cas la diff&eacute;rence entre le cours du sous-jacent et le prix d'exercice.<br>
+<br>
+<strong>La valeur temps</strong><br>
+La valeur temps se mesure par la diff&eacute;rence entre le prix de march&eacute; de l'option et sa valeur intrins&egrave;que.<br>
+Plus l'&eacute;ch&eacute;ance de l'option est &eacute;loign&eacute;e et plus la valeur temps est importante.<br>
+<br>
+La prime d'une option vaut g&eacute;n&eacute;ralement plus que sa valeur intrins&egrave;que tout simplement parce qu'il y a toujours une chance pour que, d'ici l'&eacute;ch&eacute;ance de l'option, l'&eacute;volution du cours du sous-jacent entra&icirc;ne un accroissement de la valeur intrins&egrave;que de l'option. La valeur temps mesure cette probabilit&eacute;. Ainsi, m&ecirc;me lorsque l'option a une valeur intrins&egrave;que nulle, la prime n'est pas nulle mais &eacute;gale &agrave; sa valeur temps. Cette valeur repr&eacute;sente en quelque sorte la probabilit&eacute; de r&eacute;aliser votre anticipation.<br>
+<br>
+A l'inverse, &agrave; l'&eacute;ch&eacute;ance, la prime d'une option est uniquement &eacute;gale &agrave; la valeur intrins&egrave;que, la valeur temps, elle, &eacute;tant &eacute;gale &agrave; z&eacute;ro. L'option est donc souvent revendue afin de ne pas perdre toute la valeur temps.
+<br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Fonctionnement d'une option</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <h3>1 - Les strat&eacute;gies de base</h3>
+<h4>A. ACHAT DE CALL</h4>
+<p><strong>En cas d'anticipation d'une hausse du cours du sous-jacent.</strong><br>
+<br>
+L'achat de call permet de profiter d'un mouvement de march&eacute; &agrave; la hausse avec l'assurance d'un risque connu &agrave; l'avance et dans tous les cas, limit&eacute; au montant de la prime vers&eacute;e. Le cours actuel de l'action de la soci&eacute;t&eacute; A est de 10&euro;. Anticipation haussi&egrave;re du cours de l'action A.<br>
+<br>
+Achat d'un call de style am&eacute;ricain avec les caract&eacute;ristiques suivantes :<br>
+<br>
+&bull; Prix d'exercice : 9&euro;<br>
+&bull; Maturit&eacute; : septembre<br>
+&bull; Prix du call : 1&euro;<br>
+&bull; Quotit&eacute; : 100 = r&egrave;glement de la prime : 1&euro; x 100 soit 100&euro;.<br>
+<br>
+<strong>Avant l'&eacute;ch&eacute;ance :</strong><br>
+Possibilit&eacute; de revendre &agrave; tout moment le call et de clore la position, avec une plus-value ou une moins-value en fonction de l'&eacute;volution du march&eacute; et du niveau de la prime du call achet&eacute;.<br>
+<br>
+<strong>A maturit&eacute;, il convient de distinguer deux cas :</strong><br>
+<br>
+<strong>1er cas :</strong><br>
+le cours de l'action A est mont&eacute; et se situe au-dessus du prix d'exercice = exercice du call et acquisition de 100 actions de la soci&eacute;t&eacute; A au prix de 9&euro; par action.<br>
+<br>
+<strong>2&egrave;me cas :</strong><br>
+le cours de l'action A a baiss&eacute; et se situe au-dessous du prix d'exercice, pas d'exercice du call. La perte sera limit&eacute;e au montant de la prime vers&eacute;e : 100&euro;.
+<br>
+<br>
+</p>
+<p class="text-center">
+<img sfref="[images|librariesProvider6]5891fccc-219e-61cd-bc43-ff0100e84d35" src="../../images/librariesprovider6/formations/i-options16898.gif?sfvrsn=930f9d34_0" data-displaymode="Original" alt="i-options1" title="i-options1">&nbsp;<br>
+<br>
+</p>
+<h4>B. ACHAT DE PUT</h4>
+<p>En cas d'anticipation d'une baisse du march&eacute;.<br>
+<br>
+&bull; l'acheteur de put souhaite prot&eacute;ger ses actions contre une baisse de cours, ou<br>
+&bull; il veut profiter d'une baisse du cours de l'action, ou<br>
+&bull; il veut prot&eacute;ger tout un portefeuille d'actions contre un repli (put sur l'indice CAC40&reg;)<br>
+<br>
+L'achat de put permet de profiter d'un mouvement de march&eacute; &agrave; la baisse et/ou de prot&eacute;ger ses titres dans ce contexte de march&eacute;. Comme pour l'achat d'un call, l'acheteur de put b&eacute;n&eacute;ficie d'un risque connu &agrave; l'avance et dans tous les cas, limit&eacute; au montant de la prime vers&eacute;e.<br>
+<br>
+<strong>Exemple</strong> : l'investisseur a 100 actions de la soci&eacute;t&eacute; B en portefeuille. L'action de la soci&eacute;t&eacute; B vaut 20&euro;, il anticipe une baisse de l'action B et il souhaite conserver ses actions. Il d&eacute;cide d'acheter un put de style am&eacute;ricain avec les caract&eacute;ristiques suivantes :<br>
+<br>
+&bull; Prix d'exercice : 22&euro;<br>
+&bull; Maturit&eacute; : septembre<br>
+&bull; Prix du put : 2&euro;<br>
+&bull; Quotit&eacute; : 100<br>
+<br>
+Il r&egrave;gle le montant suivant : 2&euro; x 100 soit 200&euro;.<br>
+<br>
+<strong>Avant l'&eacute;ch&eacute;ance</strong> :<br>
+Il peut &agrave; tout moment revendre son put et clore sa position, avec une plus-value ou une moins-value en fonction de l'&eacute;volution du march&eacute; et du niveau de la prime du put que l'acheteur a achet&eacute;.<br>
+<br>
+<strong>A maturit&eacute;, il convient de distinguer deux cas :</strong><br>
+<br>
+<strong>1er cas</strong> :<br>
+le cours de l'action de la soci&eacute;t&eacute; B est mont&eacute;.<br>
+le cours de l'action de la soci&eacute;t&eacute; B est mont&eacute;. Le cours de l'action est mont&eacute; au-del&agrave; du prix d'exercice de 22&euro;. La valeur de votre portefeuille s'est appr&eacute;ci&eacute;e. L'acheteur de put choisira de ne pas exercer votre option. L'acheteur de put aura perdu le montant de la prime qui correspond au co&ucirc;t d'assurance de votre portefeuille contre une baisse du march&eacute;, mais votre portefeuille en actions s'est valoris&eacute;.<br>
+<br>
+<strong>2&egrave;me cas :</strong><br>
+le cours de l'action de la soci&eacute;t&eacute; B a baiss&eacute;.<br>
+L'action B vaut 18&euro;. Le portefeuille d'actions de la soci&eacute;t&eacute; B vaut d&eacute;sormais 1.800&euro; et subit une perte latente de 200&euro;.<br>
+L'option s&lsquo;est valoris&eacute;e, et son prix &agrave; maturit&eacute; est &eacute;gal &agrave; la diff&eacute;rence entre le prix d'exercice et le cours de l'action de la soci&eacute;t&eacute; B : 22&euro; - 18&euro; = 4&euro;, soit 400&euro; au total pour 100 actions.<br>
+<br>
+&bull; l'acheteur de put peut conserver ses actions de la soci&eacute;t&eacute; B et revendre son put sur lequel il r&eacute;alise un b&eacute;n&eacute;fice de 200&euro; (400&euro; - 200&euro;, soit la valeur de l'option &agrave; maturit&eacute; moins le montant total de la prime vers&eacute;e).<br>
+<br>
+L'option agit dans ce cas comme une assurance qui vient prot&eacute;ger la valeur du portefeuille en cas d'une baisse du march&eacute;. C'est ce que l'on appelle une op&eacute;ration de couverture : en versant une prime l'investisseur a en quelque sorte souscrit une assurance pour se pr&eacute;munir contre le risque de march&eacute;. En effet le b&eacute;n&eacute;fice r&eacute;alis&eacute; sur l'option permet de compenser en partie la perte latente sur les actions.
+<br>
+<br>
+</p>
+<p class="text-center">
+<img sfref="[images|librariesProvider6]6f91fccc-219e-61cd-bc43-ff0100e84d35" src="../../images/librariesprovider6/formations/i-options27bd8.gif?sfvrsn=ba0f9d34_0" data-displaymode="Original" alt="i-options2" title="i-options2">&nbsp;<br>
+<br>
+</p>
+<h4>C. VENTE DE CALL</h4>
+<p>Anticipation d'une baisse ou une stagnation du sous-jacent<br>
+<br>
+&bull; le vendeur de call souhaite obtenir un rendement suppl&eacute;mentaire sur ces actions<br>
+&bull; il pense que son portefeuille a encore un potentiel d'appr&eacute;ciation<br>
+<br>
+La vente de call permet de fixer le prix de vente du sous-jacent. Le vendeur du call est dans l'obligation de livrer les titres si l'option est exerc&eacute;e. En effet il est possible de vendre un call sans poss&eacute;der les actions en portefeuille (syst&egrave;me de couverture en esp&egrave;ce au lieu des titres), dans ce cas cette strat&eacute;gie est tr&egrave;s risqu&eacute;e.<br>
+<br>
+L'investisseur a 100 actions de la soci&eacute;t&eacute; C en portefeuille. L'action de la soci&eacute;t&eacute; C vaut 15&euro;. Il anticipe une stagnation ou une l&eacute;g&egrave;re baisse de son cours et il est pr&ecirc;t &agrave; les c&eacute;der au prix de 13&euro;.<br>
+<br>
+Il d&eacute;cide de vendre un call de style am&eacute;ricain avec les caract&eacute;ristiques suivantes :<br>
+<br>
+&bull; Prix d'exercice : 13&euro;<br>
+&bull; Maturit&eacute; : avril<br>
+&bull; Prix de l'option : 2&euro;<br>
+&bull; Quotit&eacute; : 100<br>
+<br>
+Il encaisse le montant suivant : 2&euro; x 100 soit 200&euro;<br>
+<br>
+<strong>A maturit&eacute;, il convient de distinguer deux cas</strong> :<br>
+<br>
+<strong>1er cas</strong> :<br>
+le cours de l'action de la soci&eacute;t&eacute; C est mont&eacute; au-dessus du point mort de 15&euro;.<br>
+<br>
+Point mort = prix d'exercice + prime = 13&euro; + 2&euro; = 15&euro;<br>
+<br>
+L'acheteur de l'option choisira d'exercer son droit d'achat et, en tant que vendeur du call, le vendeur devra vendre les actions au prix d'exercice.<br>
+<br>
+Gr&acirc;ce &agrave; cette op&eacute;ration :<br>
+<br>
+&bull; le vendeur a vendu ses actions &agrave; 13&euro;, ce qui constitue une perte acceptable pour lui,<br>
+&bull; le vendeur a de plus encaiss&eacute; le montant de la prime de 2&euro; ce qui a permis de doper la performance de ses investissements.<br>
+<br>
+<strong>2&egrave;me cas</strong> :<br>
+le cours de l'action de la soci&eacute;t&eacute; C a baiss&eacute; en-dessous du point mort de 15&euro;.<br>
+L'acheteur de l'option choisira de ne pas exercer son droit d'achat et le vendeur n'aura pas &agrave; vendre ses actions.<br>
+Gr&acirc;ce &agrave; cette op&eacute;ration le vendeur conserve ses actions en portefeuille et il a encaiss&eacute; le montant de la prime ce qui a g&eacute;n&eacute;r&eacute; un rendement suppl&eacute;mentaire.
+<br>
+<br>
+</p>
+<p class="text-center">
+<img sfref="[images|librariesProvider6]8891fccc-219e-61cd-bc43-ff0100e84d35" src="../../images/librariesprovider6/formations/i-options38977.gif?sfvrsn=a30f9d34_0" data-displaymode="Original" alt="i-options3" title="i-options3"><br>
+<br>
+</p>
+<h4>D. VENTE DE PUT</h4>
+<p><strong>Anticipation d'une stagnation voir une hausse du sous-jacent</strong><br>
+<br>
+&bull; le vendeur souhaite obtenir un rendement suppl&eacute;mentaire et acheter les actions &agrave; un cours inf&eacute;rieur au cours actuel.<br>
+<br>
+La vente de put permet de fixer le prix d'achat du sous-jacent. Le vendeur de put est dans l'obligation d'acheter les titres si l'option est exerc&eacute;. Le vendeur souhaite acqu&eacute;rir des actions de la soci&eacute;t&eacute; D. L'action de la soci&eacute;t&eacute; D vaut 9&euro;. Il anticipe une stagnation ou une l&eacute;g&egrave;re hausse de son cours et il serait pr&ecirc;t &agrave; les acheter au prix de 10&euro;. Il d&eacute;cide de vendre un put de style am&eacute;ricain avec les caract&eacute;ristiques suivantes :<br>
+<br>
+&bull; Prix d'exercice : 10&euro;<br>
+&bull; Maturit&eacute; : avril<br>
+&bull; Prix de l'option : 1&euro;<br>
+&bull; Quotit&eacute; : 100<br>
+<br>
+Il encaisse donc le montant suivant : 1&euro; x 100 soit 100&euro;<br>
+<br>
+<strong>A maturit&eacute;, il convient de distinguer deux cas :</strong><br>
+<br>
+<strong>1er cas :</strong> <br>
+le cours de l'action de la soci&eacute;t&eacute; D est descendu en-dessous du point mort de 9&euro;.<br>
+Point mort = prix d'exercice - prime = 10 - 1 = 9&euro; <br>
+<br>
+L'acheteur de l'option choisira d'exercer son droit de vente et, en tant que vendeur du put, le vendeur devra acheter les actions au prix d'exercice. Gr&acirc;ce &agrave; cette op&eacute;ration :<br>
+<br>
+&bull; le vendeur ach&egrave;te les actions &agrave; 10&euro;, ce qui constitue une perte acceptable pour lui,<br>
+&bull; le vendeur a de plus encaiss&eacute; le montant de la prime ce qui lui a permis de doper la performance de ses investissements.<br>
+<br>
+<strong>2&egrave;me cas :</strong> <br>
+le cours de l'action de la soci&eacute;t&eacute; D est mont&eacute; au-dessus du point mort de 9&euro;.<br>
+<br>
+L'acheteur de l'option choisira de ne pas exercer son droit de vente et, le vendeur n'aura pas &agrave; acheter les actions. Gr&acirc;ce &agrave; cette op&eacute;ration le vendeur a encaiss&eacute; le montant de la prime ce qui a g&eacute;n&eacute;r&eacute; un rendement suppl&eacute;mentaire.
+<br>
+<br>
+</p>
+<p class="text-center">
+<img sfref="[images|librariesProvider6]a591fccc-219e-61cd-bc43-ff0100e84d35" src="../../images/librariesprovider6/formations/i-options4cbb4.gif?sfvrsn=440f9d34_0" data-displaymode="Original" alt="i-options4" title="i-options4">&nbsp;<br>
+<br>
+</p>
+<p><em><strong>Attention</strong> : les calculs utilis&eacute;s dans les exemples chiffr&eacute;s ont &eacute;t&eacute; simplifi&eacute;s dans un but p&eacute;dagogique et ne tiennent pas compte des frais de courtage.</em>
+<br>
+<br>
+</p>
+<h3>2 - Comment acheter ou vendre des options ?</h3>
+<p>Il est n&eacute;cessaire de passer un ordre d'achat ou de vente sur le march&eacute; des options (le Monep) par son interm&eacute;diaire financier sur un compte d&eacute;di&eacute;.
+<br>
+<br>
+</p>
+<div class="alert alert-warning">
+<div class="alert-title"><strong>Pour acheter ou vendre des options avec Binck.fr, il convient de renseigner les champs suivants :</strong><br>
+<br>
+&bull; La bourse sur laquelle vous voulez n&eacute;gocier (Paris, Amsterdam, Bruxelles)<br>
+&bull; Le sous-jacent <br>
+&bull; Le type (Am&eacute;ricain ou Europ&eacute;en)<br>
+&bull; Nature de l'option (Call, Put)<br>
+&bull; Date d'&eacute;ch&eacute;ance <br>
+&bull; Prix d'exercice (Dans la monnaie, A la monnaie, Hors de la monnaie) <br>
+<br>
+Toutefois, il n'est pas indispensable de renseigner tous les champs pour trouver une option.<br>
+<br>
+Lors du choix de votre transaction, vous devrez d&eacute;cider si vous voulez acheter ou vendre, mais vous devrez &eacute;galement indiquer si cette transaction est destin&eacute;e &agrave; ouvrir ou &agrave; d&eacute;boucler une position. Vous aurez donc le choix entre &lsquo;Achat initial', &lsquo;Vente initiale', &lsquo;Rachat' ou &lsquo;Vente de d&eacute;bouclement'.<br>
+<br>
+Un achat initial est une transaction par laquelle vous achetez une option et ouvrez une nouvelle position. Une vente ult&eacute;rieure de la m&ecirc;me option s'appelle une vente de d&eacute;bouclement. Avec cette vente vous supprimez la position pr&eacute;alablement ouverte, de sorte qu'elle dispara&icirc;t de votre portefeuille (vous &lsquo;cl&ocirc;turez' votre position). Lors de la n&eacute;gociation d'options, on parle g&eacute;n&eacute;ralement d'un &lsquo;Achat initial' (open buy) et d'une &lsquo;Vente de d&eacute;bouclement' (close sell). Avec une vente initiale vous ouvrez &eacute;galement une position, mais ici vous &ecirc;tes &lsquo;court' ou &lsquo;short'. Cela veut dire que vous vendez ce que vous ne poss&eacute;dez pas encore.<br>
+<br>
+Ainsi vous cr&eacute;ez une position n&eacute;gative dans votre portefeuille. Pour annuler cette position courte, vous ex&eacute;cutez un rachat. Vous apurez ainsi votre position n&eacute;gative, de sorte qu'elle dispara&icirc;t de votre portefeuille. Lors de la n&eacute;gociation d'options, on parle d'une &lsquo;Vente initiale' (open sell) et d'un &lsquo;Rachat' (close buy). <br>
+<br>
+Vous ne pourrez jamais ouvrir une position dans les deux sens dans une m&ecirc;me s&eacute;rie d'options. Si par exemple vous avez d&eacute;j&agrave; ex&eacute;cut&eacute; un achat initial dans une s&eacute;rie d'options - vous avez donc une position longue (positive) dans cette s&eacute;rie d'options - vous devez d'abord cl&ocirc;turer cette position par une vente avant d'entamer &eacute;ventuellement une position courte (n&eacute;gative) dans la m&ecirc;me s&eacute;rie d'options par une vente initiale. <br>
+<br>
+Vous pouvez passer vos ordres d'options sur NYSE Euronext uniquement au cours du march&eacute; ou &agrave; cours limit&eacute;. NYSE Euronext n'accepte pas d'ordres &agrave; d&eacute;clenchement sur le march&eacute; des d&eacute;riv&eacute;s. Sachez que NYSE Euronext annulera - contrairement au march&eacute; des titres - le solde &eacute;ventuel d'un ordre au march&eacute; ex&eacute;cut&eacute; partiellement. Il n'en est pas ainsi pour un ordre &agrave; cours limit&eacute;. La partie non ex&eacute;cut&eacute;e d'un ordre &agrave; cours limit&eacute; restera dans le carnet d'ordres jusqu'&agrave; son ex&eacute;cution ou son expiration. Le contr&ocirc;le et l'envoi d'un ordre d'options se d&eacute;roulent exactement de la m&ecirc;me fa&ccedil;on qu'un ordre sur titres. <br>
+<br>
+<strong>Les ordres de combinaisons d'options</strong><br>
+Vous pouvez placer des ordres de combinaisons d'options aupr&egrave;s de Binck.fr. Une combinaison est le placement simultan&eacute; d'un ordre de deux options diff&eacute;rentes sur la m&ecirc;me valeur sous-jacente. Le but d'un ordre de combinaison est de profiter d'un mouvement de cours sp&eacute;cifique ou de changements de volatilit&eacute;. Les spreads, straddles et strangles sont quelques exemples d'ordres de combinaisons courants.<br>
+<br>
+Pour placer un ordre de combinaison, en premier lieu il convient d'indiquer les donn&eacute;es de la premi&egrave;re option dans la combinaison. Cela se passe comme pour un ordre d'option simple. <br>
+<br>
+Apr&egrave;s s&eacute;lection de la premi&egrave;re s&eacute;rie d'option, vous remplissez la nature d'ordre pour la s&eacute;rie 1 (ex. Achat initial). Ensuite vous d&eacute;terminez la deuxi&egrave;me option dans votre combinaison. S&eacute;lectionnez en haut les donn&eacute;es de l'option et ensuite choisissez la s&eacute;rie dans la partie droite de l'&eacute;cran.<br>
+<br>
+Ensuite, indiquez la nature de l'ordre pour la deuxi&egrave;me s&eacute;rie. Enfin remplissez le nombre de contrats, la limite &eacute;ventuelle de cours et la dur&eacute;e de validit&eacute; de votre ordre. Il ne vous reste plus qu'&agrave; valider votre ordre comme vous le faites pour un ordre de titres. <br>
+<br>
+Si vous souhaitez modifier une s&eacute;rie d'options s&eacute;lectionn&eacute;e, vous pouvez modifier la nature (call ou put) et/ou la date d'expiration et s&eacute;lectionner la s&eacute;rie de votre choix dans la partie droite de l'&eacute;cran. Si vous voulez uniquement modifier le prix d'exercice, cliquez sur la s&eacute;rie sous &lsquo;Option 1' ou &lsquo;Option 2' et choisissez une nouvelle s&eacute;rie dans la liste des prix d'exercice.
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Avantages des options</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Les options peuvent r&eacute;pondre &agrave; plusieurs types de strat&eacute;gies et d'investissements. Elles peuvent servir une strat&eacute;gie de diversification de portefeuille ou &ecirc;tre utilis&eacute;es dans une optique de couverture ou encore dans un but sp&eacute;culatif. Les diff&eacute;rents avantages sont :<br>
+<br>
+&bull; <strong>l'effet de levier</strong>, qui peut multiplier les gains par rapport au sous-jacent si l'&eacute;volution du march&eacute; suit les pr&eacute;visions de l'investisseur,<br>
+&bull; <strong>la large gamme</strong> d'options sur les actifs sous-jacents,<br>
+&bull;<strong> la n&eacute;gociation facilit&eacute;e</strong>, cotation en continu avec liquidit&eacute; assur&eacute;e,<br>
+&bull; <strong>le co&ucirc;t de l'investissement</strong>, la prime repr&eacute;sente une somme faible par rapport &agrave; la valeur du sous-jacent,<br>
+&bull; <strong>la protection peu co&ucirc;teuse</strong>, permet de se prot&eacute;ger des risques de baisse en prenant une position d'option inverse &agrave; son portefeuille,<br>
+&bull; <strong>la perte limit&eacute;e</strong> &agrave; la prime pay&eacute;e pour les achats d'options.
+<br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Risques et précautions des options</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Des risques sont associ&eacute;s &agrave; toutes les formes d'investissements. Il est conseill&eacute; de bien s'informer et de conna&icirc;tre le fonctionnement des options avant d'investir en Bourse. G&eacute;n&eacute;ralement, un investissement &agrave; fort potentiel de rendement comporte des risques plus importants. Certains investissements peuvent entra&icirc;ner une perte totale des capitaux investis, ou m&ecirc;me, pour les investissements les plus sp&eacute;culatifs, une perte sup&eacute;rieure aux capitaux investis.<br>
+<br>
+&bull; <strong>L'effet de levier</strong> : un effet de levier entra&icirc;ne un risque important. S'il permet de d&eacute;multiplier les gains, il peut d&eacute;multiplier les pertes si l'&eacute;volution du march&eacute; est contraire aux pr&eacute;visions de l'investisseur.<br>
+&bull; <strong>Le risque de perte en capital</strong> : l'investissement sur les options ne comporte aucune garantie et il est possible de perdre la totalit&eacute; de son capital ou une somme sup&eacute;rieure &agrave; celui-ci. <br>
+&bull; <strong>La perte peut &ecirc;tre tr&egrave;s importante</strong> pour les vendeurs d'options si l'&eacute;volution du march&eacute; est contraire aux pr&eacute;visions de l'investisseur.
+<br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C176_Col00" class="sf_colsIn col-xs-12"><div class="row is-flex" data-sf-element="Row">
+    <div id="cpMain_C179_Col00" class="sf_colsIn col-md-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-02eb3b.jpg?sfvrsn=de29b834_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">MOTS CLES</h3>
+            <p class="card-text">Options<br>
+Call<br>
+Put<br>
+Sous-jacent<br>
+Prime<br>
+Quotit&eacute;<br>
+Ech&eacute;ance<br>
+Prix exercice</p>
+        </div>
+</div>
+    </div>
+    <div id="cpMain_C179_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-06d7ca.jpg?sfvrsn=792abb34_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">A RETENIR</h3>
+            <p class="card-text">&bull; Les options impliquent toujours l'existence de deux parties, l'acheteur et le vendeur.<br>
+<br>
+&bull; L'acheteur d'une option a toujours un droit, le vendeur peut &ecirc;tre mis dans l'obligation de vendre ou d'acheter le sousjacent.<br>
+<br>
+&bull; L'acheteur verse toujours une prime au vendeur en contrepartie de son obligation.<br>
+<br>
+<img sfref="[images|librariesProvider6]0092fccc-219e-61cd-bc43-ff0100e84d35" src="../../images/librariesprovider6/formations/i-options506e6.png?sfvrsn=2b0f9d34_0" data-displaymode="Original" alt="i-options5" title="i-options5"><br></p>
+        </div>
+</div>
+    </div>
+    <div id="cpMain_C179_Col02" class="sf_colsIn col-md-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-032482.jpg?sfvrsn=6226b834_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">A SAVOIR</h3>
+            <p class="card-text">En r&eacute;sum&eacute;, 3 possibilit&eacute;s s'offrent au d&eacute;tenteur d'une option call ou put. <strong>L'acheteur peut </strong>:<br>
+- exercer son option<br>
+- laisser expirer son option<br>
+- revendre son option<br>
+<br>
+Les investisseurs ont le choix entre prendre une des 4 positions de base suivantes :<br>
+<br>
+<img sfref="[images|librariesProvider6]3492fccc-219e-61cd-bc43-ff0100e84d35" src="../../images/librariesprovider6/formations/i-options6ddd5.png?sfvrsn=f70c9d34_0" data-displaymode="Original" alt="i-options6" title="i-options6"><br></p>
+        </div>
+</div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C177_Col00" class="sf_colsIn col-xs-12"><div class="row is-flex" data-sf-element="Row">
+    <div id="cpMain_C178_Col00" class="sf_colsIn col-md-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-10f095.jpg?sfvrsn=79a2ba34_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">ASTUCE</h3>
+            <p class="card-text">Il est souvent plus int&eacute;ressant pour l'acheteur de revendre son option sur le march&eacute; plut&ocirc;t que de l'exercer</p>
+        </div>
+</div>
+    </div>
+    <div id="cpMain_C178_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-07ed30.jpg?sfvrsn=c35bbb34_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">ATTENTION</h3>
+            <p class="card-text"><strong>Fiscalit&eacute; </strong>: les op&eacute;rations boursi&egrave;res sont soumises &agrave; l'imp&ocirc;t sur le revenu et aux cotisations sociales.</p>
+        </div>
+</div>
+    </div>
+    <div id="cpMain_C178_Col02" class="sf_colsIn col-md-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-046889.jpg?sfvrsn=a927b834_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">POUR EN SAVOIR PLUS</h3>
+            <p class="card-text"><a href="les-futures.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]19dafacb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les futures</a><br>
+<a href="les-actions.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]7da2facb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les actions</a><br>
+<a href="les-warrants.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]d2c8facb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les warrants</a><br>
+<a href="les-turbos.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]6fc1facb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les turbos</a><br>
+<a href="les-trackers.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]59b6facb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les trackers</a><br>
+<a href="la-fiscalite.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]8800fbcb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">La fiscalit&eacute;</a></p>
+        </div>
+        <footer class="card-footer footer-flex">
+
+
+
+<div class="row  " > 
+
+
+
+    <div class="col-flex">
+        <a class="" href="../espace-bourse-pratique.html" >RETOUR AU SOMMAIRE</a>
+    </div>
+
+</div>         </footer>
+</div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpFooter_C156_Col00" class="sf_colsIn col-xs-12">
+
+    <div class="card skewleft bg-white">
+        <div class="card-block">
+            <div class="row is-flex">
+
+
+<div class="col-md-7 bg-image  " style="background-image: url(../../images/librariesprovider6/fiches/visuel0156df.jpg?sfvrsn=3c70b834_2);">
+    <div class="content-center">
+    
+
+
+
+</div>
+</div>
+
+<div class="col-md-5">
+    <div>
+    
+    <p>
+        <h3>VOUS SOUHAITEZ APPROFONDIR VOS CONNAISSANCES ?</h3>
+<p>Suivez gratuitement les webinaires p&eacute;dagogiques de la Binck Academy et formez-vous avec nos experts et partenaires au fonctionnement des march&eacute;s</p>
+<p>&nbsp;</p>
+    </p>
+        <div class="content-center ">
+            
+
+
+    <a class="btn btn-secondary " type="button"  href='../../binck-tv.html'  >Je me forme</a>
+
+
+
+
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </div>
+
+
+    <div class="card skewright bg-white">
+        <div class="card-block">
+            <div class="row is-flex">
+<div class="col-md-5">
+    <div>
+    
+    <p>
+        <h3>BINCK.FR VOUS EN DIT PLUS SUR LES OPTIONS</h3>
+<p>D&eacute;couvrez les avantages des Options chez Binck.fr</p>
+<p>&nbsp;</p>
+    </p>
+        <div class="content-center ">
+            
+
+
+    <a class="btn btn-secondary " type="button"  href='../../bourse-en-ligne/produits/options.html'  >Je me renseigne</a>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-7 bg-image  " style="background-image: url(../../images/librariesprovider6/fiches/visuel022d45.jpg?sfvrsn=20b2ba34_2);">
+    <div class="content-center">
+    
+
+
+
+</div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpFooter_C157_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-center">
+                <div class="btn-group" role="group">
+<a class="btn btn-secondary" href="../espace-bourse-pratique.html" role="button">RETOUR</a><a class="btn btn-secondary" href="../../docs/librariesprovider6/fiche/les-options-fiche-pedagogique-binckf6a0.pdf?sfvrsn=0" role="button">T&eacute;l&eacute;charger cette fiche</a><a class="btn btn-secondary" href="les-futures.html" role="button">Fiche pr&eacute;c&eacute;dente</a><a class="btn btn-secondary" href="le-compte-titres-ordinaire.html" role="button">Fiche suivante</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpFooter_C158_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <em>
+Ce document p&eacute;dagogique n'est pas un document de conseils pour investir en bourse. Les informations donn&eacute;es dans ce document sont &agrave; titre informatif. Vous &ecirc;tes seul responsable des &eacute;ventuelles d&eacute;cisions que vous prendrez sur la base de ces informations. Il est conseill&eacute; de se renseigner aupr&egrave;s d'un conseil en investissement agr&eacute;&eacute; avant de prendre une d&eacute;cision d'investissement.
+</em>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="hidden-footer" id="main-footer">
+        <div class="footer text-white">
+            <div class="container-fluid-lg" id="footer-top">
+                <div class="row" id="footer-row">
+                    <ul class="list-unstyled text-nowrap">
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>CONTACTEZ-NOUS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../../contact.html"><span>Notre page contact</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE COMMERCIAL </span></li>
+                                    <li><span><img src="../../images/librariesprovider6/contact/0800-940-9805014.gif?sfvrsn=4" data-displaymode="Original" alt=" Téléphone Binck 0800 940 980" title="0800 940 980"></span></li>
+                                    <li><a class="icon-before" href="mailto:info@binck.fr" title="Contactez notre service commercial" data-icon=""><span>info@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE CLIENT</span></li>
+                                    <li><span>01 70 36 70 80 (appel non surtax&eacute;)</span></li>
+                                    <li><a class="icon-before" href="mailto:clients@binck.fr" title="Contactez notre service client" data-icon=""><span>clients@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>ADRESSE</span></li>
+                                    <li><span>10 Rue de la Paix</span></li>
+                                    <li><span>FR-75085 Paris cedex 02</span></li>
+                                    <li><span> &nbsp; </span></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>BOURSE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../../ouvrir-un-compte-en-ligne.html"><span>Ouvrir un compte</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/produits.html"><span>Produits de Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/comptes/compte-titres.html"><span>Compte-titres</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/comptes/pea.html"><span>PEA</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/comptes/pea-pme.html"><span>PEA-PME</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/outils-de-trading.html"><span>Outils de Trading</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/outils-d-analyses.html"><span>Outils d'analyses</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/club-des-traders.html"><span>Club des Traders</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../../faq.html"><span>FAQ Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../../formulaires.html"><span>Formulaires</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>ASSURANCE VIE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://landing.av.binck.fr/acquisition"><span>Adh&eacute;rer au contrat</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/modes-de-gestion/gestion-libre.html"><span>Modes de Gestion</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/supports/tous-nos-supports.html"><span>Supports</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/performances-assurance-vie.html"><span>Performances</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/avantages-fiscalite.html"><span>Fiscalit&eacute;</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/adherer-assurance-vie.html"><span>Comment adh&eacute;rer</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/FAQ-assurance-vie.html"><span>FAQ Assurance Vie</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/lexique.html"><span>Lexique</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>QUI EST BINCK.FR</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../../qui-est-binck/pourquoi-choisir-binck.html"><span>Pourquoi choisir Binck</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/palmares.html"><span>Palmar&egrave;s</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/presse.html"><span>Binck dans la presse</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/communiques-de-presse.html"><span>Communiqu&eacute;s de presse</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/rapports-financiers.html"><span>Rapports financiers</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>FORMATIONS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../espace-bourse-pratique.html"><span>Espace Bourse Pratique</span></a></li>
+                                    <li><a class="icon-before" href="../investir-en-bourse-sur-binck-fr.html"><span>Vid&eacute;os tutorielles</span></a></li>
+                                    <li><a class="icon-before" href="../../binck-tv.html"><span>Binck TV</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span> ACTUALITES </span></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><a class="icon-before" href="../../actualites/analyses.html"><span>Analyses</span></a></li>
+                                    <li><a class="icon-before" href="../../actualites/calendrier-boursier.html"><span>Calendrier Boursier</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>NOUS TROUVER</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://www.facebook.com/BinckFR" data-icon=""><span>Facebook</span></a></li>
+                                    <li><a class="icon-before" href="https://twitter.com/BinckFR" data-icon=""><span>Twitter</span></a></li>
+                                    <li><a class="icon-before" href="https://www.youtube.com/user/BINCKFR" data-icon=""><span>Youtube</span></a></li>
+                                    <li><a class="icon-before" href="https://www.linkedin.com/company/binckbank/" data-icon=""><span>LinkedIn</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="fullruler">
+            <div class="container-fluid-lg text-nowrap" id="footer-bottom">
+                <div class="row row-eq-height-md">
+                    <div class="col-md-4 col-lg-2 text-xs-center text-md-left">
+                            <a class="no-border" href="../../index.html" >
+                                <img alt="binck logo" height="16" src="../../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                            </a>
+                    </div>
+                    <nav class="col-md-8 col-lg-10" role="navigation">
+                        <div class="row">
+                                <div class="col-xs-auto"><a href="../../information/securite.html">S&eacute;curit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../informations-legales.html">Informations l&eacute;gales<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../politique-de-confidentialite.html">Politique de confidentialit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../gestion-des-cookies.html">Gestion des cookies<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binckrecrute.fr/" target="_blank">Recrutement<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binck.com/nl/corporate/" target="_blank">Binck.com<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../plan-du-site.html">Plan du site<span></span></a></div>
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</div>
+</body>
+
+<!-- Mirrored from www.binck.fr/formations-trading/espace-bourse-pratique/les-options by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:23:57 GMT -->
+</html>

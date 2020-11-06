@@ -1,0 +1,1591 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.binck.fr/formations-trading/espace-bourse-pratique/les-principaux-indicateurs-economiques by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:25:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link href="../../Telerik.Web.UI.WebResourceb6a9.css?d=PMrIT5dOWaVYIcpFWUE4nMLWcdQIjXr7e7sRrUL6XRMyEGvH48LOQzat_9YOOsN0J6WPBFhfQ4EN__Y3UDQ8KVFySae_B1iqlXBugPHQ1XuXHNF00&amp;t=637317551186412526&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d11.0.6732.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3afr%3aca5aa0cb-9dda-4885-a4ae-598cf4f97af5%3a7a90d6a%3ad271177c%3adff30785" type="text/css" rel="stylesheet" />
+            <link rel="alternate" hreflang="fr_fr" />
+            
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+        <link rel="stylesheet" href="../../Content/font-awesome.min.css" />
+        
+           <link rel="stylesheet" href="../../Content/BinckPatternLAB/binck.bootstrap.css" />
+           <link href="../../Content/patternlabcf9e.css?v=bauX_oIE8src8FNJTNLBQqUcmCLmSn7CvalvEIB5d0M1" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" type="image/x-icon" href="../../Style/Corporate/images/myicon.ico" />
+    <style>
+        body {
+            min-width: 0 !important;
+        }
+    </style>
+<style type="text/css" media="all">.navbar-brand > img {
+    max-height: 20px;
+    max-width: 65vw;
+    height: auto;
+}
+</style><script type="text/javascript">
+(function () {
+    window.digitalData = window.digitalData || [];
+
+    var domains = [
+        { "domain": "binckspanje.com", "country": "es", "language": "nl", "website": "rs-spain" },
+        { "domain": "binckbank.com", "country": "en", "language": "en", "website": "binck" },
+        { "domain": "binck.com", "country": "en", "language": "en", "website": "rs-binck" },
+        { "domain": "binck.be", "country": "be", "language": "nl", "website": "rs-belgium" },
+        { "domain": "binck.it", "country": "it", "language": "it", "website": "rs-italy" },
+        { "domain": "binck.nl", "country": "nl", "language": "nl", "website": "rs-netherlands" },
+        { "domain": "binck.fr", "country": "fr", "language": "fr", "website": "rs-france" }
+    ];
+
+    var languageList = [
+        { "language": "en" }, { "language": "nl" }, { "language": "fr" }, { "language": "it" }
+    ];
+
+    function findObject(arr, key, val) {
+        var found;
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i][key] === val) {
+                found = arr[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+    var topLvl = document.domain.split(".").reverse();
+    var subdomain = "";
+    
+    if (topLvl.length === 3 && topLvl[2] !== "www") {
+        subdomain = topLvl.pop();
+    } else {
+        topLvl.length = 2;
+    }
+
+    topLvl = topLvl.reverse().join(".");
+
+    var domain = findObject(domains, "domain", topLvl);
+
+    if (!domain) {
+        throw new Error(topLvl + " not supported by dataLayer");
+    }
+
+    var languageCode = domain.language;
+    var parts = window.location.pathname.split("../../index.html");
+    var languageCodeInUrl;
+
+    if (parts.length > 1) {
+        languageCodeInUrl = findObject(languageList, "language", parts[1]);
+    }
+    
+    if (subdomain === "ouvriruncompte") {
+        languageCodeInUrl = findObject(languageList, "language", "fr");
+    }
+
+    if (languageCodeInUrl) {
+        languageCode = languageCodeInUrl.language;
+        parts.shift();
+    }
+
+    parts.shift();
+    if (subdomain !== "") {
+        parts.unshift(subdomain);
+    }
+
+    var sections = parts.concat();
+    sections.unshift(languageCode + "-" + domain.country);
+
+    function responseStatusCode() {
+        responseStatusCode = 200;
+        var titlepage = window.document.title.toLowerCase()
+        if (titlepage.indexOf('pagina niet gevonden') > -1 || titlepage.indexOf('error 404') > -1 || titlepage.indexOf('page not found') > -1 || titlepage.indexOf('page non trouvée') > -1) {
+            responseStatusCode = 404;
+        }
+        return responseStatusCode;
+    }
+
+    function getPageName() {
+        return parts.join(":").replace(/:$/, "");
+    }
+
+    function getSiteSectionAll() {
+        var sectionAll = "";
+        if (parts.length === 0 || parts[0] === "") {
+            sectionAll = "frontpage";
+        } else {
+            sectionAll = getPageName();
+        }
+        return sectionAll;
+    }
+
+    var pageName = getPageName();
+
+    window.digitalData.error = {
+        responseStatusCode: responseStatusCode(),
+    }
+    window.digitalData.page = {
+        hostName: window.location.hostname,
+        pageName: languageCode + "-" + domain.country + (pageName != "" ? ":" : "" ) + pageName,
+        siteSection1: sections[0] || '',
+        siteSection2: sections[1] || '',
+        siteSection3: sections[2] || '',
+        siteSection4: sections[3] || '',
+        siteSection5: sections[4] || '',
+        siteSectionAll: getSiteSectionAll(),
+        queryString: window.location.search,
+        website: domain.website,
+        language: languageCode
+    };
+})()
+</script><script type="text/javascript" src="../../../assets.adobedtm.com/launch-EN5a2ce50dc24d4c95ad125c65fa54d8b3.min.js"></script><meta name="Generator" content="Sitefinity 11.0.6732.0 PU" /><link rel="canonical" href="les-principaux-indicateurs-economiques.html" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="../../Sitefinity/Public/ResponsiveDesign/layout_transformations466b.html?pageDataId=7b74facb-219e-61cd-bc43-ff0300e84d35&amp;pageSiteNode=7A74FACB-219E-61CD-BC43-FF0300E84D35/f77df8cb-219e-61cd-bc43-ff0100e84d35/SitefinitySiteMap" type="text/css" rel="stylesheet" /><title>
+	Formation Bourse en Ligne - Les Principaux Indicateurs &#201;conomiques 
+</title><meta name="description" content="Binck vous accompagne et vous aide à mieux comprendre le Trading pour ne plus commettre d&#39;erreurs en Bourse : les principaux indicateurs économiques" /><meta name="keywords" content="indicateurs économiques pib, taux d’intérêts directeurs, IPC " /></head>
+<body>
+    <script src="../../bundles/PatternLab3b9e?v=eaHEFy3f5naNK8Kf7OcOckvdcpgFonixou7UWowavXk1"></script>
+
+    <form method="post" action="https://www.binck.fr/formations-trading/espace-bourse-pratique/les-principaux-indicateurs-economiques" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSM" id="ctl06_TSM" value="" />
+<input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="PXcgQm/mrfpMhmcsIXxik9QEJv4UOdfhUTTeTzh8bMBZv4tV+b4KcMBaeJEFazAedcoz1TvrUs+gyZODIkW2iL5T/Xo=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource908c.js?d=pynGkmcFUV13He1Qd6_TZP_4ej2xu7z_XVotHnL9kuaGNPxbuoHGPHb-o8amqx79yDcwVA2&amp;t=637290829350350503" type="text/javascript"></script>
+
+
+<script src="../../WebResource74ff.js?d=yAZznlIeaGQJz8qTi4uqDSxm-bWuIiwJKKVOYfsBKOKGAYFrBb8CzgrpwJulWIFfZX6-Sq38e3w8f8tdivnh_jEm03mVBkvaobew0b5wtEF7AzpSEpk2-02-UP7Vfj_PgCuldAuwGtncSUrXnO_klSdbTGY1&amp;t=636751093820000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"Non numérique","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infini","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+Infini","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":true,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="../../Telerik.Web.UI.WebResourcef71e.js?_TSM_HiddenField_=ctl06_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr%3a4feca508-514b-48c0-a162-7fa9c360d783%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="758C4320" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="wvx4OvdF643yQxIKyM7q4RE8+DodLccqKqvZvKp9wUlFwUWcniKtQDE+L2axXYdWYwMFM6dRcHlpFNjP6ro7Drc5WQr+WoH8MrVPolY8I56FzZz4" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl06', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<input type="hidden" name="ctl00$ctl06" id="ctl06" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl06", "ctl00$ctl06");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <input type="hidden" name="ctl00$uniqueSubmitIdHiddenField" id="uniqueSubmitIdHiddenField" value="578df542-c15d-4bcd-b36f-c04e8bf8e101" />
+        
+        
+        
+    <script type="text/javascript">
+	StatsClient.LogVisit('7a74facb-219e-61cd-bc43-ff0300e84d35', '4c0c1d81-9802-4afa-85f8-9ea666342d1e');
+</script><script type="text/javascript">
+if(typeof _satellite!=="undefined"){_satellite.pageBottom();}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='../../index.html';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl07_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=11.0.6732.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:fr:ca5aa0cb-9dda-4885-a4ae-598cf4f97af5:7a90d6a:d271177c:dff30785';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();//]]>
+</script>
+</form>
+    <div id="content" class="wrap">
+
+    <div id="dna-header">
+        <nav class="navbar navbar-inverse navbar-static-top" id="top-nav" role="navigation">
+            <div class="container-fluid-lg">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../../index.html" >
+                        <img alt="binck logo" src="../../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                    </a>
+                    <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-left" aria-expanded="false" data-icon="">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                        <button class="navbar-toggle collapsed icon-size-1x icon-color-white" type="button" data-toggle="collapse" data-target="#secondary-nav-right" aria-expanded="false" data-icon="">
+                            <span class="sr-only">Toggle selection</span>
+                        </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown nav-item open-on-hover">
+                                <a href="../../contact.html" class="nav-link">Contacts</a>
+                            </li>
+                                                    <li class="nav-link">
+                                <a id="header-button" class="btn btn-primary btn-sm navbar-btn mr-2 ml-2 hidden-xs" href="../../devenir-client.html" >Devenir client</a>
+                                <a class="nav-link visible-xs" href="../../devenir-client.html" >Devenir client</a>
+                            </li>
+                                                    <li class="nav-link">
+                                
+
+<a class="nav-link" href="../../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<nav class="navbar navbar-light alt" id="secondary-nav">
+    <div class="container-fluid-lg">
+        <ul class="nav navbar-nav navbar-left secondary-nav navbar-collapse collapse" id="secondary-nav-left">
+                <li class="nav-item visible-xs">
+                    
+
+<a class="nav-link" href="../../connexion.html" >
+    <span class="icon-after icon-size-1x icon-abs" data-icon="">Acc&#232;s client</span>
+</a>
+                </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../bourse-en-ligne.html">Bourse</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/bourses.html" style="text-transform: none;">
+                                                        Les Bourses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                        Produits
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/achat-d-actions-en-bourse.html" style="text-transform: none;">
+                                                                                Achat d&#39;actions en bourse
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/fonds.html" style="text-transform: none;">
+                                                                                Fonds
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/trackers.html" style="text-transform: none;">
+                                                                                Trackers
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/turbos.html" style="text-transform: none;">
+                                                                                Turbos
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/certificats.html" style="text-transform: none;">
+                                                                                Certificats
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/warrants.html" style="text-transform: none;">
+                                                                                Warrants
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/options.html" style="text-transform: none;">
+                                                                                Options
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/futures.html" style="text-transform: none;">
+                                                                                Futures
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/produits/srd.html" style="text-transform: none;">
+                                                                                SRD
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/comptes.html" style="text-transform: none;">
+                                                        Comptes
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/comptes/compte-titres.html" style="text-transform: none;">
+                                                                                Le compte-titres
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/comptes/pea.html" style="text-transform: none;">
+                                                                                Le PEA
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/comptes/pea-pme.html" style="text-transform: none;">
+                                                                                Le PEA-PME
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading.html" style="text-transform: none;">
+                                                        Outils de trading
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/nos-plateformes.html" style="text-transform: none;">
+                                                                                Nos plateformes
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/application-mobile.html" style="text-transform: none;">
+                                                                                Application mobile
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/prorealtime.html" style="text-transform: none;">
+                                                                                ProRealTime V11
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/protrader.html" style="text-transform: none;">
+                                                                                ProTrader
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/fiches-valeurs.html" style="text-transform: none;">
+                                                                                Fiches valeurs
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/ordres-conditionnels.html" style="text-transform: none;">
+                                                                                Ordres conditionnels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-de-trading/portefeuille-virtuel.html" style="text-transform: none;">
+                                                                                Portefeuille virtuel
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                        Outils d&#39;analyses
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/analyses-techniques.html" style="text-transform: none;">
+                                                                                Analyses techniques
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/analyse-fondamentale.html" style="text-transform: none;">
+                                                                                Analyse fondamentale
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/aide-a-la-decision.html" style="text-transform: none;">
+                                                                                Aide &#224; la d&#233;cision
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../bourse-en-ligne/outils-d-analyses/portefeuilles-types.html" style="text-transform: none;">
+                                                                                Portefeuilles types
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/club-des-traders.html" style="text-transform: none;">
+                                                        Club des Traders
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../bourse-en-ligne/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../assurance-vie.html">Assurance Vie</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/tarifs.html" style="text-transform: none;">
+                                                        Tarifs
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                        Modes de gestion
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/modes-de-gestion/gestion-libre.html" style="text-transform: none;">
+                                                                                Gestion libre
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/modes-de-gestion/gestion-sous-mandat.html" style="text-transform: none;">
+                                                                                Gestion sous mandat
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                        Supports
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/tous-nos-supports.html" style="text-transform: none;">
+                                                                                Tous nos supports
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/fonds-euros.html" style="text-transform: none;">
+                                                                                Fonds euros
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/opc.html" style="text-transform: none;">
+                                                                                OPC
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/opc-indiciels.html" style="text-transform: none;">
+                                                                                OPC indiciels
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../assurance-vie/supports/actions.html" style="text-transform: none;">
+                                                                                Actions
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/performances-assurance-vie.html" style="text-transform: none;">
+                                                        Performances
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/avantages-fiscalite.html" style="text-transform: none;">
+                                                        Fiscalit&#233;
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/adherer-assurance-vie.html" style="text-transform: none;">
+                                                        Comment adh&#233;rer
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/offres-du-moment.html" style="text-transform: none;">
+                                                        Offres du moment
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/FAQ-assurance-vie.html" style="text-transform: none;">
+                                                        FAQ
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../assurance-vie/lexique.html" style="text-transform: none;">
+                                                        Lexique
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../qui-est-binck.html">Qui est Binck</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/pourquoi-choisir-binck.html" style="text-transform: none;">
+                                                        Pourquoi choisir Binck
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/trader-en-ligne.html" style="text-transform: none;">
+                                                        Trader en ligne
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/palmares.html" style="text-transform: none;">
+                                                        Palmar&#232;s
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/presse.html" style="text-transform: none;">
+                                                        Binck dans la presse
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown ">
+                                                    <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                        Communiqu&#233;s de presse
+                                                    </a>
+                                                        <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                                        <nav class="childItem">
+                                                            <div class="container-fluid-lg visible-xs">
+                                                                <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2020.html" style="text-transform: none;">
+                                                                                2020
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2019.html" style="text-transform: none;">
+                                                                                2019
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2018.html" style="text-transform: none;">
+                                                                                2018
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2017.html" style="text-transform: none;">
+                                                                                2017
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2016.html" style="text-transform: none;">
+                                                                                2016
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2015.html" style="text-transform: none;">
+                                                                                2015
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2014.html" style="text-transform: none;">
+                                                                                2014
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2013.html" style="text-transform: none;">
+                                                                                2013
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2012.html" style="text-transform: none;">
+                                                                                2012
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link " href="../../qui-est-binck/communiques-de-presse/2011.html" style="text-transform: none;">
+                                                                                2011
+                                                                            </a>
+                                                                        </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../qui-est-binck/rapports-financiers.html" style="text-transform: none;">
+                                                        Rapports financiers
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown open">
+                            <a class="nav-link dropdown-toggle active" href="../../formations-trading.html">Formations</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  open">
+                                                    <a class="nav-link active" href="../espace-bourse-pratique.html" style="text-transform: none;">
+                                                        Espace Bourse Pratique
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../dictionnaire-financier.html" style="text-transform: none;">
+                                                        Dictionnaire financier
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../investir-en-bourse-sur-binck-fr.html" style="text-transform: none;">
+                                                        Investir en bourse sur Binck.fr
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="../../actualites/analyses.html">Actualit&#233;s</a>
+                                <span class="mobile-menu-fix-push-area nav-arrow dropdown-toggle visible-xxs-block visible-xs-block dropdown nav-item open-on-hover"></span>
+                                <nav class="childItem">
+                                    <div class="container-fluid-lg visible-xs">
+                                        <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../actualites/analyses.html" style="text-transform: none;">
+                                                        Analyses
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link " href="../../actualites/calendrier-boursier.html" style="text-transform: none;">
+                                                        Calendrier boursier
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link  " href="../../binck-tv.html">Binck TV</a>
+                        </li>
+            
+                <li class="nav-item visible-xs">
+<a href="../../contact.html" class="nav-link">Contacts</a>                </li>
+                            <li class="nav-item visible-xs">
+                    <a class="nav-link" href="../../devenir-client.html" >Devenir client</a>
+                </li>
+                    </ul>
+        
+            <ul class="nav navbar-nav navbar-right secondary-nav navbar-collapse collapse" id="secondary-nav-right">
+                <div class="form-group has-search">
+                    <input id="search-box" class="form-control" type="search" placeholder="Recherche ..." data-toggle="pill" data-target="#searchresult" data-search-page="/search-results" data-index-catalog="searchfrance">
+                </div>
+            </ul>
+    </div>
+</nav>
+    <nav class="levelmenu alt">
+        <div class="container-fluid-lg">
+            <ul class="nav navbar-nav secondary-nav navbar-collapse collapse">
+                    <li class="nav-item  open">
+                        <a class="nav-link  active" href="../espace-bourse-pratique.html">Espace Bourse Pratique</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="../dictionnaire-financier.html">Dictionnaire financier</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="../investir-en-bourse-sur-binck-fr.html">Investir en bourse sur Binck.fr</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+
+
+
+
+
+
+<div class="lane  bg-image  bg-darkgrey  has-halfrudder has-tail" 
+     style="background-image: url('../../images/librariesprovider6/bgd/header-03751f.jpg?sfvrsn=6d74b834_2')" >
+    <div class="container text-center text-white " >
+<h1 class="h1  ">Quelles sont les principaux indicateurs économiques ?</h1>                    <div class="littleruler"></div>
+        <p class="lead">Fonctionnement de la Bourse</p>
+        <p>
+            
+
+
+
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+<div class="lane tail">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C129_Col00" class="sf_colsIn col-xs-12">
+<div class="card has-bubble  " data-icon="&#xf19c;"   >        <div class="card-block ">
+            <h2 class="h2  ">LES PRINCIPAUX INDICATEURS ECONOMIQUES</h2>
+            <p class="card-text">Les indicateurs &eacute;conomiques (PIB, taux d'int&eacute;r&ecirc;ts directeurs, indice des prix &agrave; la consommation, taux de ch&ocirc;mage) permettent de suivre la sant&eacute; &eacute;conomique et financi&egrave;re d'un pays ou d'un secteur. Ils ont un effet important sur l'&eacute;volution des Bourses. C'est la raison pour laquelle les investisseurs suivent et analysent r&eacute;guli&egrave;rement leurs publications.<br>
+<br></p>
+        </div>
+</div>
+            </div> 
+        </div>
+    </div>
+</div><div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C130_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    <h3 class="h2  text-left">Définition</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                Un indicateur &eacute;conomique est une donn&eacute;e chiffr&eacute;e qui mesure une certaine dimension d'une activit&eacute; &eacute;conomique d'un secteur ou d'un pays. Cette statistique est publiquement publi&eacute;e &agrave; intervalle r&eacute;gulier par des organismes d'&eacute;tudes statistiques publics ou priv&eacute;s.
+<br>
+<br>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Les types d'indicateurs</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Les indicateurs &eacute;conomiques sont class&eacute;s selon leur importance et l'impact qu'ils ont sur les march&eacute;s au moment de leurs publications. Nous distinguons trois types d'indicateurs :<br>
+&bull; <strong>les indicateurs &eacute;conomiques avanc&eacute;s</strong><br>
+&bull; <strong>les indicateurs &eacute;conomiques co&iuml;ncidents</strong><br>
+&bull; <strong>les indicateurs &eacute;conomiques retard&eacute;s</strong><br>
+<br>
+</p>
+<p>
+</p>
+<h4>1 - Les indicateurs &eacute;conomiques avanc&eacute;s</h4>
+<p>Ces indicateurs refl&egrave;tent en avance l'activit&eacute; &eacute;conomique r&eacute;elle. Ils permettent d'anticiper des changements de tendances &eacute;conomiques.<br>
+<br>
+Ils sont difficiles &agrave; analyser puisqu'ils anticipent l'activit&eacute; &eacute;conomique. Combin&eacute;s &agrave; d'autres indicateurs, ils permettent de confirmer ou d'infirmer certaines tendances. Par exemple, un bon chiffre sur l'indice de confiance des consommateurs peut sous-entendre une consommation future plus &eacute;lev&eacute;e, mais cette tendance sera confirm&eacute;e ou infirm&eacute;e avec un indicateur retard&eacute;.<br>
+<br>
+</p>
+<h4>2 - Les indicateurs &eacute;conomiques co&iuml;ncidents</h4>
+<p>Ce sont les indicateurs les plus suivis qui &eacute;valuent l'activit&eacute; &eacute;conomique r&eacute;elle au moment de leur publication. Ces statistiques suivent l'activit&eacute; &eacute;conomique dans son ensemble. Ils permettent &agrave; un instant donn&eacute; de prendre la mesure de l'activit&eacute; &eacute;conomique. Ils sont moins complexes &agrave; analyser que les indicateurs avanc&eacute;s.<br>
+<br>
+</p>
+<h4>3 - Les indicateurs &eacute;conomiques retard&eacute;s</h4>
+<p>Ces statistiques sont bas&eacute;es sur des donn&eacute;es d&eacute;j&agrave; pass&eacute;es donc plus facilement calculables. Ils permettent de mesurer l'activit&eacute; &eacute;conomique pass&eacute;e. Ces indicateurs confirment ou infirment une tendance &eacute;conomique. Leurs publications ont un impact direct sur l'&eacute;conomie des march&eacute;s.<br>
+<br>
+</p>
+<table class="table table-striped table-hover" >
+    <colgroup><col><col><col></colgroup>
+    <thead>
+        <tr>
+            <th>INDICATEUR AVANC&Eacute;</th>
+            <th>INDICATEUR COINCIDENT</th>
+            <th>INDICATEUR RETARD&Eacute;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Refl&egrave;te en avance l&rsquo;activit&eacute; &eacute;conomique r&eacute;elle</td>
+            <td>Evalue l&rsquo;activit&eacute; &eacute;conomique r&eacute;elle au moment de leur publication</td>
+            <td>Mesure l&rsquo;activit&eacute; &eacute;conomique pass&eacute;e</td>
+        </tr>
+        <tr>
+            <td>&bull; l&rsquo;indice des prix &agrave; la consommation<br>
+            &bull; le sentiment des consommateurs<br>
+            &bull; le climat &eacute;conomique<br>
+            &bull; la construction de logements</td>
+            <td>&bull; le PIB (1&egrave;re estimation)<br>
+            &bull; la production industrielle<br>
+            &bull; le PMI manufacturier<br>
+            &bull; le rapport de vente aux d&eacute;tails</td>
+            <td>&bull; le PIB r&eacute;el (version d&eacute;finitive)<br>
+            &bull; les taux d&rsquo;int&eacute;r&ecirc;ts directeurs<br>
+            &bull; le taux de ch&ocirc;mage<br>
+            &bull; la balance des paiements</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Les principaux indicateurs</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <h4>1 - Le Produit Int&eacute;rieur Brut (PIB)</h4>
+<p>L'&eacute;volution du PIB mesure la croissance &eacute;conomique d'un pays.<br>
+<br>
+Il est d&eacute;fini comme la somme des valeurs ou richesses cr&eacute;&eacute;es par les secteurs institutionnels (les soci&eacute;t&eacute;s, les administrations publiques, les m&eacute;nages, les institutions sans but lucratif) ou par les diff&eacute;rentes branches d'activit&eacute;s, &agrave; l'int&eacute;rieur d'un pays. Il repr&eacute;sente la valeur totale de la production de biens et services.</p>
+<p>C'est l'indicateur le plus repr&eacute;sentatif de l'activit&eacute; &eacute;conomique et il peut &ecirc;tre consid&eacute;r&eacute; comme un indicateur co&iuml;ncident lors de ces premi&egrave;res mesures (versions pr&eacute;liminaires) ou comme un indicateur retard&eacute; lors de sa mesure r&eacute;elle (version d&eacute;finitive).<br>
+<br>
+</p>
+<h4>2 - Les taux d'int&eacute;r&ecirc;ts directeurs</h4>
+<p>Les taux d'int&eacute;r&ecirc;ts directeurs sont les taux auxquels les banques centrales, qui les imposent, accordent des cr&eacute;dits &agrave; court terme aux banques commerciales.<br>
+<br>
+Ce taux consid&eacute;r&eacute; comme un indicateur agit sur la vie &eacute;conomique d'un pays, il influence directement l'octroi des cr&eacute;dits et l'inflation. Il a &eacute;galement un fort impact sur le taux de change d'une monnaie donc sur les investissements, les importations et les exportations.<br>
+<br>
+Les taux directeurs sont publi&eacute;s une fois par mois par les banques centrales (la Banque Centrale Europ&eacute;enne (BCE), la R&eacute;serve F&eacute;d&eacute;rale des Etats-Unis (FED) ou la Banque centrale d'Angleterre (BoE). La publication des taux d'int&eacute;r&ecirc;ts est tr&egrave;s suivie car leur impact sur les march&eacute;s est tr&egrave;s important.<br>
+<br>
+</p>
+<h4>3 - L'indice des prix &agrave; la consommation (IPC)</h4>
+<p>L'IPC mesure le niveau d'inflation d'un pays. Il calcule la variation des prix aux d&eacute;tails selon un panier de biens de consommation type et la variation des salaires. Autrement dit, il permet de calculer, entre deux p&eacute;riodes, la variation moyenne des prix des produits consomm&eacute;s par les m&eacute;nages.<br>
+<br>
+</p>
+<h4>4 - Le taux de ch&ocirc;mage</h4>
+<p>Le taux de ch&ocirc;mage mesure le pourcentage de personnes faisant partie de la population active qui n'a pas d'emploi et qui en recherche un. Cette statistique, tr&egrave;s importante, permet de situer l'&eacute;conomie d'un pays par rapport &agrave; son niveau d'emploi.<br>
+<br>
+</p>
+<h4>5 - Les rapports de ventes aux d&eacute;tails</h4>
+<p>Cette statistique mesure les d&eacute;penses du consommateur ainsi que le comportement du commerce au d&eacute;tail. Elle permet de repr&eacute;senter le comportement du consommateur &agrave; un instant donn&eacute;. Il s'agit du principal indicateur en termes de d&eacute;penses de consommation.<br>
+<br>
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Les autres indicateurs</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <h4>1 - Le sentiment des consommateurs</h4>
+<p>Cet indicateur mesure le sentiment des consommateurs sur l'&eacute;volution des conditions &eacute;conomiques actuelles et futures. Il est connu aux Etats Unis sous le nom de l'indice de l'Universit&eacute; de Michigan.<br>
+<br>
+</p>
+<h4>2 - Le climat &eacute;conomique</h4>
+<p>Cet indicateur estime les perspectives &eacute;conomiques des six prochains mois des investisseurs institutionnels et des analystes. Il permet de conna&icirc;tre le sentiment des professionnels sur les climats &eacute;conomiques actuels et futurs. Il est connu en Europe sous le nom d'indice ZEW (Zentrum fur Europaische Wirtschaftsforschung).<br>
+<br>
+</p>
+<h4>3 - Le PMI manufacturier (Purchasing Managers Index)</h4>
+<p>Cette statistique calcule le niveau d'activit&eacute; des directeurs d'achats du secteur manufacturier qui repr&eacute;sente les industries de transformations des biens. Il comprend les prises de commandes, la production, l'emploi, les livraisons et les stocks. Il refl&egrave;te la confiance des directeurs d'achats.<br>
+<br>
+</p>
+<h4>4 - La balance des paiements</h4>
+<p>Cet indicateur comptabilise toutes les op&eacute;rations r&eacute;alis&eacute;es li&eacute;es aux importations, aux exportations, aux investissements re&ccedil;us de l'&eacute;tranger et aux investissements r&eacute;alis&eacute;s &agrave; l'&eacute;tranger. Il calcule la diff&eacute;rence entre la valeur totale des encaissements re&ccedil;us de l'&eacute;tranger et la valeur totale des paiements &eacute;mis &agrave; destination de l'&eacute;tranger.<br>
+<br>
+La balance des paiements est exc&eacute;dentaire lorsque les encaissements provenant de l'&eacute;tranger sont sup&eacute;rieurs aux paiements &eacute;mis vers l'&eacute;tranger.<br>
+<br>
+</p>
+<h4>5 - La production industrielle</h4>
+<p>Cette statistique calcule la variation des quantit&eacute;s produites dans les entreprises industrielles du secteur secondaire (usines, chantiers, carri&egrave;res, mines). Elle ne prend pas en compte les secteurs primaires et tertiaires.<br>
+<br>
+</p>
+<h4>6 - La construction de logement</h4>
+<p>Cet indicateur mesure la variation du nombre de nouveaux immeubles r&eacute;sidentiels, dont les mises en chantier ont d&eacute;but&eacute; lors de la p&eacute;riode &eacute;tudi&eacute;e. Il s'agit d'un indicateur important pour l'activit&eacute; du march&eacute; immobilier.<br>
+<br>
+</p>
+<table class="table table-striped table-hover" >
+    <colgroup><col><col><col><col><col></colgroup>
+    <thead>
+        <tr>
+            <th>INDICATEUR</th>
+            <th>TYPE</th>
+            <th>DEFINITION</th>
+            <th>PERIODICITE</th>
+            <th>IMPACT</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Le PIB</td>
+            <td>co&iuml;ncident /
+            retard&eacute;</td>
+            <td>Mesure la croissance &eacute;conomique d&rsquo;un pays</td>
+            <td>Trimestrielle</td>
+            <td>Important</td>
+        </tr>
+        <tr>
+            <td>Les taux d&rsquo;int&eacute;r&ecirc;ts directeurs</td>
+            <td>&nbsp;</td>
+            <td>Indique les taux auxquels les banques  centrales accordent les cr&eacute;dits</td>
+            <td>Mensuelle</td>
+            <td>Important</td>
+        </tr>
+        <tr>
+            <td>L&rsquo;indice des prix &agrave; la  consommation (IPC) </td>
+            <td>avanc&eacute;</td>
+            <td>Mesure le niveau d&rsquo;inflation d&rsquo;un pays</td>
+            <td>Mensuelle</td>
+            <td>Important</td>
+        </tr>
+        <tr>
+            <td>Le taux de ch&ocirc;mage</td>
+            <td>retard&eacute;</td>
+            <td>Mesure le pourcentage de personnes sans  emploi dans la population active </td>
+            <td>Mensuelle</td>
+            <td>Important</td>
+        </tr>
+        <tr>
+            <td>Les rapports de ventes aux  d&eacute;tails</td>
+            <td>co&iuml;ncident</td>
+            <td>Mesure les d&eacute;penses du consommateur</td>
+            <td>Mensuelle</td>
+            <td>Moyen</td>
+        </tr>
+        <tr>
+            <td>Le sentiment des  consommateurs</td>
+            <td>avanc&eacute;</td>
+            <td>Evalue le sentiment des consommateurs  sur l&rsquo;&eacute;volution des conditions &eacute;conomiques  actuelles et futures</td>
+            <td>Mensuelle</td>
+            <td>Moyen</td>
+        </tr>
+        <tr>
+            <td>Le climat &eacute;conomique</td>
+            <td>avanc&eacute;</td>
+            <td>Evalue les perspectives &eacute;conomiques  des 6 prochains mois des investisseurs  institutionnels et des analystes</td>
+            <td>Mensuelle</td>
+            <td>Important</td>
+        </tr>
+        <tr>
+            <td>Le PMI manufacturier  (Purchasing Managers Index)</td>
+            <td>co&iuml;ncident</td>
+            <td>Indique le niveau d&rsquo;activit&eacute; des directeurs  d&rsquo;achats du secteur manufacturier</td>
+            <td>Mensuelle</td>
+            <td>Moyen</td>
+        </tr>
+        <tr>
+            <td>La balance des paiements</td>
+            <td>retard&eacute;</td>
+            <td>Calcule la diff&eacute;rence entre la valeur totale  des encaissements re&ccedil;us de l&rsquo;&eacute;tranger  et la valeur totale des paiements &eacute;mis &agrave;  destination de l&rsquo;&eacute;tranger</td>
+            <td>Mensuelle</td>
+            <td>Faible</td>
+        </tr>
+        <tr>
+            <td>La production industrielle</td>
+            <td>co&iuml;ncident</td>
+            <td>Calcule la variation des quantit&eacute;s produites  dans les entreprises industrielles du  secteur secondaire</td>
+            <td>Mensuelle</td>
+            <td>Moyen</td>
+        </tr>
+        <tr>
+            <td>La construction de logement</td>
+            <td>avanc&eacute;</td>
+            <td>Calcule la variation du nombre de  nouveaux immeubles r&eacute;sidentiels</td>
+            <td>Mensuelle</td>
+            <td>Moyen</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Le fonctionnement du calendrier économique</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <p>Le calendrier &eacute;conomique indique toutes les dates importantes de publication d'indicateurs &eacute;conomiques &agrave; venir.<br>
+<br>
+</p>
+<p><strong>La plupart des calendriers &eacute;conomiques pr&eacute;sentent les indicateurs sous forme de tableau avec les indications suivantes</strong> :<br>
+&bull; le nom de l'indicateur<br>
+&bull; le pays concern&eacute;<br>
+&bull; la date et l'heure de publication<br>
+&bull; la p&eacute;riode concern&eacute;e<br>
+&bull; la valeur publi&eacute;e<br>
+&bull; la valeur pr&eacute;c&eacute;dente<br>
+&bull; l'importance de l'indicateur<br>
+&bull; l'estimation pr&eacute;vue, le consensus (moyenne des anticipations)<br>
+<br>
+</p>
+<p><strong>Exemple de calendrier :</strong><br>
+<br>
+</p>
+<table class="table table-striped table-hover" >
+    <colgroup><col><col><col><col><col></colgroup>
+    <thead>
+        <tr>
+            <th>LUNDI 12 AO&Ucirc;T 2013</th>
+            <th>Heure</th>
+            <th>P&eacute;riode</th>
+            <th>Publi&eacute;</th>
+            <th>Pr&eacute;c&eacute;dent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="5"><strong>FRANCE</strong></td>
+        </tr>
+        <tr>
+            <td>-Balance des paiements</td>
+            <td>8h45</td>
+            <td>Juin</td>
+            <td>-1,4 MdE </td>
+            <td>-3,5 MdE</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>JAPON</strong></td>
+        </tr>
+        <tr>
+            <td>-PIB - pr&eacute;liminaire</td>
+            <td>&nbsp;</td>
+            <td>2T</td>
+            <td>479,36 MdsY</td>
+            <td>475,99 MdsY</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<table class="table table-striped table-hover" >
+    <colgroup><col><col><col><col><col></colgroup>
+    <thead>
+        <tr>
+            <th>MARDI 13 AO&Ucirc;T 2013</th>
+            <th>Heure</th>
+            <th>P&eacute;riode</th>
+            <th>Publi&eacute;</th>
+            <th>Pr&eacute;c&eacute;dent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="5"><strong>ALLEMAGNE</strong></td>
+        </tr>
+        <tr>
+            <td>-Indice des prix  <br>
+            -Indice ZEW</td>
+            <td>9h00<br>
+            11h00</td>
+            <td>Juillet  <br>
+            Ao&ucirc;t</td>
+            <td>106,1  <br>
+            +42,0</td>
+            <td>105,6  <br>
+            +36,3</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>ESPAGNE</strong></td>
+        </tr>
+        <tr>
+            <td>-Indice des prix</td>
+            <td>&nbsp;</td>
+            <td>Juillet</td>
+            <td>120,36</td>
+            <td>121,74</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>ETATS-UNIS</strong></td>
+        </tr>
+        <tr>
+            <td>-Ventes de d&eacute;tail  <br>
+            -Prix &agrave; l&rsquo;importation<br>
+            -Stocks des entreprises</td>
+            <td>14h30<br>
+            14h30  <br>
+            16h00</td>
+            <td>Juillet  <br>
+            Juillet  <br>
+            Juin</td>
+            <td>+0,2%  <br>
+            139,1  <br>
+            0,0%</td>
+            <td>+0,6%  <br>
+            138,8  <br>
+            -0,1%</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>EUROPE UEM</strong></td>
+        </tr>
+        <tr>
+            <td>-Production industrielle</td>
+            <td>11h00</td>
+            <td>Juin</td>
+            <td>101,0</td>
+            <td>100,3</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>ROYAUME-UNI</strong></td>
+        </tr>
+        <tr>
+            <td>-Prix &agrave; la production industrielle  <br>
+            -Indice des prix</td>
+            <td>10h30  <br>
+            10h30</td>
+            <td>Juillet  <br>
+            Juillet</td>
+            <td>0,2%<br>
+            125,8</td>
+            <td>0,1%  <br>
+            125,9</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<table class="table table-striped table-hover" >
+    <colgroup><col><col><col><col><col></colgroup>
+    <thead>
+        <tr>
+            <th>MERCREDI 14 AO&Ucirc;T 2013</th>
+            <th>Heure</th>
+            <th>P&eacute;riode</th>
+            <th>Publi&eacute;</th>
+            <th>Pr&eacute;c&eacute;dent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="5"><strong>ALLEMAGNE</strong></td>
+        </tr>
+        <tr>
+            <td>-PIB - pr&eacute;liminaire</td>
+            <td>9h00</td>
+            <td>2T</td>
+            <td>684,91 MdsE</td>
+            <td>674,39 MdsE</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>ETATS-UNIS</strong></td>
+        </tr>
+        <tr>
+            <td>-Prix &agrave; la production industrielle<br>
+            -Stocks de p&eacute;trole</td>
+            <td>14h30<br>
+            16h30</td>
+            <td>Juillet  <br>
+            Hebdomadaire</td>
+            <td>197,3  <br>
+            -2,8 Ml de barils</td>
+            <td>197,3  <br>
+            -1,3 Ml de barils</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>EUROPE UEM</strong></td>
+        </tr>
+        <tr>
+            <td>-PIB - estimation rapide</td>
+            <td>11h00</td>
+            <td>2T</td>
+            <td>NA</td>
+            <td>2378,41 MdsE</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>FRANCE</strong></td>
+        </tr>
+        <tr>
+            <td>-PIB - 1ers r&eacute;sultats  <br>
+            -Indice des prix</td>
+            <td>7h30  <br>
+            8h45</td>
+            <td>2T  <br>
+            Juillet</td>
+            <td>516,57 MdsE<br>
+            127,40</td>
+            <td>512,18 MdsE<br>
+            127,17</td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>ROYAUME-UNI</strong></td>
+        </tr>
+        <tr>
+            <td>-Taux de ch&ocirc;mage</td>
+            <td>10h30  </td>
+            <td>          Juillet</td>
+            <td>4,3 %</td>
+            <td>4,4 %</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+            </div>
+        </div>
+    </div>
+
+
+<div  class="  ">
+    <h3 class="h2  text-left">Conclusion</h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                Il est important de bien comprendre et de suivre les indicateurs &eacute;conomiques &agrave; travers les calendriers &eacute;conomiques. La valeur publi&eacute;e est bien s&ucirc;r importante mais il faut surveiller son &eacute;cart par rapport &agrave; l'estimation pr&eacute;vue. En effet, plus l'&eacute;cart sera important, plus la probabilit&eacute; d'une forte volatilit&eacute; sur les march&eacute;s est &eacute;lev&eacute;e au moment de la publication.<br>
+<br>
+En effet, la publication d'un indicateur qui est d&eacute;cal&eacute; par rapport au consensus peut cr&eacute;er un effet de surprise. Ainsi, m&ecirc;me si l'indicateur est bon, l'effet de surprise peut faire baisser les march&eacute;s et inversement..&nbsp;
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C149_Col00" class="sf_colsIn col-xs-12"><div class="row is-flex" data-sf-element="Row">
+    <div id="cpMain_C150_Col00" class="sf_colsIn col-md-3" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-02eb3b.jpg?sfvrsn=de29b834_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">MOTS CLES</h3>
+            <p class="card-text">Indicateurs &eacute;conomiques avanc&eacute;s<br>
+Indicateurs &eacute;conomiques co&iuml;ncidents<br>
+Indicateurs &eacute;conomiques retard&eacute;s<br>
+PIB<br>
+Taux d'int&eacute;r&ecirc;ts directeurs<br>
+Indice des prix &agrave; la consommation (IPC)<br>
+Taux de ch&ocirc;mage<br>
+Ventes aux d&eacute;tails</p>
+        </div>
+</div>
+    </div>
+     <div id="cpMain_C150_Col01" class="sf_colsIn col-md-3" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-06d7ca.jpg?sfvrsn=792abb34_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">A RETENIR</h3>
+            <p class="card-text"><strong>Les principaux indicateurs &eacute;conomiques &agrave; suivre sont&nbsp;</strong>:<br>
+&bull; le PIB<br>
+&bull; les taux d'int&eacute;r&ecirc;ts directeurs<br>
+&bull; l'indice des prix &agrave; la consommation (IPC)<br>
+&bull; le taux de ch&ocirc;mage<br>
+&bull; les rapports de ventes aux d&eacute;tails</p>
+        </div>
+</div>
+    </div>
+     <div id="cpMain_C150_Col02" class="sf_colsIn col-md-3" data-sf-element="Column 3" data-placeholder-label="Column 3">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-032482.jpg?sfvrsn=6226b834_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">A SAVOIR</h3>
+            <p class="card-text"><strong>Les pays o&ugrave; les zones dont les indicateurs &eacute;conomiques sont les plus suivis sont&nbsp;</strong>:<br>
+&bull; les Etats-Unis<br>
+&bull; l'Europe<br>
+&bull; le Japon</p>
+        </div>
+</div>
+    </div>
+     <div id="cpMain_C150_Col03" class="sf_colsIn col-md-3" data-sf-element="Column 4" data-placeholder-label="Column 4">
+<div class="card   "    >        <img class="card-img-top  " src="../../images/librariesprovider6/fiches/top-fiche-pratique-046889.jpg?sfvrsn=a927b834_2" >
+        <div class="card-block ">
+            <h3 class="h3  ">POUR EN SAVOIR PLUS</h3>
+            <p class="card-text"><a href="les-marches-boursiers-en-france.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]5046facb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les march&eacute;s boursiers en France</a><br>
+<a href="les-indices-boursiers.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]b854facb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les indices boursiers</a><br>
+<a href="les-acteurs-de-la-bourse.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]0b2bfacb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les acteurs de la bourse</a><br>
+<a href="les-secteurs-en-bourse.html" sfref="[f87df8cb-219e-61cd-bc43-ff0100e84d35]fd80facb-219e-61cd-bc43-ff0300e84d35" title="" class="" target="">Les secteurs en bourse</a></p>
+        </div>
+        <footer class="card-footer footer-flex">
+
+
+
+<div class="row  " > 
+
+
+
+    <div class="col-flex">
+        <a class="" href="../espace-bourse-pratique.html" >RETOUR AU SOMMAIRE</a>
+    </div>
+
+</div>         </footer>
+</div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C132_Col00" class="sf_colsIn col-xs-12">
+
+    <div class="card skewleft bg-white">
+        <div class="card-block">
+            <div class="row is-flex">
+
+
+<div class="col-md-7 bg-image  " style="background-image: url(../../images/librariesprovider6/fiches/visuel0156df.jpg?sfvrsn=3c70b834_2);">
+    <div class="content-center">
+    
+
+
+
+</div>
+</div>
+
+<div class="col-md-5">
+    <div>
+    
+    <p>
+        <h3>VOUS SOUHAITEZ APPROFONDIR VOS CONNAISSANCES ?</h3>
+<p>Suivez gratuitement les webinaires p&eacute;dagogiques de la Binck Academy et formez-vous avec nos experts et partenaires au fonctionnement des march&eacute;s</p>
+<p>&nbsp;</p>
+    </p>
+        <div class="content-center ">
+            
+
+
+    <a class="btn btn-secondary " type="button"  href='../../binck-tv.html'  >Je me forme</a>
+
+
+
+
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C133_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-center">
+                <div class="btn-group" role="group">
+<a class="btn btn-secondary" href="../espace-bourse-pratique.html" role="button">RETOUR</a><a class="btn btn-secondary" href="../../docs/librariesprovider6/fiche/les-principaux-indicateurs-economiques-fiche-pedagogique-binckf6a0.pdf?sfvrsn=0" role="button">T&eacute;l&eacute;charger cette fiche</a><a class="btn btn-secondary" href="les-pages-de-cotations.html" role="button">Fiche pr&eacute;c&eacute;dente</a><a class="btn btn-secondary" href="les-secteurs-en-bourse.html" role="button">Fiche suivante</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lane">
+    <div class="container">
+        <div class="row sf_cols">
+            <div id="cpMain_C134_Col00" class="sf_colsIn col-xs-12">
+
+<div  class="  ">
+    
+
+        <div class="row">
+            <div class="col-xs-12">
+                 
+            </div>
+            <div class="col-xs-12 text-left">
+                <em>Ce document p&eacute;dagogique n'est pas un document de conseils pour investir en bourse. Les informations donn&eacute;es dans ce document sont &agrave; titre informatif. Vous &ecirc;tes seul responsable des &eacute;ventuelles d&eacute;cisions que vous prendrez sur la base de ces informations. Il est conseill&eacute; de se renseigner aupr&egrave;s d'un conseil en investissement agr&eacute;&eacute; avant de prendre une d&eacute;cision d'investissement.</em>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="hidden-footer" id="main-footer">
+        <div class="footer text-white">
+            <div class="container-fluid-lg" id="footer-top">
+                <div class="row" id="footer-row">
+                    <ul class="list-unstyled text-nowrap">
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>CONTACTEZ-NOUS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../../contact.html"><span>Notre page contact</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE COMMERCIAL </span></li>
+                                    <li><span><img src="../../images/librariesprovider6/contact/0800-940-9805014.gif?sfvrsn=4" data-displaymode="Original" alt=" Téléphone Binck 0800 940 980" title="0800 940 980"></span></li>
+                                    <li><a class="icon-before" href="mailto:info@binck.fr" title="Contactez notre service commercial" data-icon=""><span>info@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>SERVICE CLIENT</span></li>
+                                    <li><span>01 70 36 70 80 (appel non surtax&eacute;)</span></li>
+                                    <li><a class="icon-before" href="mailto:clients@binck.fr" title="Contactez notre service client" data-icon=""><span>clients@binck.fr</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span>ADRESSE</span></li>
+                                    <li><span>10 Rue de la Paix</span></li>
+                                    <li><span>FR-75085 Paris cedex 02</span></li>
+                                    <li><span> &nbsp; </span></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>BOURSE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../../ouvrir-un-compte-en-ligne.html"><span>Ouvrir un compte</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/produits.html"><span>Produits de Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/comptes/compte-titres.html"><span>Compte-titres</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/comptes/pea.html"><span>PEA</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/comptes/pea-pme.html"><span>PEA-PME</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/outils-de-trading.html"><span>Outils de Trading</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/outils-d-analyses.html"><span>Outils d'analyses</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/club-des-traders.html"><span>Club des Traders</span></a></li>
+                                    <li><a class="icon-before" href="../../bourse-en-ligne/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../../faq.html"><span>FAQ Bourse</span></a></li>
+                                    <li><a class="icon-before" href="../../formulaires.html"><span>Formulaires</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>ASSURANCE VIE</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://landing.av.binck.fr/acquisition"><span>Adh&eacute;rer au contrat</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/index.html"><span>Accueil</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/tarifs.html"><span>Tarifs</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/modes-de-gestion/gestion-libre.html"><span>Modes de Gestion</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/supports/tous-nos-supports.html"><span>Supports</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/performances-assurance-vie.html"><span>Performances</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/avantages-fiscalite.html"><span>Fiscalit&eacute;</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/adherer-assurance-vie.html"><span>Comment adh&eacute;rer</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/offres-du-moment.html"><span>Offres du moment</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/FAQ-assurance-vie.html"><span>FAQ Assurance Vie</span></a></li>
+                                    <li><a class="icon-before" href="../../assurance-vie/lexique.html"><span>Lexique</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>QUI EST BINCK.FR</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../../qui-est-binck/pourquoi-choisir-binck.html"><span>Pourquoi choisir Binck</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/palmares.html"><span>Palmar&egrave;s</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/presse.html"><span>Binck dans la presse</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/communiques-de-presse.html"><span>Communiqu&eacute;s de presse</span></a></li>
+                                    <li><a class="icon-before" href="../../qui-est-binck/rapports-financiers.html"><span>Rapports financiers</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>FORMATIONS</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="../espace-bourse-pratique.html"><span>Espace Bourse Pratique</span></a></li>
+                                    <li><a class="icon-before" href="../investir-en-bourse-sur-binck-fr.html"><span>Vid&eacute;os tutorielles</span></a></li>
+                                    <li><a class="icon-before" href="../../binck-tv.html"><span>Binck TV</span></a></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><span> ACTUALITES </span></li>
+                                    <li><span> &nbsp; </span></li>
+                                    <li><a class="icon-before" href="../../actualites/analyses.html"><span>Analyses</span></a></li>
+                                    <li><a class="icon-before" href="../../actualites/calendrier-boursier.html"><span>Calendrier Boursier</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <h5>NOUS TROUVER</h5>
+                            <nav role="navigation"></nav>
+                            <ul class="list-unstyled">
+                                    <li><a class="icon-before" href="https://www.facebook.com/BinckFR" data-icon=""><span>Facebook</span></a></li>
+                                    <li><a class="icon-before" href="https://twitter.com/BinckFR" data-icon=""><span>Twitter</span></a></li>
+                                    <li><a class="icon-before" href="https://www.youtube.com/user/BINCKFR" data-icon=""><span>Youtube</span></a></li>
+                                    <li><a class="icon-before" href="https://www.linkedin.com/company/binckbank/" data-icon=""><span>LinkedIn</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="fullruler">
+            <div class="container-fluid-lg text-nowrap" id="footer-bottom">
+                <div class="row row-eq-height-md">
+                    <div class="col-md-4 col-lg-2 text-xs-center text-md-left">
+                            <a class="no-border" href="../../index.html" >
+                                <img alt="binck logo" height="16" src="../../images/librariesprovider6/headerandfooter/binck-fr14ab.png?sfvrsn=3d29cc34_6">
+                            </a>
+                    </div>
+                    <nav class="col-md-8 col-lg-10" role="navigation">
+                        <div class="row">
+                                <div class="col-xs-auto"><a href="../../information/securite.html">S&eacute;curit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../informations-legales.html">Informations l&eacute;gales<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../politique-de-confidentialite.html">Politique de confidentialit&eacute;<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../gestion-des-cookies.html">Gestion des cookies<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binckrecrute.fr/" target="_blank">Recrutement<span></span></a></div>
+                                <div class="col-xs-auto"><a href="https://www.binck.com/nl/corporate/" target="_blank">Binck.com<span></span></a></div>
+                                <div class="col-xs-auto"><a href="../../plan-du-site.html">Plan du site<span></span></a></div>
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</div>
+</body>
+
+<!-- Mirrored from www.binck.fr/formations-trading/espace-bourse-pratique/les-principaux-indicateurs-economiques by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 05:25:13 GMT -->
+</html>
